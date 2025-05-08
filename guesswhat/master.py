@@ -261,6 +261,33 @@ class GuessWhat(DialogueGameMaster):
         bench_score = max(0, speed_score)
         
         return bench_score
+    def compute_response_score(self, parsed_response, context):
+        """Compute turn-based rewards based on current game state"""
+        max_turns = self.experiment["max_turns"]
+        game_level = self.experiment["name"]
+        current_turns = self.current_round + 1
+
+        # Set lower bound turns based on level
+        num_categories_1 = 4
+        num_features_3 = 4
+
+        if game_level == "Level_1" or "Abs_Level_1":
+            lower_bound_turns = num_categories_1 + 1
+        elif game_level == "Level_2" or "Abs_Level_2":
+            lower_bound_turns = math.log2(max_turns) + 1
+        elif game_level == "Level_3" or "Abs_Level_3":
+            lower_bound_turns = num_features_3 + 1
+
+        # Terminal state: return episode score
+        if self.correct_guess or self.incorrect_guess or current_turns >= max_turns:
+            return self.compute_episode_score()
+        
+        # Non-terminal states
+        if current_turns <= lower_bound_turns:
+            return 0
+        else:
+            return -10
+
 
     def compute_turn_score(self):
         """Compute turn-based rewards based on current game state"""
