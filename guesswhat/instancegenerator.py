@@ -30,7 +30,8 @@ TEST_FILENAME = "test_instances.json"
 logger = logging.getLogger(__name__)
 GAME_NAME = "guesswhat"
 
-SEED = 42
+# SEED = 42
+SEED = 11
 
 class GuessWhatGameInstanceGenerator(GameInstanceGenerator):
     def __init__(self):
@@ -287,6 +288,6 @@ class GuessWhatGameInstanceGenerator(GameInstanceGenerator):
 
 if __name__ == '__main__':
     random.seed(SEED)
-    GuessWhatGameInstanceGenerator().generate(filename=TEST_FILENAME)
+    GuessWhatGameInstanceGenerator().generate()
 
 
