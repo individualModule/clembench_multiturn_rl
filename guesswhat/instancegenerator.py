@@ -25,7 +25,8 @@ num_words = 8
 
 # number of instances per experiment
 N_INSTANCES = 10
-
+N_TEST_INSTANCES = 3
+TEST_FILENAME = "test_instances.json"
 logger = logging.getLogger(__name__)
 GAME_NAME = "guesswhat"
 
@@ -286,6 +287,6 @@ class GuessWhatGameInstanceGenerator(GameInstanceGenerator):
 
 if __name__ == '__main__':
     random.seed(SEED)
-    GuessWhatGameInstanceGenerator().generate()
+    GuessWhatGameInstanceGenerator().generate(filename=TEST_FILENAME)
 
 
