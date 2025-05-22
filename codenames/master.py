@@ -270,7 +270,32 @@ class CodenamesGame(DialogueGameMaster):
         self.log_key("Cluegiver engaged flags", self.cluegiver.flags_engaged)
         self.log_key("Guesser engaged flags", self.guesser.flags_engaged)
 
+    def compute_response_score(self, parsed_response, context):
+        """
+        Check if the terminal state has been reached. If yes, call compute_episode_score and return it. Otherwise, return 0.
+        """
+        
+        if self.aborted or self.lost or self.assassin_won:
+            # Game has ended, compute the final score
+            return self.compute_episode_score()
+        return 0  # Game is still ongoing
+    
 
+    def compute_episode_score(self):
+        """
+        Compute the final benchmark score for the episode.
+        The score is based on recall (team words revealed).
+        """
+        if self.aborted:
+            return 0
+
+        # Calculate recall: proportion of team words revealed
+        total_team_words = len(self.board.get_hidden_words(TEAM)) + len(self.board.get_revealed_words(TEAM))
+        revealed_team_words = len(self.board.get_revealed_words(TEAM))
+        recall = revealed_team_words / total_team_words if total_team_words > 0 else 0
+
+        return recall
+    
 class CodenamesGameBenchmark(GameBenchmark):
 
     def __init__(self, game_spec: GameSpec):

@@ -261,6 +261,7 @@ class GuessWhat(DialogueGameMaster):
         bench_score = max(0, speed_score)
         
         return bench_score
+    
     def compute_response_score(self, parsed_response, context):
         """Compute turn-based rewards based on current game state
         19/05 - first experiment - 0 for turn, main score end of trajectory reward.

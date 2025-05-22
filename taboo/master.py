@@ -189,8 +189,20 @@ class Taboo(DialogueGameMaster):
         if player == self.guesser:
             self.set_context_for(self.describer, parsed_response)
 
+    # def compute_response_score(self, response, context):
+        """
+        22/05 - currently experimenting with sparse rewards, save this for later.
+        """
+
+        # return 1 if self.is_success() else 0
+
     def compute_response_score(self, response, context):
-        return 1 if self.is_success() else 0
+        """
+        Sparse reward scheme with episode score as the only reward. 
+        """
+        if self.is_terminal():
+            return self.compute_episode_score()
+        return 0
 
     def compute_episode_score(self):
         if self.is_success():

@@ -228,8 +228,37 @@ class MatchItAscii(DialogueGameMaster):
                 self.set_context_for(self.current_player, self.q_reprompt)
             return False
         return True
+    
 
+    def compute_response_score(self, parsed_response, context):
+        """
+        Check if the terminal state has been reached. If yes, call compute_episode_score and return it. Otherwise, return 0.
+        """
+        if self.final_decision or self.aborted:
+            # Terminal state reached, compute the episode score
+            return self.compute_episode_score()
+        else:
+            # No terminal state, return 0 as the response score
+            return 0
 
+    def compute_episode_score(self):
+        """Compute episode bench score using the same logic as Scorer Class."""
+        if self.aborted:
+            # If the game was aborted, return a score of 0
+            return 0
+
+        # Check success conditions for both players
+        if self.success_a and self.success_b:
+            # Both players succeeded
+            return 100
+        elif self.success_a or self.success_b:
+            # Only one player succeeded
+            return 50
+        else:
+            # Neither player succeeded
+            return 0    
+        
+        
 class MatchItScorer(GameScorer):
 
     def __init__(self, game_name: str, experiment: Dict, game_instance: Dict):
