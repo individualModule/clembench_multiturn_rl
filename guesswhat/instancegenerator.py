@@ -24,14 +24,14 @@ from clemcore.clemgame import GameInstanceGenerator
 num_words = 8
 
 # number of instances per experiment
-N_INSTANCES = 10
+N_INSTANCES = 3
 N_TEST_INSTANCES = 3
 TEST_FILENAME = "test_instances.json"
 logger = logging.getLogger(__name__)
 GAME_NAME = "guesswhat"
 
-# SEED = 42
-SEED = 11
+SEED = 42 # for test
+# SEED = 11
 
 class GuessWhatGameInstanceGenerator(GameInstanceGenerator):
     def __init__(self):
