@@ -33,8 +33,8 @@ class Words:
 
 
 class Answerer(Player):
-    def __init__(self, model: Model, name, game_recorder, initial_prompt: str, words: Words):
-        super().__init__(model, name, game_recorder, initial_prompt)
+    def __init__(self, model: Model, name, game_recorder, words: Words):
+        super().__init__(model, name, game_recorder=game_recorder)
         self.words = words
 
     def _custom_response(self, context: Dict) -> str:
@@ -62,7 +62,7 @@ class Questioner(Player):
 
     def __init__(self, name, game_recorder,
                  question_order: List[str], requests: Dict[str, int], request_strings: Dict):
-        super().__init__(CustomResponseModel(), name, game_recorder)
+        super().__init__(CustomResponseModel(), name, game_recorder=game_recorder)
         self.question_order = question_order
         self.question_type = None
         self.requests = requests
@@ -131,9 +131,10 @@ class PrivateShared(GameMaster):
 
         request_strings = self.load_json(REQUESTS_PATH.format(self.experiment['name']))
         self.words = Words(self.load_json(WORDS_PATH.format(lang)))  # load language specific words
-        self.answerer: Answerer = Answerer(self.player_models[0], "Player 1 (Answerer)",
-                                           self.game_recorder, initial_prompt, self.words)
-        self.questioner: Questioner = Questioner("Player 2 (Questioner)", self.game_recorder,
+        self.initial_prompt = initial_prompt
+        self.answerer: Answerer = Answerer(self.player_models[0], "Player 1",
+                                           self.game_recorder, self.words)
+        self.questioner: Questioner = Questioner("Player 2", self.game_recorder,
                                                  request_order, requests, request_strings)
 
         # initialise turn counters
@@ -141,11 +142,8 @@ class PrivateShared(GameMaster):
         self.parsed_request_counts = [0] * self.n_probe_turns
         self.violated_request_counts = [0] * self.n_probe_turns
 
-        self.log_players({
-            'GM': 'Game master for privateshared',
-            'Player 1': f'Answerer: {self.player_models[0].get_name()}',
-            'Player 2': 'Questioner: Programmatic'
-        })
+        self.log_player(self.answerer)
+        self.log_player(self.questioner)
 
     @property
     def current_round(self):
@@ -157,6 +155,14 @@ class PrivateShared(GameMaster):
 
     def play(self) -> None:
         all_probes = []
+
+        # setup fake dialogue prequel (like in the original version of the game)
+        self.answerer._messages.append(dict(role="user", content=self.initial_prompt))
+        self.game_recorder.log_event(from_="GM", to=self.answerer.name,
+                                      action={"type": "send message", "content": self.initial_prompt, "label": "pseudo"})
+        self.answerer._messages.append(dict(role="assistant", content="Ok."))
+        self.game_recorder.log_event(from_=self.answerer.name, to="GM",
+                                      action={"type": "get message", "content": "Ok.", "label": "pseudo"})
 
         # probing round before game starts
         turn_probes, probing_successful = self.probe()
@@ -193,9 +199,10 @@ class PrivateShared(GameMaster):
         context = dict(role="user", content=self.words.dummy_prompt)
         request = self.questioner(context)
         tagged_request = f"{self.questioner_tag}{request}"
-        # append the instruction to be straight to the point
-        tagged_coda_request = self.words.coda.format(tagged_request)
-        return tagged_coda_request
+        # append the instruction to be straight to the point (for regression testing not fixed here )
+        # tagged_coda_request = self.words.coda.format(tagged_request)
+        # return tagged_coda_request
+        return tagged_request
 
     def answerer_turn(self, request: str, memorize=True) -> str:
         context = dict(role="user", content=request)
