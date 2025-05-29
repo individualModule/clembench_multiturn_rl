@@ -43,6 +43,9 @@ class ImageGame:
         self.max_rounds = self.grid_dimension * self.grid_dimension * 2
         self.terminate = False
 
+        # for playpen scoring
+        self.prev_turn_score = 0
+
 class ImageGameMaster(DialogueGameMaster):
 
     def __init__(self, game_name: str, game_path: str, experiment: Dict, player_models: List[Model]):
@@ -158,6 +161,41 @@ class ImageGameMaster(DialogueGameMaster):
             self.log_to_self("game end", "turn limit reached")
             return False
         return True
+    
+    def compute_response_score(self, parsed_response, context) -> float:
+        """
+        Compute the F1 score for the current turn.
+
+        Returns:
+            The F1 score for the current turn. 0-100 scale
+        """
+        precision, recall, f1 = 0, 0, 0
+
+        target_grid = self.game.target_grid
+
+        try:
+            # Evaluate the F1 score based on the target grid and Player 1's parsed response
+            precision, recall, f1 = evaluate(target_grid, parsed_response)
+        except Exception as e:
+            # Handle any evaluation errors gracefully
+            self.prev_turn_score = 0
+            return 0
+
+        self.prev_turn_score = f1
+        return f1
+
+    def compute_episode_score(self):
+        """
+        Episode level scores for playpen.
+        """
+
+        # Return the F1 score as the BENCH_SCORE
+        if self.prev_turn_score > 99:
+            return self.prev_turn_score
+        
+        return 0
+
+
 
 class ImageGameScorer(GameScorer):
 

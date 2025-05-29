@@ -17,6 +17,7 @@ from scorer import CodenamesScorer
 
 logger = logging.getLogger(__name__)
 
+EXPECTED_WORDS_PER_TURN = 2
 
 class CodenamesGame(DialogueGameMaster):
     """This class implements a codenames game in which player A
@@ -50,6 +51,9 @@ class CodenamesGame(DialogueGameMaster):
         self.guesser: Guesser = Guesser(self.player_models[1], self.experiment["flags"])
         self.add_player(self.cluegiver)
         self.add_player(self.guesser)
+
+        # for playpen scoring
+        self.running_score = 0
 
     def _was_target(self, word: str):
         return word in self.cluegiver.targets
@@ -269,6 +273,60 @@ class CodenamesGame(DialogueGameMaster):
         self.log_key(METRIC_REQUEST_COUNT_VIOLATED, self.violated_request_count)
         self.log_key("Cluegiver engaged flags", self.cluegiver.flags_engaged)
         self.log_key("Guesser engaged flags", self.guesser.flags_engaged)
+
+
+    def compute_response_score(self, parsed_response: str, context: Dict) -> float:
+        """
+        Compute the F1 score for the current turn.
+
+        Args:
+            parsed_response: The parsed response from the player.
+            context: The context provided to the player for this turn.
+
+        Returns:
+            The F1 score for the current turn.
+        """
+        # Initialize precision, recall, and F1 score
+        target_precision, target_recall, f1_score = 0, 0, 0
+
+        try:
+            # Retrieve revealed words and calculate the number of revealed targets
+            revealed_words = self.board.get_revealed_words(TEAM)
+            number_revealed = sum(1 for word in revealed_words if word in parsed_response)
+
+            # Retrieve the number of remaining team words and the number of targets
+            number_of_targets = len(self.cluegiver.targets)
+            number_revealed_targets = sum(1 for target in self.cluegiver.targets if target in parsed_response)
+
+            # Calculate recall
+            if number_of_targets > 0:
+                target_recall = number_revealed_targets / number_of_targets
+
+            # Calculate precision
+            if number_revealed > 0:
+                target_precision = number_revealed_targets / number_revealed
+
+            # Calculate F1 score
+            if target_precision + target_recall > 0:
+                f1_score = (2 * target_precision * target_recall) / (target_precision + target_recall)
+
+        except Exception as e:
+            # Log the exception for debugging purposes (optional)
+            logger.error(f"Error in compute_response_score: {e}")
+            return 0
+        
+        self.running_score += f1_score
+
+        return f1_score * 100    
+    
+    def compute_episode_score(self) -> float:
+        score = 0
+        number_of_turns = self.current_round + 1
+        
+        if number_of_turns > 0:
+            score = self.running_score/ number_of_turns
+
+        return score*100
 
 
 class CodenamesGameBenchmark(GameBenchmark):
