@@ -61,11 +61,9 @@ class ImageGameMaster(DialogueGameMaster):
         self.game = ImageGame(self.game_instance)
         self.instruction_giver = InstructionGiver(self.player_models[0],
                                                   name="Player 1",
-                                                  game_role="Instruction Giver",
                                                   game_recorder=self.game_recorder)
         self.instruction_follower = InstructionFollower(self.player_models[1],
                                                         name="Player 2",
-                                                        game_role="Instruction Follower",
                                                         game_recorder=self.game_recorder)
         p1_initial_prompt = self.game.player_1_prompt_header + '\n' + self.game.target_grid + '\n' + self.game.player_1_question
         self.add_player(self.instruction_giver, initial_context=p1_initial_prompt)
