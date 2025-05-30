@@ -331,7 +331,9 @@ class CodenamesGame(DialogueGameMaster):
         # small turn reward signal
 
         number_of_turns = self.current_round + 1
-
+        if self.board.has_team_won:
+            return 10
+        
         return 0
 
 class CodenamesGameBenchmark(GameBenchmark):
