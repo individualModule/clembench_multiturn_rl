@@ -316,18 +316,23 @@ class CodenamesGame(DialogueGameMaster):
             return 0
         
         self.running_score += f1_score
-
-        return f1_score * 100    
+        # return unscaled reward
+        return f1_score    
     
-    def compute_episode_score(self) -> float:
-        score = 0
-        number_of_turns = self.current_round + 1
+    # def compute_episode_score(self) -> float:
+    #     score = 0
+    #     number_of_turns = self.current_round + 1
         
-        if number_of_turns > 0:
-            score = self.running_score/ number_of_turns
+    #     if number_of_turns > 0:
+    #         score = self.running_score/ number_of_turns
 
-        return score*100
+    #     return score*100
+    def compute_episode_score(self) -> float:   
+        # small turn reward signal
 
+        number_of_turns = self.current_round + 1
+
+        return 0
 
 class CodenamesGameBenchmark(GameBenchmark):
 
