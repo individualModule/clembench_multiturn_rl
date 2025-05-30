@@ -4,6 +4,134 @@
             "name": "low",
             "game_instances": [
                 {
+                    "game_id": 0,
+                    "board": [
+                        "bed",
+                        "force",
+                        "bridge",
+                        "witch",
+                        "maple",
+                        "foot",
+                        "car",
+                        "bar",
+                        "leprechaun",
+                        "pool",
+                        "revolution",
+                        "hospital",
+                        "iron",
+                        "concert",
+                        "chick",
+                        "ice",
+                        "thief",
+                        "fan",
+                        "contract",
+                        "africa",
+                        "moscow",
+                        "screen",
+                        "lemon",
+                        "board",
+                        "alien"
+                    ],
+                    "assignments": {
+                        "team": [
+                            "revolution",
+                            "board",
+                            "chick",
+                            "witch",
+                            "force",
+                            "bridge",
+                            "maple",
+                            "contract",
+                            "bed"
+                        ],
+                        "opponent": [
+                            "thief",
+                            "lemon",
+                            "iron",
+                            "alien",
+                            "concert",
+                            "pool",
+                            "africa",
+                            "foot"
+                        ],
+                        "innocent": [
+                            "ice",
+                            "leprechaun",
+                            "screen",
+                            "hospital",
+                            "bar",
+                            "moscow",
+                            "fan",
+                            "car"
+                        ],
+                        "assassin": []
+                    }
+                },
+                {
+                    "game_id": 4,
+                    "board": [
+                        "fork",
+                        "pipe",
+                        "fall",
+                        "dinosaur",
+                        "honey",
+                        "fly",
+                        "log",
+                        "battery",
+                        "pie",
+                        "bottle",
+                        "deck",
+                        "pin",
+                        "diamond",
+                        "web",
+                        "angel",
+                        "death",
+                        "force",
+                        "robin",
+                        "engine",
+                        "box",
+                        "server",
+                        "hole",
+                        "bow",
+                        "iron",
+                        "queen"
+                    ],
+                    "assignments": {
+                        "team": [
+                            "robin",
+                            "honey",
+                            "queen",
+                            "iron",
+                            "death",
+                            "server",
+                            "diamond",
+                            "fork",
+                            "pie"
+                        ],
+                        "opponent": [
+                            "bow",
+                            "battery",
+                            "bottle",
+                            "fly",
+                            "pin",
+                            "dinosaur",
+                            "web",
+                            "pipe"
+                        ],
+                        "innocent": [
+                            "hole",
+                            "deck",
+                            "engine",
+                            "force",
+                            "fall",
+                            "box",
+                            "angel",
+                            "log"
+                        ],
+                        "assassin": []
+                    }
+                },
+                {
                     "game_id": 8,
                     "board": [
                         "czech",
@@ -130,267 +258,157 @@
                         ],
                         "assassin": []
                     }
-                },
-                {
-                    "game_id": 3,
-                    "board": [
-                        "stream",
-                        "europe",
-                        "wake",
-                        "boot",
-                        "snowman",
-                        "belt",
-                        "web",
-                        "plastic",
-                        "line",
-                        "port",
-                        "hand",
-                        "cliff",
-                        "stadium",
-                        "yard",
-                        "gold",
-                        "link",
-                        "lab",
-                        "chair",
-                        "police",
-                        "ice",
-                        "plane",
-                        "cell",
-                        "sock",
-                        "copper",
-                        "scale"
-                    ],
-                    "assignments": {
-                        "team": [
-                            "stadium",
-                            "yard",
-                            "europe",
-                            "snowman",
-                            "gold",
-                            "stream",
-                            "cliff",
-                            "plane",
-                            "chair"
-                        ],
-                        "opponent": [
-                            "lab",
-                            "port",
-                            "cell",
-                            "sock",
-                            "wake",
-                            "belt",
-                            "link",
-                            "line"
-                        ],
-                        "innocent": [
-                            "plastic",
-                            "scale",
-                            "police",
-                            "boot",
-                            "copper",
-                            "ice",
-                            "web",
-                            "hand"
-                        ],
-                        "assassin": []
-                    }
-                },
-                {
-                    "game_id": 0,
-                    "board": [
-                        "bed",
-                        "force",
-                        "bridge",
-                        "witch",
-                        "maple",
-                        "foot",
-                        "car",
-                        "bar",
-                        "leprechaun",
-                        "pool",
-                        "revolution",
-                        "hospital",
-                        "iron",
-                        "concert",
-                        "chick",
-                        "ice",
-                        "thief",
-                        "fan",
-                        "contract",
-                        "africa",
-                        "moscow",
-                        "screen",
-                        "lemon",
-                        "board",
-                        "alien"
-                    ],
-                    "assignments": {
-                        "team": [
-                            "revolution",
-                            "board",
-                            "chick",
-                            "witch",
-                            "force",
-                            "bridge",
-                            "maple",
-                            "contract",
-                            "bed"
-                        ],
-                        "opponent": [
-                            "thief",
-                            "lemon",
-                            "iron",
-                            "alien",
-                            "concert",
-                            "pool",
-                            "africa",
-                            "foot"
-                        ],
-                        "innocent": [
-                            "ice",
-                            "leprechaun",
-                            "screen",
-                            "hospital",
-                            "bar",
-                            "moscow",
-                            "fan",
-                            "car"
-                        ],
-                        "assassin": []
-                    }
                 }
-            ]
+            ],
+            "variable": "Risk",
+            "number of instances": 10,
+            "generator": "random",
+            "opponent difficulty": 1,
+            "assignments": {
+                "team": 9,
+                "opponent": 8,
+                "innocent": 8,
+                "assassin": 0
+            },
+            "wordlist": "original.json",
+            "flags": {
+                "IGNORE RAMBLING": false,
+                "IGNORE FALSE TARGETS OR GUESSES": false,
+                "REPROMPT ON ERROR": false,
+                "STRIP WORDS": true,
+                "IGNORE NUMBER OF TARGETS": false
+            }
         },
         {
             "name": "high",
             "game_instances": [
                 {
-                    "game_id": 7,
+                    "game_id": 4,
                     "board": [
-                        "jam",
-                        "disease",
-                        "bear",
-                        "cat",
-                        "racket",
-                        "change",
-                        "plane",
-                        "amazon",
+                        "ghost",
+                        "march",
+                        "cycle",
+                        "police",
+                        "point",
+                        "state",
+                        "pupil",
+                        "buck",
+                        "agent",
+                        "row",
+                        "shakespeare",
+                        "time",
+                        "circle",
+                        "plate",
+                        "web",
+                        "screen",
+                        "stick",
                         "server",
-                        "parachute",
-                        "pitch",
-                        "microscope",
-                        "london",
-                        "thumb",
-                        "piano",
-                        "berry",
-                        "dance",
-                        "crown",
-                        "jet",
-                        "embassy",
-                        "horse",
-                        "temple",
-                        "match",
-                        "vacuum",
-                        "part"
+                        "calf",
+                        "ninja",
+                        "stadium",
+                        "fence",
+                        "snow",
+                        "pyramid",
+                        "pan"
                     ],
                     "assignments": {
                         "team": [
-                            "cat",
-                            "london",
-                            "bear",
-                            "microscope",
-                            "dance",
-                            "vacuum",
-                            "part",
-                            "plane",
-                            "server"
+                            "ghost",
+                            "time",
+                            "row",
+                            "web",
+                            "pyramid",
+                            "snow",
+                            "server",
+                            "shakespeare",
+                            "pupil"
                         ],
                         "opponent": [
-                            "racket",
-                            "jet",
-                            "disease",
-                            "parachute",
-                            "match",
-                            "change",
-                            "horse",
-                            "berry"
+                            "buck",
+                            "march",
+                            "pan",
+                            "fence",
+                            "screen",
+                            "cycle",
+                            "circle",
+                            "stadium"
                         ],
                         "innocent": [
-                            "embassy",
-                            "temple",
-                            "crown"
+                            "calf",
+                            "stick",
+                            "point"
                         ],
                         "assassin": [
-                            "thumb",
-                            "piano",
-                            "amazon",
-                            "jam",
-                            "pitch"
+                            "police",
+                            "ninja",
+                            "plate",
+                            "state",
+                            "agent"
                         ]
                     }
                 },
                 {
-                    "game_id": 1,
+                    "game_id": 8,
                     "board": [
-                        "pants",
-                        "ghost",
-                        "square",
-                        "queen",
-                        "press",
-                        "contract",
-                        "line",
-                        "australia",
-                        "fish",
-                        "tube",
-                        "back",
-                        "whip",
-                        "snow",
-                        "string",
-                        "conductor",
-                        "day",
-                        "knight",
+                        "bed",
+                        "bug",
+                        "green",
+                        "pipe",
+                        "litter",
+                        "lead",
+                        "turkey",
+                        "hospital",
+                        "lab",
+                        "jet",
+                        "berry",
+                        "shark",
                         "cycle",
-                        "calf",
-                        "chick",
-                        "tooth",
-                        "shakespeare",
-                        "forest",
-                        "centaur",
-                        "bomb"
+                        "cell",
+                        "australia",
+                        "mug",
+                        "lion",
+                        "pie",
+                        "honey",
+                        "ball",
+                        "dinosaur",
+                        "giant",
+                        "himalayas",
+                        "thief",
+                        "code"
                     ],
                     "assignments": {
                         "team": [
-                            "whip",
-                            "ghost",
-                            "fish",
-                            "bomb",
-                            "press",
-                            "forest",
-                            "string",
-                            "square",
-                            "chick"
+                            "berry",
+                            "ball",
+                            "mug",
+                            "shark",
+                            "hospital",
+                            "pie",
+                            "bug",
+                            "himalayas",
+                            "litter"
                         ],
                         "opponent": [
-                            "line",
-                            "knight",
-                            "conductor",
-                            "queen",
-                            "tube",
-                            "australia",
-                            "shakespeare",
-                            "snow"
+                            "jet",
+                            "lab",
+                            "lead",
+                            "honey",
+                            "cycle",
+                            "cell",
+                            "giant",
+                            "turkey"
                         ],
                         "innocent": [
-                            "day",
-                            "pants",
-                            "tooth"
+                            "pipe",
+                            "green",
+                            "australia"
                         ],
                         "assassin": [
-                            "contract",
-                            "centaur",
-                            "back",
-                            "cycle",
-                            "calf"
+                            "thief",
+                            "dinosaur",
+                            "lion",
+                            "code",
+                            "bed"
                         ]
                     }
                 },
@@ -460,312 +478,246 @@
                     }
                 },
                 {
-                    "game_id": 6,
+                    "game_id": 5,
                     "board": [
-                        "jupiter",
-                        "suit",
-                        "pin",
-                        "space",
-                        "mount",
-                        "eagle",
-                        "block",
-                        "mint",
-                        "war",
-                        "opera",
-                        "lock",
-                        "hollywood",
-                        "bear",
-                        "missile",
+                        "pipe",
+                        "superhero",
+                        "tokyo",
+                        "button",
+                        "whale",
+                        "park",
+                        "plot",
+                        "wave",
+                        "engine",
+                        "snowman",
+                        "play",
+                        "phoenix",
+                        "hotel",
+                        "himalayas",
+                        "shakespeare",
+                        "soldier",
                         "mercury",
-                        "telescope",
-                        "brush",
-                        "horn",
-                        "mug",
-                        "octopus",
-                        "america",
-                        "carrot",
-                        "bar",
-                        "tooth",
-                        "kangaroo"
+                        "spring",
+                        "foot",
+                        "ice",
+                        "suit",
+                        "pants",
+                        "crash",
+                        "europe",
+                        "canada"
                     ],
                     "assignments": {
                         "team": [
-                            "hollywood",
-                            "lock",
-                            "mint",
-                            "horn",
-                            "carrot",
-                            "telescope",
-                            "mug",
-                            "tooth",
-                            "bar"
+                            "europe",
+                            "crash",
+                            "superhero",
+                            "mercury",
+                            "whale",
+                            "phoenix",
+                            "canada",
+                            "suit",
+                            "spring"
                         ],
                         "opponent": [
-                            "suit",
-                            "pin",
-                            "america",
-                            "missile",
-                            "war",
-                            "space",
-                            "mercury",
-                            "block"
+                            "wave",
+                            "himalayas",
+                            "ice",
+                            "engine",
+                            "shakespeare",
+                            "button",
+                            "play",
+                            "park"
                         ],
                         "innocent": [
-                            "jupiter",
-                            "eagle",
-                            "brush"
+                            "plot",
+                            "foot",
+                            "snowman"
                         ],
                         "assassin": [
-                            "opera",
-                            "bear",
-                            "kangaroo",
-                            "octopus",
-                            "mount"
+                            "pants",
+                            "pipe",
+                            "tokyo",
+                            "soldier",
+                            "hotel"
                         ]
                     }
                 }
-            ]
+            ],
+            "variable": "Risk",
+            "number of instances": 10,
+            "generator": "random",
+            "opponent difficulty": 1,
+            "assignments": {
+                "team": 9,
+                "opponent": 8,
+                "innocent": 3,
+                "assassin": 5
+            },
+            "wordlist": "original.json",
+            "flags": {
+                "IGNORE RAMBLING": false,
+                "IGNORE FALSE TARGETS OR GUESSES": false,
+                "REPROMPT ON ERROR": false,
+                "STRIP WORDS": true,
+                "IGNORE NUMBER OF TARGETS": false
+            }
         },
         {
             "name": "easy",
             "game_instances": [
                 {
-                    "game_id": 4,
+                    "game_id": 3,
                     "board": [
-                        "attic",
-                        "running",
-                        "neck",
-                        "bluegrass",
-                        "atv",
-                        "brazil",
-                        "portugal",
-                        "seasoning",
-                        "entrance",
-                        "truck",
-                        "china",
-                        "buttocks",
-                        "head",
-                        "oregano",
-                        "fog",
-                        "swimming",
-                        "wool",
-                        "gospel",
-                        "cotton",
-                        "basement",
-                        "hose",
-                        "shears",
-                        "back",
-                        "thunder",
-                        "silver"
-                    ],
-                    "assignments": {
-                        "team": [
-                            "gospel",
-                            "shears",
-                            "thunder",
-                            "fog",
-                            "bluegrass",
-                            "attic",
-                            "entrance",
-                            "basement",
-                            "hose"
-                        ],
-                        "opponent": [
-                            "cotton",
-                            "head",
-                            "buttocks",
-                            "running",
-                            "back",
-                            "wool",
-                            "swimming",
-                            "neck"
-                        ],
-                        "innocent": [
-                            "seasoning",
-                            "brazil",
-                            "oregano",
-                            "china",
-                            "portugal",
-                            "truck",
-                            "atv"
-                        ],
-                        "assassin": [
-                            "silver"
-                        ]
-                    },
-                    "private": {
-                        "categories": [
-                            "a gardener\u2019s tool",
-                            "a part of a building",
-                            "a type of music",
-                            "a weather phenomenon",
-                            "a sport",
-                            "a part of the human body",
-                            "a type of fabric",
-                            "a type of vehicle",
-                            "a substance for flavoring food",
-                            "a country",
-                            "a metal"
-                        ]
-                    }
-                },
-                {
-                    "game_id": 8,
-                    "board": [
-                        "daffodil",
-                        "rock",
-                        "dandelion",
-                        "scooter",
-                        "bucket",
-                        "house",
+                        "water",
+                        "jade",
+                        "violet",
+                        "pneumonia",
+                        "rv",
+                        "leukemia",
+                        "petunia",
+                        "elbow",
+                        "yard",
                         "train",
-                        "taxi",
-                        "tent",
-                        "martini",
-                        "racing",
-                        "metal",
-                        "lilac",
-                        "larceny",
-                        "van",
-                        "legos",
-                        "australia",
-                        "portugal",
-                        "ale",
-                        "shack",
-                        "bowling",
-                        "hotel",
-                        "mexico",
-                        "champagne",
-                        "shovel"
+                        "measles",
+                        "arson",
+                        "iron",
+                        "hair",
+                        "topaz",
+                        "semi",
+                        "nun",
+                        "lead",
+                        "aids",
+                        "reverend",
+                        "forgery",
+                        "mailman",
+                        "hydrogen",
+                        "salesperson",
+                        "buttocks"
                     ],
                     "assignments": {
                         "team": [
-                            "shack",
-                            "tent",
-                            "daffodil",
-                            "rock",
-                            "lilac",
-                            "house",
-                            "hotel",
-                            "dandelion",
-                            "metal"
+                            "violet",
+                            "aids",
+                            "train",
+                            "semi",
+                            "measles",
+                            "pneumonia",
+                            "rv",
+                            "petunia",
+                            "leukemia"
                         ],
                         "opponent": [
-                            "van",
-                            "ale",
-                            "martini",
-                            "taxi",
-                            "scooter",
-                            "legos",
-                            "train",
-                            "champagne"
+                            "topaz",
+                            "jade",
+                            "mailman",
+                            "lead",
+                            "water",
+                            "salesperson",
+                            "iron",
+                            "hydrogen"
                         ],
                         "innocent": [
-                            "australia",
-                            "portugal",
-                            "racing",
-                            "bucket",
-                            "bowling",
-                            "mexico",
-                            "shovel"
+                            "buttocks",
+                            "reverend",
+                            "elbow",
+                            "forgery",
+                            "hair",
+                            "nun",
+                            "arson"
                         ],
                         "assassin": [
-                            "larceny"
+                            "yard"
                         ]
                     },
                     "private": {
                         "categories": [
-                            "a flower",
-                            "a type of music",
-                            "a type of human dwelling",
-                            "an alcoholic beverage",
                             "a type of vehicle",
-                            "a toy",
-                            "a country",
-                            "a gardener\u2019s tool",
-                            "a sport",
-                            "a crime"
+                            "a disease",
+                            "a flower",
+                            "a precious stone",
+                            "a chemical element",
+                            "an occupation or profession",
+                            "a crime",
+                            "a part of the human body",
+                            "a member of the clergy",
+                            "a unit of distance"
                         ]
                     }
                 },
                 {
-                    "game_id": 0,
+                    "game_id": 2,
                     "board": [
-                        "attic",
-                        "grenade",
-                        "apricot",
-                        "carp",
-                        "roof",
-                        "beam",
-                        "mule",
-                        "battery",
-                        "australia",
-                        "foot",
-                        "spear",
-                        "assault",
-                        "kilometer",
-                        "coal",
-                        "robbery",
-                        "organ",
-                        "france",
-                        "lemon",
-                        "trumpet",
-                        "guppy",
-                        "couch",
-                        "nightstand",
-                        "solar",
-                        "cheetah",
-                        "softball"
+                        "gin",
+                        "whiskey",
+                        "table",
+                        "firefighter",
+                        "scientist",
+                        "garden",
+                        "cyclone",
+                        "carpenter",
+                        "teacher",
+                        "zebra",
+                        "copperhead",
+                        "hiv",
+                        "vodka",
+                        "mercury",
+                        "rattlesnake",
+                        "hepatitis",
+                        "sodium",
+                        "lightning",
+                        "rabbit",
+                        "acid",
+                        "sheep",
+                        "aids",
+                        "rhinoceros",
+                        "asp",
+                        "champagne"
                     ],
                     "assignments": {
                         "team": [
-                            "attic",
-                            "mule",
-                            "beam",
-                            "cheetah",
-                            "guppy",
-                            "foot",
-                            "carp",
-                            "roof",
-                            "kilometer"
+                            "garden",
+                            "lightning",
+                            "rattlesnake",
+                            "aids",
+                            "hiv",
+                            "hepatitis",
+                            "asp",
+                            "cyclone",
+                            "copperhead"
                         ],
                         "opponent": [
-                            "france",
-                            "organ",
-                            "nightstand",
-                            "apricot",
-                            "trumpet",
-                            "australia",
-                            "couch",
-                            "lemon"
+                            "rabbit",
+                            "gin",
+                            "zebra",
+                            "vodka",
+                            "champagne",
+                            "whiskey",
+                            "sheep",
+                            "rhinoceros"
                         ],
                         "innocent": [
-                            "assault",
-                            "grenade",
-                            "solar",
-                            "coal",
-                            "spear",
-                            "robbery",
-                            "battery"
+                            "firefighter",
+                            "sodium",
+                            "acid",
+                            "carpenter",
+                            "mercury",
+                            "scientist",
+                            "teacher"
                         ],
                         "assassin": [
-                            "softball"
+                            "table"
                         ]
                     },
                     "private": {
                         "categories": [
-                            "a fish",
-                            "a unit of distance",
+                            "a weather phenomenon",
+                            "a snake",
+                            "a disease",
+                            "an alcoholic beverage",
                             "a four footed animal",
-                            "a part of a building",
-                            "a fruit",
-                            "an article of furniture",
-                            "a country",
-                            "a musical instrument",
-                            "a type of fuel",
-                            "a weapon",
-                            "a crime",
-                            "a sport"
+                            "a chemical element",
+                            "an occupation or profession",
+                            "an article of furniture"
                         ]
                     }
                 },
@@ -847,86 +799,261 @@
                             "a gardener\u2019s tool"
                         ]
                     }
+                },
+                {
+                    "game_id": 5,
+                    "board": [
+                        "zucchini",
+                        "onion",
+                        "seasoning",
+                        "ketchup",
+                        "carbon",
+                        "drum",
+                        "rabbit",
+                        "ankle",
+                        "white",
+                        "violet",
+                        "wind",
+                        "oil",
+                        "storm",
+                        "magenta",
+                        "bass",
+                        "carrot",
+                        "cougar",
+                        "grapefruit",
+                        "eye",
+                        "zinc",
+                        "face",
+                        "silver",
+                        "drought",
+                        "mule",
+                        "cauliflower"
+                    ],
+                    "assignments": {
+                        "team": [
+                            "face",
+                            "eye",
+                            "silver",
+                            "drum",
+                            "white",
+                            "magenta",
+                            "ankle",
+                            "bass",
+                            "violet"
+                        ],
+                        "opponent": [
+                            "oil",
+                            "zinc",
+                            "drought",
+                            "carbon",
+                            "ketchup",
+                            "seasoning",
+                            "wind",
+                            "storm"
+                        ],
+                        "innocent": [
+                            "zucchini",
+                            "carrot",
+                            "cauliflower",
+                            "mule",
+                            "cougar",
+                            "rabbit",
+                            "onion"
+                        ],
+                        "assassin": [
+                            "grapefruit"
+                        ]
+                    },
+                    "private": {
+                        "categories": [
+                            "a part of the human body",
+                            "a musical instrument",
+                            "a color",
+                            "a weather phenomenon",
+                            "a type of fuel",
+                            "a chemical element",
+                            "a substance for flavoring food",
+                            "a vegetable",
+                            "a four footed animal",
+                            "a fruit"
+                        ]
+                    }
                 }
-            ]
+            ],
+            "variable": "Word Assignments",
+            "number of instances": 10,
+            "generator": "easy word assignments",
+            "opponent difficulty": 1,
+            "assignments": {
+                "team": 9,
+                "opponent": 8,
+                "innocent": 7,
+                "assassin": 1
+            },
+            "wordlist": "categories.json",
+            "flags": {
+                "IGNORE RAMBLING": false,
+                "IGNORE FALSE TARGETS OR GUESSES": false,
+                "REPROMPT ON ERROR": false,
+                "STRIP WORDS": true,
+                "IGNORE NUMBER OF TARGETS": false
+            }
         },
         {
             "name": "difficult",
             "game_instances": [
                 {
-                    "game_id": 3,
+                    "game_id": 1,
                     "board": [
-                        "zucchini",
-                        "cello",
-                        "sander",
-                        "meter",
-                        "screw",
-                        "france",
-                        "storm",
-                        "tomato",
-                        "orange",
-                        "awl",
-                        "hat",
-                        "shorts",
-                        "green",
-                        "turquoise",
-                        "canada",
-                        "cyclone",
-                        "drum",
-                        "brown",
-                        "bass",
-                        "chisel",
+                        "sister",
+                        "hair",
+                        "hail",
+                        "couch",
+                        "table",
+                        "desert",
+                        "recliner",
+                        "poland",
+                        "daughter",
+                        "thigh",
+                        "teeth",
+                        "cousin",
+                        "stool",
+                        "sergeant",
+                        "private",
+                        "england",
+                        "son",
                         "fog",
-                        "inch",
-                        "norway",
-                        "saxophone",
-                        "ireland"
+                        "ireland",
+                        "liquor",
+                        "neck",
+                        "officer",
+                        "rye",
+                        "mountain",
+                        "captain"
                     ],
                     "assignments": {
                         "team": [
-                            "screw",
-                            "france",
-                            "orange",
-                            "turquoise",
-                            "bass",
-                            "brown",
-                            "green",
-                            "inch",
-                            "storm"
+                            "hail",
+                            "neck",
+                            "mountain",
+                            "poland",
+                            "sister",
+                            "couch",
+                            "stool",
+                            "captain",
+                            "officer"
                         ],
                         "opponent": [
-                            "shorts",
-                            "saxophone",
-                            "zucchini",
-                            "canada",
-                            "drum",
-                            "meter",
-                            "chisel",
-                            "cyclone"
+                            "hair",
+                            "teeth",
+                            "england",
+                            "sergeant",
+                            "table",
+                            "fog",
+                            "desert",
+                            "rye"
                         ],
                         "innocent": [
-                            "tomato",
-                            "hat",
-                            "fog",
-                            "cello",
-                            "sander",
-                            "norway",
+                            "daughter",
+                            "recliner",
+                            "private",
+                            "son",
+                            "cousin",
+                            "thigh",
                             "ireland"
                         ],
                         "assassin": [
-                            "awl"
+                            "liquor"
                         ]
                     },
                     "private": {
                         "categories": [
-                            "a carpenter\u2019s tool",
-                            "a vegetable",
+                            "an alcoholic beverage",
+                            "a natural earth formation",
                             "a country",
-                            "a unit of distance",
+                            "a weather phenomenon",
+                            "a part of the human body",
+                            "a military title",
+                            "an article of furniture",
+                            "a relative"
+                        ]
+                    }
+                },
+                {
+                    "game_id": 8,
+                    "board": [
+                        "violet",
+                        "pansy",
+                        "copper",
+                        "tornado",
+                        "socks",
+                        "pistol",
+                        "chlorine",
+                        "gnat",
+                        "teal",
+                        "chisel",
+                        "water",
+                        "bee",
+                        "car",
+                        "shotgun",
+                        "gold",
+                        "jeans",
+                        "blouse",
+                        "yellow",
+                        "fog",
+                        "screw",
+                        "club",
+                        "rv",
+                        "tulip",
+                        "worm",
+                        "tractor"
+                    ],
+                    "assignments": {
+                        "team": [
+                            "screw",
+                            "pistol",
+                            "blouse",
+                            "yellow",
+                            "worm",
+                            "rv",
+                            "tornado",
+                            "violet",
+                            "water"
+                        ],
+                        "opponent": [
+                            "club",
+                            "shotgun",
+                            "gnat",
+                            "tractor",
+                            "tulip",
+                            "socks",
+                            "chisel",
+                            "chlorine"
+                        ],
+                        "innocent": [
+                            "pansy",
+                            "teal",
+                            "car",
+                            "jeans",
+                            "fog",
+                            "bee",
+                            "gold"
+                        ],
+                        "assassin": [
+                            "copper"
+                        ]
+                    },
+                    "private": {
+                        "categories": [
+                            "a chemical element",
                             "a weather phenomenon",
                             "an article of clothing",
-                            "a musical instrument",
-                            "a color"
+                            "a flower",
+                            "a type of vehicle",
+                            "a color",
+                            "an insect",
+                            "a weapon",
+                            "a carpenter\u2019s tool"
                         ]
                     }
                 },
@@ -1086,85 +1213,26 @@
                             "an insect"
                         ]
                     }
-                },
-                {
-                    "game_id": 4,
-                    "board": [
-                        "chicken",
-                        "hummingbird",
-                        "mockingbird",
-                        "sheep",
-                        "copper",
-                        "silver",
-                        "meter",
-                        "aluminum",
-                        "doctor",
-                        "mile",
-                        "toe",
-                        "gloves",
-                        "iron",
-                        "cave",
-                        "pig",
-                        "sparrow",
-                        "shears",
-                        "hand",
-                        "carpenter",
-                        "neck",
-                        "glacier",
-                        "centimeter",
-                        "rototiller",
-                        "foot",
-                        "hose"
-                    ],
-                    "assignments": {
-                        "team": [
-                            "aluminum",
-                            "sheep",
-                            "hose",
-                            "doctor",
-                            "shears",
-                            "centimeter",
-                            "cave",
-                            "neck",
-                            "chicken"
-                        ],
-                        "opponent": [
-                            "rototiller",
-                            "foot",
-                            "mockingbird",
-                            "iron",
-                            "hand",
-                            "copper",
-                            "meter",
-                            "pig"
-                        ],
-                        "innocent": [
-                            "gloves",
-                            "glacier",
-                            "mile",
-                            "sparrow",
-                            "carpenter",
-                            "toe",
-                            "silver"
-                        ],
-                        "assassin": [
-                            "hummingbird"
-                        ]
-                    },
-                    "private": {
-                        "categories": [
-                            "a bird",
-                            "a unit of distance",
-                            "a part of the human body",
-                            "an occupation or profession",
-                            "a natural earth formation",
-                            "a gardener\u2019s tool",
-                            "a metal",
-                            "a four footed animal"
-                        ]
-                    }
                 }
-            ]
+            ],
+            "variable": "Word Assignments",
+            "number of instances": 10,
+            "generator": "difficult word assignments",
+            "opponent difficulty": 1,
+            "assignments": {
+                "team": 9,
+                "opponent": 8,
+                "innocent": 7,
+                "assassin": 1
+            },
+            "wordlist": "categories.json",
+            "flags": {
+                "IGNORE RAMBLING": false,
+                "IGNORE FALSE TARGETS OR GUESSES": false,
+                "REPROMPT ON ERROR": false,
+                "STRIP WORDS": true,
+                "IGNORE NUMBER OF TARGETS": false
+            }
         },
         {
             "name": "none",
@@ -1235,67 +1303,132 @@
                     }
                 },
                 {
-                    "game_id": 5,
+                    "game_id": 0,
                     "board": [
+                        "crown",
+                        "slip",
+                        "aztec",
+                        "apple",
+                        "bed",
+                        "penguin",
+                        "cell",
+                        "forest",
+                        "force",
+                        "angel",
+                        "novel",
+                        "antarctica",
                         "orange",
-                        "head",
-                        "bomb",
-                        "conductor",
-                        "nut",
-                        "dinosaur",
-                        "server",
+                        "mouth",
+                        "square",
+                        "mammoth",
+                        "leprechaun",
+                        "america",
+                        "missile",
                         "star",
-                        "needle",
-                        "ketchup",
-                        "comic",
-                        "honey",
-                        "life",
-                        "game",
-                        "train",
-                        "strike",
-                        "lab",
-                        "cover",
-                        "post",
-                        "hand",
-                        "mexico",
-                        "bolt",
-                        "oil",
-                        "gold",
-                        "canada"
+                        "death",
+                        "tie",
+                        "buck",
+                        "mine",
+                        "germany"
                     ],
                     "assignments": {
                         "team": [
-                            "mexico",
-                            "ketchup",
-                            "comic",
-                            "bomb",
-                            "dinosaur",
-                            "gold",
-                            "head",
-                            "hand",
-                            "game"
+                            "bed",
+                            "leprechaun",
+                            "novel",
+                            "buck",
+                            "forest",
+                            "tie",
+                            "star",
+                            "angel",
+                            "germany"
                         ],
                         "opponent": [
-                            "life",
-                            "lab",
-                            "strike",
-                            "bolt",
-                            "needle",
-                            "train",
-                            "conductor",
-                            "nut"
+                            "america",
+                            "mine",
+                            "mammoth",
+                            "cell",
+                            "aztec",
+                            "crown",
+                            "slip",
+                            "square"
                         ],
                         "innocent": [
-                            "honey",
-                            "server",
-                            "post",
+                            "missile",
+                            "mouth",
+                            "penguin",
                             "orange",
-                            "cover",
-                            "star",
-                            "oil"
+                            "apple",
+                            "force",
+                            "antarctica"
                         ],
                         "assassin": [
-                            "canada"
+                            "death"
+                        ]
+                    }
+                },
+                {
+                    "game_id": 6,
+                    "board": [
+                        "marble",
+                        "copper",
+                        "cast",
+                        "bar",
+                        "mint",
+                        "crash",
+                        "scorpion",
+                        "cover",
+                        "iron",
+                        "undertaker",
+                        "cell",
+                        "life",
+                        "nut",
+                        "button",
+                        "log",
+                        "square",
+                        "berry",
+                        "mexico",
+                        "glove",
+                        "server",
+                        "nurse",
+                        "file",
+                        "washer",
+                        "parachute",
+                        "death"
+                    ],
+                    "assignments": {
+                        "team": [
+                            "square",
+                            "life",
+                            "marble",
+                            "mexico",
+                            "copper",
+                            "file",
+                            "server",
+                            "bar",
+                            "undertaker"
+                        ],
+                        "opponent": [
+                            "cast",
+                            "death",
+                            "nurse",
+                            "log",
+                            "button",
+                            "berry",
+                            "crash",
+                            "scorpion"
+                        ],
+                        "innocent": [
+                            "nut",
+                            "parachute",
+                            "washer",
+                            "glove",
+                            "iron",
+                            "cell",
+                            "cover"
+                        ],
+                        "assassin": [
+                            "mint"
                         ]
                     }
                 },
@@ -1363,139 +1496,222 @@
                             "whale"
                         ]
                     }
-                },
-                {
-                    "game_id": 0,
-                    "board": [
-                        "crown",
-                        "slip",
-                        "aztec",
-                        "apple",
-                        "bed",
-                        "penguin",
-                        "cell",
-                        "forest",
-                        "force",
-                        "angel",
-                        "novel",
-                        "antarctica",
-                        "orange",
-                        "mouth",
-                        "square",
-                        "mammoth",
-                        "leprechaun",
-                        "america",
-                        "missile",
-                        "star",
-                        "death",
-                        "tie",
-                        "buck",
-                        "mine",
-                        "germany"
-                    ],
-                    "assignments": {
-                        "team": [
-                            "bed",
-                            "leprechaun",
-                            "novel",
-                            "buck",
-                            "forest",
-                            "tie",
-                            "star",
-                            "angel",
-                            "germany"
-                        ],
-                        "opponent": [
-                            "america",
-                            "mine",
-                            "mammoth",
-                            "cell",
-                            "aztec",
-                            "crown",
-                            "slip",
-                            "square"
-                        ],
-                        "innocent": [
-                            "missile",
-                            "mouth",
-                            "penguin",
-                            "orange",
-                            "apple",
-                            "force",
-                            "antarctica"
-                        ],
-                        "assassin": [
-                            "death"
-                        ]
-                    }
                 }
-            ]
+            ],
+            "variable": "Opponent Difficulty",
+            "number of instances": 10,
+            "generator": "random",
+            "opponent difficulty": 0,
+            "assignments": {
+                "team": 9,
+                "opponent": 8,
+                "innocent": 7,
+                "assassin": 1
+            },
+            "wordlist": "original.json",
+            "flags": {
+                "IGNORE RAMBLING": false,
+                "IGNORE FALSE TARGETS OR GUESSES": false,
+                "REPROMPT ON ERROR": false,
+                "STRIP WORDS": true,
+                "IGNORE NUMBER OF TARGETS": false
+            }
         },
         {
             "name": "easy",
             "game_instances": [
                 {
-                    "game_id": 0,
+                    "game_id": 4,
                     "board": [
-                        "washington",
-                        "mexico",
-                        "amazon",
-                        "stadium",
-                        "paste",
-                        "police",
+                        "berry",
+                        "queen",
+                        "hole",
+                        "ham",
+                        "space",
+                        "ship",
+                        "screen",
+                        "mouth",
+                        "cross",
+                        "point",
+                        "church",
+                        "calf",
+                        "play",
+                        "port",
+                        "grass",
                         "forest",
-                        "suit",
-                        "bill",
-                        "cast",
-                        "deck",
-                        "cap",
-                        "hotel",
-                        "post",
-                        "gold",
-                        "turkey",
-                        "scale",
-                        "day",
-                        "spine",
-                        "temple",
-                        "pyramid",
-                        "engine",
-                        "drill",
-                        "doctor",
-                        "bugle"
+                        "ketchup",
+                        "vacuum",
+                        "hollywood",
+                        "maple",
+                        "teacher",
+                        "boom",
+                        "organ",
+                        "pumpkin",
+                        "jack"
                     ],
                     "assignments": {
                         "team": [
-                            "suit",
-                            "day",
-                            "engine",
+                            "berry",
                             "forest",
-                            "doctor",
-                            "turkey",
-                            "post",
-                            "stadium",
-                            "mexico"
+                            "ship",
+                            "point",
+                            "grass",
+                            "play",
+                            "ham",
+                            "teacher",
+                            "hole"
                         ],
                         "opponent": [
-                            "deck",
-                            "hotel",
-                            "washington",
-                            "paste",
-                            "cap",
-                            "drill",
-                            "pyramid",
-                            "bugle"
+                            "maple",
+                            "hollywood",
+                            "queen",
+                            "mouth",
+                            "ketchup",
+                            "port",
+                            "calf",
+                            "vacuum"
                         ],
                         "innocent": [
-                            "cast",
-                            "temple",
-                            "scale",
-                            "amazon",
-                            "gold",
-                            "bill",
-                            "police"
+                            "pumpkin",
+                            "space",
+                            "boom",
+                            "organ",
+                            "screen",
+                            "jack",
+                            "cross"
                         ],
                         "assassin": [
-                            "spine"
+                            "church"
+                        ]
+                    }
+                },
+                {
+                    "game_id": 5,
+                    "board": [
+                        "screen",
+                        "link",
+                        "oil",
+                        "palm",
+                        "needle",
+                        "time",
+                        "pass",
+                        "maple",
+                        "olympus",
+                        "post",
+                        "stadium",
+                        "bugle",
+                        "beijing",
+                        "grace",
+                        "ray",
+                        "police",
+                        "face",
+                        "eye",
+                        "drill",
+                        "horn",
+                        "mouse",
+                        "soul",
+                        "light",
+                        "file",
+                        "giant"
+                    ],
+                    "assignments": {
+                        "team": [
+                            "mouse",
+                            "ray",
+                            "screen",
+                            "bugle",
+                            "file",
+                            "oil",
+                            "link",
+                            "post",
+                            "beijing"
+                        ],
+                        "opponent": [
+                            "horn",
+                            "stadium",
+                            "palm",
+                            "pass",
+                            "face",
+                            "olympus",
+                            "soul",
+                            "light"
+                        ],
+                        "innocent": [
+                            "eye",
+                            "police",
+                            "grace",
+                            "drill",
+                            "maple",
+                            "needle",
+                            "time"
+                        ],
+                        "assassin": [
+                            "giant"
+                        ]
+                    }
+                },
+                {
+                    "game_id": 9,
+                    "board": [
+                        "lawyer",
+                        "hawk",
+                        "button",
+                        "play",
+                        "australia",
+                        "dwarf",
+                        "lab",
+                        "missile",
+                        "tooth",
+                        "round",
+                        "pole",
+                        "hospital",
+                        "horn",
+                        "worm",
+                        "boot",
+                        "wave",
+                        "poison",
+                        "revolution",
+                        "mount",
+                        "marble",
+                        "war",
+                        "india",
+                        "police",
+                        "strike",
+                        "ball"
+                    ],
+                    "assignments": {
+                        "team": [
+                            "police",
+                            "lab",
+                            "play",
+                            "poison",
+                            "mount",
+                            "missile",
+                            "australia",
+                            "ball",
+                            "button"
+                        ],
+                        "opponent": [
+                            "dwarf",
+                            "round",
+                            "hospital",
+                            "boot",
+                            "revolution",
+                            "war",
+                            "lawyer",
+                            "india"
+                        ],
+                        "innocent": [
+                            "worm",
+                            "pole",
+                            "wave",
+                            "strike",
+                            "hawk",
+                            "horn",
+                            "tooth"
+                        ],
+                        "assassin": [
+                            "marble"
                         ]
                     }
                 },
@@ -1563,138 +1779,26 @@
                             "cat"
                         ]
                     }
-                },
-                {
-                    "game_id": 4,
-                    "board": [
-                        "berry",
-                        "queen",
-                        "hole",
-                        "ham",
-                        "space",
-                        "ship",
-                        "screen",
-                        "mouth",
-                        "cross",
-                        "point",
-                        "church",
-                        "calf",
-                        "play",
-                        "port",
-                        "grass",
-                        "forest",
-                        "ketchup",
-                        "vacuum",
-                        "hollywood",
-                        "maple",
-                        "teacher",
-                        "boom",
-                        "organ",
-                        "pumpkin",
-                        "jack"
-                    ],
-                    "assignments": {
-                        "team": [
-                            "berry",
-                            "forest",
-                            "ship",
-                            "point",
-                            "grass",
-                            "play",
-                            "ham",
-                            "teacher",
-                            "hole"
-                        ],
-                        "opponent": [
-                            "maple",
-                            "hollywood",
-                            "queen",
-                            "mouth",
-                            "ketchup",
-                            "port",
-                            "calf",
-                            "vacuum"
-                        ],
-                        "innocent": [
-                            "pumpkin",
-                            "space",
-                            "boom",
-                            "organ",
-                            "screen",
-                            "jack",
-                            "cross"
-                        ],
-                        "assassin": [
-                            "church"
-                        ]
-                    }
-                },
-                {
-                    "game_id": 1,
-                    "board": [
-                        "roulette",
-                        "pool",
-                        "crane",
-                        "change",
-                        "leprechaun",
-                        "ketchup",
-                        "spring",
-                        "antarctica",
-                        "grace",
-                        "van",
-                        "ice",
-                        "flute",
-                        "button",
-                        "shop",
-                        "water",
-                        "washington",
-                        "revolution",
-                        "centaur",
-                        "pass",
-                        "penguin",
-                        "center",
-                        "spider",
-                        "tie",
-                        "turkey",
-                        "orange"
-                    ],
-                    "assignments": {
-                        "team": [
-                            "penguin",
-                            "centaur",
-                            "roulette",
-                            "crane",
-                            "ice",
-                            "grace",
-                            "flute",
-                            "washington",
-                            "shop"
-                        ],
-                        "opponent": [
-                            "orange",
-                            "tie",
-                            "ketchup",
-                            "leprechaun",
-                            "antarctica",
-                            "spider",
-                            "button",
-                            "change"
-                        ],
-                        "innocent": [
-                            "van",
-                            "turkey",
-                            "spring",
-                            "pass",
-                            "revolution",
-                            "center",
-                            "water"
-                        ],
-                        "assassin": [
-                            "pool"
-                        ]
-                    }
                 }
-            ]
+            ],
+            "variable": "Opponent Difficulty",
+            "number of instances": 10,
+            "generator": "random",
+            "opponent difficulty": 1,
+            "assignments": {
+                "team": 9,
+                "opponent": 8,
+                "innocent": 7,
+                "assassin": 1
+            },
+            "wordlist": "original.json",
+            "flags": {
+                "IGNORE RAMBLING": false,
+                "IGNORE FALSE TARGETS OR GUESSES": false,
+                "REPROMPT ON ERROR": false,
+                "STRIP WORDS": true,
+                "IGNORE NUMBER OF TARGETS": false
+            }
         },
         {
             "name": "difficult",
@@ -1830,405 +1934,571 @@
                     }
                 },
                 {
-                    "game_id": 9,
+                    "game_id": 2,
                     "board": [
-                        "battery",
-                        "king",
-                        "thumb",
-                        "sound",
-                        "atlantis",
-                        "england",
-                        "hand",
+                        "hawk",
+                        "triangle",
+                        "horseshoe",
+                        "queen",
+                        "stream",
                         "piano",
-                        "brush",
-                        "smuggler",
-                        "soul",
-                        "shadow",
-                        "chest",
-                        "iron",
-                        "compound",
-                        "tap",
-                        "car",
+                        "time",
+                        "straw",
+                        "cotton",
+                        "glass",
+                        "string",
+                        "pan",
+                        "turkey",
+                        "trip",
+                        "snow",
+                        "buck",
+                        "vet",
                         "australia",
-                        "teacher",
-                        "code",
+                        "switch",
+                        "post",
+                        "watch",
+                        "figure",
                         "ray",
-                        "trunk",
-                        "america",
-                        "board",
-                        "tick"
+                        "head",
+                        "organ"
                     ],
                     "assignments": {
                         "team": [
-                            "smuggler",
-                            "battery",
-                            "chest",
-                            "hand",
-                            "america",
+                            "triangle",
                             "piano",
-                            "england",
-                            "sound",
-                            "brush"
+                            "figure",
+                            "hawk",
+                            "cotton",
+                            "queen",
+                            "australia",
+                            "turkey",
+                            "post"
                         ],
                         "opponent": [
-                            "thumb",
-                            "atlantis",
-                            "shadow",
-                            "tick",
-                            "tap",
-                            "king",
-                            "soul",
-                            "car"
+                            "watch",
+                            "straw",
+                            "snow",
+                            "head",
+                            "time",
+                            "buck",
+                            "ray",
+                            "glass"
                         ],
                         "innocent": [
-                            "australia",
-                            "iron",
-                            "trunk",
-                            "code",
-                            "ray",
-                            "board",
-                            "compound"
+                            "organ",
+                            "horseshoe",
+                            "stream",
+                            "trip",
+                            "pan",
+                            "switch",
+                            "vet"
                         ],
                         "assassin": [
-                            "teacher"
+                            "string"
                         ]
                     }
                 },
                 {
-                    "game_id": 3,
+                    "game_id": 5,
                     "board": [
-                        "lead",
-                        "tube",
-                        "germany",
-                        "row",
-                        "school",
-                        "nail",
-                        "vacuum",
+                        "pipe",
+                        "novel",
+                        "boom",
+                        "model",
+                        "heart",
+                        "missile",
+                        "telescope",
+                        "contract",
+                        "platypus",
+                        "king",
+                        "tablet",
+                        "ball",
+                        "life",
+                        "lion",
+                        "web",
+                        "bomb",
+                        "board",
+                        "eagle",
                         "needle",
-                        "ship",
-                        "america",
-                        "point",
-                        "roulette",
-                        "giant",
-                        "chick",
-                        "atlantis",
-                        "tooth",
-                        "switch",
-                        "soldier",
-                        "tap",
-                        "block",
-                        "time",
-                        "thumb",
-                        "drop",
-                        "pirate",
-                        "mint"
+                        "washington",
+                        "africa",
+                        "hawk",
+                        "tokyo",
+                        "disease",
+                        "slip"
                     ],
                     "assignments": {
                         "team": [
-                            "needle",
-                            "ship",
-                            "chick",
-                            "mint",
-                            "tube",
-                            "nail",
-                            "thumb",
-                            "atlantis",
-                            "pirate"
+                            "tokyo",
+                            "tablet",
+                            "ball",
+                            "disease",
+                            "eagle",
+                            "web",
+                            "missile",
+                            "telescope",
+                            "life"
                         ],
                         "opponent": [
-                            "tap",
-                            "roulette",
-                            "vacuum",
-                            "drop",
-                            "time",
-                            "point",
-                            "lead",
-                            "school"
+                            "lion",
+                            "africa",
+                            "model",
+                            "king",
+                            "boom",
+                            "contract",
+                            "pipe",
+                            "heart"
                         ],
                         "innocent": [
-                            "switch",
-                            "soldier",
-                            "america",
-                            "tooth",
-                            "giant",
-                            "germany",
-                            "block"
+                            "board",
+                            "washington",
+                            "needle",
+                            "hawk",
+                            "platypus",
+                            "bomb",
+                            "slip"
                         ],
                         "assassin": [
-                            "row"
+                            "novel"
                         ]
                     }
                 }
-            ]
+            ],
+            "variable": "Opponent Difficulty",
+            "number of instances": 10,
+            "generator": "random",
+            "opponent difficulty": 2,
+            "assignments": {
+                "team": 9,
+                "opponent": 8,
+                "innocent": 7,
+                "assassin": 1
+            },
+            "wordlist": "original.json",
+            "flags": {
+                "IGNORE RAMBLING": false,
+                "IGNORE FALSE TARGETS OR GUESSES": false,
+                "REPROMPT ON ERROR": false,
+                "STRIP WORDS": true,
+                "IGNORE NUMBER OF TARGETS": false
+            }
         },
         {
             "name": "low",
             "game_instances": [
                 {
-                    "game_id": 6,
+                    "game_id": 2,
                     "board": [
-                        "liquidness",
-                        "sketcher",
-                        "carsickness",
-                        "cashbook",
-                        "ungodliness",
-                        "latecomer",
-                        "underclassman",
-                        "plantain",
-                        "schooldays",
-                        "inquirer",
-                        "newsagent",
-                        "larcenist",
-                        "townswoman",
-                        "inexistence",
-                        "baptizer",
-                        "pleasantness",
-                        "lightheadedness",
-                        "nearsightedness",
-                        "hurdler",
-                        "ineptness",
-                        "pockmark",
-                        "ducktail",
-                        "elliptic",
-                        "denseness",
-                        "demander"
-                    ],
-                    "assignments": {
-                        "team": [
-                            "cashbook",
-                            "ungodliness",
-                            "latecomer",
-                            "demander",
-                            "underclassman",
-                            "baptizer",
-                            "inexistence",
-                            "schooldays",
-                            "sketcher"
-                        ],
-                        "opponent": [
-                            "nearsightedness",
-                            "townswoman",
-                            "lightheadedness",
-                            "pleasantness",
-                            "larcenist",
-                            "newsagent",
-                            "hurdler",
-                            "ducktail"
-                        ],
-                        "innocent": [
-                            "elliptic",
-                            "pockmark",
-                            "denseness",
-                            "carsickness",
-                            "liquidness",
-                            "inquirer",
-                            "plantain"
-                        ],
-                        "assassin": [
-                            "ineptness"
-                        ]
-                    }
-                },
-                {
-                    "game_id": 0,
-                    "board": [
-                        "uncleanness",
-                        "scrubwoman",
-                        "backwardness",
-                        "inquirer",
-                        "newsbeat",
-                        "sketcher",
-                        "perpetration",
-                        "thriftiness",
-                        "carsickness",
-                        "defilement",
-                        "seamlessness",
-                        "plurality",
-                        "nightcaps",
-                        "canola",
-                        "unchallenging",
-                        "seacoast",
-                        "dangerousness",
-                        "plainclothesman",
-                        "decentralization",
-                        "infector",
-                        "cattiness",
-                        "backswept",
-                        "pleasantness",
-                        "emotionality",
-                        "ultralow"
-                    ],
-                    "assignments": {
-                        "team": [
-                            "ultralow",
-                            "newsbeat",
-                            "unchallenging",
-                            "emotionality",
-                            "plurality",
-                            "backwardness",
-                            "seamlessness",
-                            "uncleanness",
-                            "carsickness"
-                        ],
-                        "opponent": [
-                            "pleasantness",
-                            "scrubwoman",
-                            "nightcaps",
-                            "thriftiness",
-                            "sketcher",
-                            "perpetration",
-                            "inquirer",
-                            "cattiness"
-                        ],
-                        "innocent": [
-                            "decentralization",
-                            "infector",
-                            "canola",
-                            "plainclothesman",
-                            "seacoast",
-                            "dangerousness",
-                            "defilement"
-                        ],
-                        "assassin": [
-                            "backswept"
-                        ]
-                    }
-                },
-                {
-                    "game_id": 3,
-                    "board": [
-                        "neutralist",
-                        "inheritability",
-                        "deepness",
-                        "undercoat",
-                        "neckband",
-                        "candidness",
-                        "neurobiology",
-                        "demineralization",
-                        "sipper",
-                        "emersion",
-                        "carmaker",
-                        "hotelkeeper",
-                        "backswept",
-                        "caretaking",
-                        "deject",
-                        "playsuit",
-                        "decisiveness",
-                        "dabbler",
                         "pleader",
-                        "simplification",
-                        "pockmark",
-                        "defensiveness",
-                        "dangerousness",
-                        "forestation",
-                        "housewifery"
+                        "unchallenging",
+                        "embroil",
+                        "niftiness",
+                        "hyperinflation",
+                        "sideway",
+                        "sketcher",
+                        "pegboard",
+                        "emancipationist",
+                        "inquirer",
+                        "candlepower",
+                        "hurdler",
+                        "demineralization",
+                        "tonsillitis",
+                        "unbefitting",
+                        "assuredness",
+                        "multidimensionality",
+                        "nearsightedness",
+                        "banquette",
+                        "nearside",
+                        "playsuit",
+                        "bagpiper",
+                        "duplicator",
+                        "gyration",
+                        "simplification"
                     ],
                     "assignments": {
                         "team": [
-                            "candidness",
-                            "hotelkeeper",
-                            "dabbler",
-                            "deject",
-                            "housewifery",
-                            "defensiveness",
-                            "sipper",
-                            "neurobiology",
-                            "simplification"
+                            "simplification",
+                            "inquirer",
+                            "sketcher",
+                            "candlepower",
+                            "gyration",
+                            "hurdler",
+                            "bagpiper",
+                            "banquette",
+                            "nearside"
                         ],
                         "opponent": [
-                            "pleader",
-                            "forestation",
-                            "carmaker",
-                            "emersion",
-                            "deepness",
-                            "undercoat",
-                            "neckband",
-                            "caretaking"
+                            "playsuit",
+                            "embroil",
+                            "pegboard",
+                            "emancipationist",
+                            "hyperinflation",
+                            "multidimensionality",
+                            "unbefitting",
+                            "niftiness"
                         ],
                         "innocent": [
-                            "backswept",
-                            "pockmark",
+                            "duplicator",
+                            "assuredness",
                             "demineralization",
-                            "dangerousness",
-                            "inheritability",
-                            "neutralist",
-                            "playsuit"
+                            "tonsillitis",
+                            "pleader",
+                            "unchallenging",
+                            "sideway"
                         ],
                         "assassin": [
-                            "decisiveness"
+                            "nearsightedness"
+                        ]
+                    }
+                },
+                {
+                    "game_id": 8,
+                    "board": [
+                        "emersion",
+                        "lightheartedness",
+                        "deadfall",
+                        "larcenist",
+                        "limitlessness",
+                        "darer",
+                        "sipper",
+                        "baptizer",
+                        "latecomer",
+                        "undercoat",
+                        "hospitableness",
+                        "humanization",
+                        "ungodliness",
+                        "slouchy",
+                        "mudslinging",
+                        "moviemaker",
+                        "lightheadedness",
+                        "celiac",
+                        "plainclothesman",
+                        "sketchpad",
+                        "inexpensiveness",
+                        "undulation",
+                        "hydroplane",
+                        "shuffler",
+                        "cardiograph"
+                    ],
+                    "assignments": {
+                        "team": [
+                            "latecomer",
+                            "sipper",
+                            "plainclothesman",
+                            "mudslinging",
+                            "hospitableness",
+                            "cardiograph",
+                            "limitlessness",
+                            "lightheadedness",
+                            "larcenist"
+                        ],
+                        "opponent": [
+                            "undercoat",
+                            "celiac",
+                            "shuffler",
+                            "slouchy",
+                            "lightheartedness",
+                            "ungodliness",
+                            "emersion",
+                            "hydroplane"
+                        ],
+                        "innocent": [
+                            "undulation",
+                            "deadfall",
+                            "darer",
+                            "humanization",
+                            "inexpensiveness",
+                            "sketchpad",
+                            "moviemaker"
+                        ],
+                        "assassin": [
+                            "baptizer"
+                        ]
+                    }
+                },
+                {
+                    "game_id": 7,
+                    "board": [
+                        "timestamp",
+                        "inexistence",
+                        "moviemaker",
+                        "scrubwoman",
+                        "ungodliness",
+                        "haircutting",
+                        "perpetration",
+                        "townswoman",
+                        "seafloor",
+                        "musicologist",
+                        "playact",
+                        "electrostatics",
+                        "trackside",
+                        "dabbler",
+                        "neuropathology",
+                        "duplicator",
+                        "narrowness",
+                        "insurgence",
+                        "gutlessness",
+                        "cattiness",
+                        "newsagent",
+                        "typeset",
+                        "percept",
+                        "pilferer",
+                        "bashfulness"
+                    ],
+                    "assignments": {
+                        "team": [
+                            "scrubwoman",
+                            "cattiness",
+                            "perpetration",
+                            "typeset",
+                            "pilferer",
+                            "electrostatics",
+                            "timestamp",
+                            "insurgence",
+                            "gutlessness"
+                        ],
+                        "opponent": [
+                            "trackside",
+                            "neuropathology",
+                            "dabbler",
+                            "ungodliness",
+                            "newsagent",
+                            "bashfulness",
+                            "inexistence",
+                            "narrowness"
+                        ],
+                        "innocent": [
+                            "moviemaker",
+                            "playact",
+                            "percept",
+                            "musicologist",
+                            "duplicator",
+                            "haircutting",
+                            "townswoman"
+                        ],
+                        "assassin": [
+                            "seafloor"
+                        ]
+                    }
+                },
+                {
+                    "game_id": 5,
+                    "board": [
+                        "celiac",
+                        "gingerroot",
+                        "electrostatics",
+                        "ladylove",
+                        "unconstitutionality",
+                        "lightener",
+                        "inexistence",
+                        "laundrywoman",
+                        "insurgence",
+                        "easiness",
+                        "baptizer",
+                        "limitlessness",
+                        "duplicator",
+                        "lightheadedness",
+                        "uncleanness",
+                        "duckweed",
+                        "customizer",
+                        "deconstructionist",
+                        "catheterization",
+                        "playact",
+                        "multidimensionality",
+                        "personhood",
+                        "chiding",
+                        "niftiness",
+                        "mudslinger"
+                    ],
+                    "assignments": {
+                        "team": [
+                            "gingerroot",
+                            "uncleanness",
+                            "deconstructionist",
+                            "inexistence",
+                            "mudslinger",
+                            "baptizer",
+                            "duckweed",
+                            "electrostatics",
+                            "lightener"
+                        ],
+                        "opponent": [
+                            "ladylove",
+                            "unconstitutionality",
+                            "niftiness",
+                            "customizer",
+                            "easiness",
+                            "celiac",
+                            "personhood",
+                            "catheterization"
+                        ],
+                        "innocent": [
+                            "chiding",
+                            "limitlessness",
+                            "duplicator",
+                            "playact",
+                            "laundrywoman",
+                            "lightheadedness",
+                            "multidimensionality"
+                        ],
+                        "assassin": [
+                            "insurgence"
+                        ]
+                    }
+                }
+            ],
+            "variable": "Word Frequency",
+            "number of instances": 10,
+            "generator": "random",
+            "opponent difficulty": 1,
+            "assignments": {
+                "team": 9,
+                "opponent": 8,
+                "innocent": 7,
+                "assassin": 1
+            },
+            "wordlist": "low_frequency.json",
+            "flags": {
+                "IGNORE RAMBLING": false,
+                "IGNORE FALSE TARGETS OR GUESSES": false,
+                "REPROMPT ON ERROR": false,
+                "STRIP WORDS": true,
+                "IGNORE NUMBER OF TARGETS": false
+            }
+        },
+        {
+            "name": "high",
+            "game_instances": [
+                {
+                    "game_id": 1,
+                    "board": [
+                        "times",
+                        "lunch",
+                        "people",
+                        "game",
+                        "man",
+                        "job",
+                        "question",
+                        "cop",
+                        "chance",
+                        "fault",
+                        "age",
+                        "future",
+                        "brother",
+                        "class",
+                        "miss",
+                        "book",
+                        "wife",
+                        "door",
+                        "day",
+                        "afternoon",
+                        "bag",
+                        "eyes",
+                        "company",
+                        "shit",
+                        "reason"
+                    ],
+                    "assignments": {
+                        "team": [
+                            "book",
+                            "class",
+                            "company",
+                            "game",
+                            "afternoon",
+                            "man",
+                            "job",
+                            "times",
+                            "future"
+                        ],
+                        "opponent": [
+                            "chance",
+                            "people",
+                            "miss",
+                            "lunch",
+                            "question",
+                            "cop",
+                            "reason",
+                            "shit"
+                        ],
+                        "innocent": [
+                            "eyes",
+                            "age",
+                            "wife",
+                            "door",
+                            "fault",
+                            "brother",
+                            "bag"
+                        ],
+                        "assassin": [
+                            "day"
                         ]
                     }
                 },
                 {
                     "game_id": 4,
                     "board": [
-                        "neurophysiologist",
-                        "demander",
-                        "typewrite",
-                        "permafrost",
-                        "nearside",
-                        "cancelation",
-                        "slightness",
-                        "emasculation",
-                        "undulation",
-                        "inexpensiveness",
-                        "unchallenging",
-                        "catheterization",
-                        "hotelkeeper",
-                        "backbreaker",
-                        "signifier",
-                        "toxicologist",
-                        "mudslinging",
-                        "playact",
-                        "carmaker",
-                        "backflow",
-                        "cardiograph",
-                        "easiness",
-                        "checkmark",
-                        "duplicator",
-                        "quadrillion"
+                        "present",
+                        "life",
+                        "case",
+                        "brother",
+                        "moment",
+                        "tv",
+                        "lawyer",
+                        "gun",
+                        "future",
+                        "history",
+                        "trouble",
+                        "sense",
+                        "haven",
+                        "team",
+                        "star",
+                        "king",
+                        "afternoon",
+                        "past",
+                        "hell",
+                        "party",
+                        "bit",
+                        "dinner",
+                        "bar",
+                        "message",
+                        "boss"
                     ],
                     "assignments": {
                         "team": [
-                            "duplicator",
-                            "inexpensiveness",
-                            "cardiograph",
-                            "playact",
-                            "demander",
-                            "quadrillion",
-                            "typewrite",
-                            "easiness",
-                            "checkmark"
+                            "lawyer",
+                            "bar",
+                            "sense",
+                            "tv",
+                            "past",
+                            "gun",
+                            "history",
+                            "haven",
+                            "life"
                         ],
                         "opponent": [
-                            "emasculation",
-                            "backbreaker",
-                            "hotelkeeper",
-                            "neurophysiologist",
-                            "cancelation",
-                            "permafrost",
-                            "nearside",
-                            "slightness"
+                            "team",
+                            "king",
+                            "case",
+                            "star",
+                            "trouble",
+                            "brother",
+                            "dinner",
+                            "moment"
                         ],
                         "innocent": [
-                            "carmaker",
-                            "undulation",
-                            "signifier",
-                            "toxicologist",
-                            "mudslinging",
-                            "catheterization",
-                            "backflow"
+                            "hell",
+                            "future",
+                            "party",
+                            "present",
+                            "afternoon",
+                            "boss",
+                            "message"
                         ],
                         "assassin": [
-                            "unchallenging"
+                            "bit"
                         ]
                     }
-                }
-            ]
-        },
-        {
-            "name": "high",
-            "game_instances": [
+                },
                 {
                     "game_id": 7,
                     "board": [
@@ -2295,205 +2565,158 @@
                     }
                 },
                 {
-                    "game_id": 0,
+                    "game_id": 9,
                     "board": [
-                        "club",
-                        "mother",
-                        "kind",
-                        "top",
-                        "fish",
-                        "bed",
                         "eye",
-                        "charge",
-                        "haven",
-                        "company",
-                        "family",
-                        "boss",
-                        "mom",
-                        "evening",
-                        "horse",
-                        "job",
-                        "million",
-                        "lady",
-                        "luck",
-                        "mistake",
-                        "murder",
-                        "husband",
-                        "street",
-                        "matter",
-                        "eyes"
-                    ],
-                    "assignments": {
-                        "team": [
-                            "fish",
-                            "top",
-                            "eyes",
-                            "kind",
-                            "matter",
-                            "street",
-                            "charge",
-                            "club",
-                            "mom"
-                        ],
-                        "opponent": [
-                            "bed",
-                            "company",
-                            "haven",
-                            "million",
-                            "husband",
-                            "horse",
-                            "lady",
-                            "eye"
-                        ],
-                        "innocent": [
-                            "family",
-                            "mistake",
-                            "mother",
-                            "boss",
-                            "evening",
-                            "murder",
-                            "job"
-                        ],
-                        "assassin": [
-                            "luck"
-                        ]
-                    }
-                },
-                {
-                    "game_id": 5,
-                    "board": [
-                        "general",
-                        "judge",
-                        "uncle",
-                        "chance",
-                        "place",
-                        "mouth",
-                        "family",
-                        "darling",
-                        "fun",
-                        "boy",
-                        "ride",
-                        "fish",
-                        "information",
-                        "bed",
-                        "name",
-                        "team",
-                        "rock",
-                        "clothes",
+                        "state",
+                        "kid",
                         "country",
-                        "word",
-                        "game",
-                        "lieutenant",
-                        "year",
-                        "cop",
-                        "president"
+                        "town",
+                        "pleasure",
+                        "light",
+                        "school",
+                        "people",
+                        "moment",
+                        "eyes",
+                        "bar",
+                        "judge",
+                        "kind",
+                        "haven",
+                        "question",
+                        "room",
+                        "child",
+                        "hotel",
+                        "record",
+                        "store",
+                        "service",
+                        "brother",
+                        "day",
+                        "shot"
                     ],
                     "assignments": {
                         "team": [
-                            "team",
+                            "room",
+                            "record",
+                            "light",
                             "country",
-                            "president",
-                            "rock",
-                            "year",
-                            "word",
-                            "ride",
-                            "bed",
-                            "mouth"
+                            "bar",
+                            "people",
+                            "school",
+                            "kid",
+                            "day"
                         ],
                         "opponent": [
-                            "boy",
-                            "information",
-                            "fish",
-                            "lieutenant",
-                            "family",
-                            "chance",
-                            "uncle",
-                            "darling"
+                            "child",
+                            "store",
+                            "eye",
+                            "eyes",
+                            "moment",
+                            "town",
+                            "shot",
+                            "question"
                         ],
                         "innocent": [
-                            "game",
-                            "general",
-                            "fun",
-                            "name",
+                            "service",
+                            "brother",
+                            "pleasure",
                             "judge",
-                            "place",
-                            "clothes"
+                            "state",
+                            "haven",
+                            "kind"
                         ],
                         "assassin": [
-                            "cop"
-                        ]
-                    }
-                },
-                {
-                    "game_id": 8,
-                    "board": [
-                        "paper",
-                        "team",
-                        "party",
-                        "business",
-                        "general",
-                        "power",
-                        "person",
-                        "guy",
-                        "point",
-                        "mama",
-                        "ride",
-                        "trip",
-                        "order",
-                        "cause",
-                        "luck",
-                        "man",
-                        "dude",
-                        "bed",
-                        "law",
-                        "army",
-                        "future",
-                        "thanks",
-                        "test",
-                        "sex",
-                        "bitch"
-                    ],
-                    "assignments": {
-                        "team": [
-                            "sex",
-                            "paper",
-                            "army",
-                            "person",
-                            "guy",
-                            "thanks",
-                            "mama",
-                            "power",
-                            "future"
-                        ],
-                        "opponent": [
-                            "party",
-                            "bed",
-                            "man",
-                            "test",
-                            "ride",
-                            "order",
-                            "trip",
-                            "point"
-                        ],
-                        "innocent": [
-                            "luck",
-                            "team",
-                            "cause",
-                            "business",
-                            "bitch",
-                            "general",
-                            "law"
-                        ],
-                        "assassin": [
-                            "dude"
+                            "hotel"
                         ]
                     }
                 }
-            ]
+            ],
+            "variable": "Word Frequency",
+            "number of instances": 10,
+            "generator": "random",
+            "opponent difficulty": 1,
+            "assignments": {
+                "team": 9,
+                "opponent": 8,
+                "innocent": 7,
+                "assassin": 1
+            },
+            "wordlist": "high_frequency.json",
+            "flags": {
+                "IGNORE RAMBLING": false,
+                "IGNORE FALSE TARGETS OR GUESSES": false,
+                "REPROMPT ON ERROR": false,
+                "STRIP WORDS": true,
+                "IGNORE NUMBER OF TARGETS": false
+            }
         },
         {
             "name": "unambiguous",
             "game_instances": [
+                {
+                    "game_id": 6,
+                    "board": [
+                        "eggplant",
+                        "melon",
+                        "pimple",
+                        "elephant",
+                        "tact",
+                        "airstrip",
+                        "jukebox",
+                        "oven",
+                        "stagecoach",
+                        "latrine",
+                        "bayou",
+                        "luncheon",
+                        "cameraman",
+                        "gent",
+                        "lawsuit",
+                        "mumps",
+                        "vial",
+                        "columnist",
+                        "smallpox",
+                        "daybreak",
+                        "hometown",
+                        "apartment",
+                        "crowbar",
+                        "lawman",
+                        "appetizer"
+                    ],
+                    "assignments": {
+                        "team": [
+                            "gent",
+                            "appetizer",
+                            "melon",
+                            "hometown",
+                            "smallpox",
+                            "airstrip",
+                            "mumps",
+                            "eggplant",
+                            "columnist"
+                        ],
+                        "opponent": [
+                            "pimple",
+                            "daybreak",
+                            "apartment",
+                            "elephant",
+                            "bayou",
+                            "lawsuit",
+                            "crowbar",
+                            "cameraman"
+                        ],
+                        "innocent": [
+                            "luncheon",
+                            "stagecoach",
+                            "vial",
+                            "latrine",
+                            "oven",
+                            "tact",
+                            "lawman"
+                        ],
+                        "assassin": [
+                            "jukebox"
+                        ]
+                    }
+                },
                 {
                     "game_id": 1,
                     "board": [
@@ -2625,267 +2848,155 @@
                     }
                 },
                 {
-                    "game_id": 7,
+                    "game_id": 8,
                     "board": [
-                        "bridegroom",
-                        "potion",
-                        "raincoat",
-                        "cynic",
-                        "scrapbook",
-                        "stairway",
-                        "mower",
-                        "stairwell",
-                        "tequila",
-                        "ignorance",
-                        "commie",
-                        "prank",
-                        "swimsuit",
-                        "eyeliner",
+                        "cabaret",
                         "battleship",
-                        "saliva",
-                        "sofa",
-                        "statute",
-                        "campus",
-                        "groundhog",
-                        "bridesmaid",
-                        "bartender",
-                        "hangman",
-                        "concierge",
-                        "chef"
-                    ],
-                    "assignments": {
-                        "team": [
-                            "saliva",
-                            "bridegroom",
-                            "raincoat",
-                            "bridesmaid",
-                            "chef",
-                            "commie",
-                            "statute",
-                            "potion",
-                            "stairwell"
-                        ],
-                        "opponent": [
-                            "prank",
-                            "campus",
-                            "scrapbook",
-                            "tequila",
-                            "mower",
-                            "groundhog",
-                            "ignorance",
-                            "concierge"
-                        ],
-                        "innocent": [
-                            "bartender",
-                            "hangman",
-                            "battleship",
-                            "eyeliner",
-                            "swimsuit",
-                            "sofa",
-                            "stairway"
-                        ],
-                        "assassin": [
-                            "cynic"
-                        ]
-                    }
-                },
-                {
-                    "game_id": 0,
-                    "board": [
-                        "cameraman",
-                        "info",
-                        "thug",
-                        "sofa",
+                        "sundae",
                         "stead",
-                        "unicorn",
-                        "housewife",
-                        "serenity",
-                        "hypocrite",
-                        "quicksand",
-                        "mumps",
-                        "groundhog",
-                        "cuisine",
-                        "terrorism",
-                        "storeroom",
-                        "nephew",
-                        "smallpox",
-                        "ammo",
-                        "oven",
-                        "cupboard",
-                        "atheist",
-                        "piranha",
-                        "cynic",
-                        "giraffe",
-                        "puck"
+                        "factory",
+                        "sailboat",
+                        "marijuana",
+                        "ledger",
+                        "campus",
+                        "vaudeville",
+                        "chef",
+                        "bedroom",
+                        "sauerkraut",
+                        "doorman",
+                        "billboard",
+                        "hatred",
+                        "petroleum",
+                        "melon",
+                        "luncheon",
+                        "excrement",
+                        "eyeliner",
+                        "sincerity",
+                        "pretext",
+                        "cargo",
+                        "eggplant"
                     ],
                     "assignments": {
                         "team": [
-                            "stead",
-                            "cameraman",
-                            "info",
-                            "serenity",
-                            "atheist",
-                            "piranha",
-                            "unicorn",
-                            "cuisine",
-                            "oven"
+                            "ledger",
+                            "excrement",
+                            "petroleum",
+                            "sincerity",
+                            "eyeliner",
+                            "marijuana",
+                            "sundae",
+                            "doorman",
+                            "pretext"
                         ],
                         "opponent": [
-                            "storeroom",
-                            "giraffe",
-                            "thug",
-                            "smallpox",
-                            "sofa",
-                            "cynic",
-                            "quicksand",
-                            "puck"
+                            "sauerkraut",
+                            "battleship",
+                            "cabaret",
+                            "stead",
+                            "factory",
+                            "luncheon",
+                            "sailboat",
+                            "campus"
                         ],
                         "innocent": [
-                            "terrorism",
-                            "ammo",
-                            "housewife",
-                            "hypocrite",
-                            "cupboard",
-                            "mumps",
-                            "nephew"
+                            "cargo",
+                            "billboard",
+                            "bedroom",
+                            "hatred",
+                            "vaudeville",
+                            "chef",
+                            "melon"
                         ],
                         "assassin": [
-                            "groundhog"
+                            "eggplant"
                         ]
                     }
                 }
-            ]
+            ],
+            "variable": "Word Ambiguity",
+            "number of instances": 10,
+            "generator": "random",
+            "opponent difficulty": 1,
+            "assignments": {
+                "team": 9,
+                "opponent": 8,
+                "innocent": 7,
+                "assassin": 1
+            },
+            "wordlist": "unambiguous_words.json",
+            "flags": {
+                "IGNORE RAMBLING": false,
+                "IGNORE FALSE TARGETS OR GUESSES": false,
+                "REPROMPT ON ERROR": false,
+                "STRIP WORDS": true,
+                "IGNORE NUMBER OF TARGETS": false
+            }
         },
         {
             "name": "ambiguous",
             "game_instances": [
                 {
-                    "game_id": 2,
+                    "game_id": 1,
                     "board": [
-                        "flat",
-                        "bank",
-                        "spray",
-                        "wax",
-                        "imperial",
-                        "pink",
-                        "fit",
-                        "rank",
-                        "sheer",
-                        "trace",
-                        "cuff",
-                        "tap",
-                        "lash",
-                        "nip",
-                        "strand",
-                        "ham",
-                        "fan",
-                        "slug",
-                        "tender",
-                        "pipe",
-                        "chase",
-                        "hatch",
-                        "gloss",
-                        "stable",
-                        "flock"
-                    ],
-                    "assignments": {
-                        "team": [
-                            "slug",
-                            "pipe",
-                            "tender",
-                            "pink",
-                            "stable",
-                            "trace",
-                            "chase",
-                            "strand",
-                            "rank"
-                        ],
-                        "opponent": [
-                            "fan",
-                            "imperial",
-                            "hatch",
-                            "tap",
-                            "wax",
-                            "gloss",
-                            "spray",
-                            "cuff"
-                        ],
-                        "innocent": [
-                            "nip",
-                            "flock",
-                            "lash",
-                            "ham",
-                            "flat",
-                            "bank",
-                            "sheer"
-                        ],
-                        "assassin": [
-                            "fit"
-                        ]
-                    }
-                },
-                {
-                    "game_id": 9,
-                    "board": [
-                        "rear",
-                        "flag",
-                        "drone",
-                        "pawn",
-                        "snuff",
-                        "liver",
-                        "arm",
-                        "cuff",
-                        "stall",
-                        "grave",
-                        "rag",
-                        "hip",
-                        "crab",
-                        "rush",
                         "tag",
-                        "freak",
-                        "bark",
-                        "coil",
-                        "lean",
-                        "stem",
-                        "stripe",
-                        "lap",
-                        "spray",
-                        "clip",
-                        "drill"
+                        "flat",
+                        "rack",
+                        "rib",
+                        "trap",
+                        "rank",
+                        "stable",
+                        "plot",
+                        "bolt",
+                        "page",
+                        "zip",
+                        "steep",
+                        "rag",
+                        "steer",
+                        "cramp",
+                        "poop",
+                        "duck",
+                        "host",
+                        "spill",
+                        "pitch",
+                        "bust",
+                        "stall",
+                        "mint",
+                        "shock",
+                        "test"
                     ],
                     "assignments": {
                         "team": [
-                            "grave",
-                            "rag",
-                            "snuff",
-                            "rear",
-                            "lap",
-                            "stem",
-                            "stall",
-                            "flag",
-                            "freak"
+                            "poop",
+                            "page",
+                            "test",
+                            "shock",
+                            "steer",
+                            "mint",
+                            "bolt",
+                            "tag",
+                            "plot"
                         ],
                         "opponent": [
-                            "clip",
-                            "lean",
-                            "drill",
-                            "cuff",
-                            "hip",
-                            "spray",
-                            "rush",
-                            "tag"
+                            "cramp",
+                            "rib",
+                            "stall",
+                            "rack",
+                            "rag",
+                            "host",
+                            "trap",
+                            "pitch"
                         ],
                         "innocent": [
-                            "pawn",
-                            "arm",
-                            "coil",
-                            "liver",
-                            "crab",
-                            "drone",
-                            "stripe"
+                            "zip",
+                            "bust",
+                            "flat",
+                            "duck",
+                            "rank",
+                            "spill",
+                            "stable"
                         ],
                         "assassin": [
-                            "bark"
+                            "steep"
                         ]
                     }
                 },
@@ -2955,71 +3066,154 @@
                     }
                 },
                 {
-                    "game_id": 4,
+                    "game_id": 3,
                     "board": [
+                        "flat",
+                        "staff",
+                        "peel",
+                        "poop",
+                        "corn",
+                        "quack",
                         "rag",
-                        "fit",
-                        "rear",
-                        "beetle",
-                        "pile",
-                        "imperial",
-                        "scrub",
-                        "shower",
-                        "mint",
-                        "toast",
-                        "bush",
                         "rib",
-                        "pad",
-                        "bust",
-                        "dab",
-                        "bridge",
-                        "pound",
-                        "boom",
-                        "jumper",
-                        "stalk",
-                        "cuff",
-                        "nip",
-                        "rock",
-                        "stall",
-                        "bull"
+                        "buff",
+                        "freak",
+                        "pulse",
+                        "slack",
+                        "seal",
+                        "sheer",
+                        "stick",
+                        "pot",
+                        "ham",
+                        "slick",
+                        "post",
+                        "trap",
+                        "bark",
+                        "stem",
+                        "box",
+                        "port",
+                        "soil"
                     ],
                     "assignments": {
                         "team": [
-                            "pad",
-                            "cuff",
-                            "toast",
-                            "shower",
-                            "nip",
-                            "beetle",
-                            "rear",
-                            "bridge",
-                            "bush"
+                            "bark",
+                            "poop",
+                            "stem",
+                            "corn",
+                            "pulse",
+                            "seal",
+                            "soil",
+                            "box",
+                            "ham"
                         ],
                         "opponent": [
-                            "scrub",
-                            "mint",
-                            "imperial",
-                            "dab",
+                            "pot",
                             "rag",
                             "rib",
-                            "bust",
-                            "jumper"
+                            "quack",
+                            "freak",
+                            "port",
+                            "buff",
+                            "staff"
                         ],
                         "innocent": [
-                            "rock",
-                            "pile",
-                            "fit",
-                            "bull",
-                            "stalk",
-                            "pound",
-                            "boom"
+                            "flat",
+                            "slick",
+                            "peel",
+                            "slack",
+                            "post",
+                            "trap",
+                            "stick"
                         ],
                         "assassin": [
-                            "stall"
+                            "sheer"
+                        ]
+                    }
+                },
+                {
+                    "game_id": 7,
+                    "board": [
+                        "cock",
+                        "glare",
+                        "truck",
+                        "chase",
+                        "stable",
+                        "post",
+                        "scarf",
+                        "jumper",
+                        "funk",
+                        "diet",
+                        "liver",
+                        "chop",
+                        "pot",
+                        "lap",
+                        "plot",
+                        "stud",
+                        "hip",
+                        "vault",
+                        "peel",
+                        "pound",
+                        "trace",
+                        "founder",
+                        "bush",
+                        "shock",
+                        "stalk"
+                    ],
+                    "assignments": {
+                        "team": [
+                            "vault",
+                            "glare",
+                            "diet",
+                            "stalk",
+                            "jumper",
+                            "post",
+                            "chop",
+                            "hip",
+                            "plot"
+                        ],
+                        "opponent": [
+                            "peel",
+                            "chase",
+                            "founder",
+                            "shock",
+                            "bush",
+                            "scarf",
+                            "stable",
+                            "trace"
+                        ],
+                        "innocent": [
+                            "pot",
+                            "liver",
+                            "stud",
+                            "cock",
+                            "lap",
+                            "funk",
+                            "truck"
+                        ],
+                        "assassin": [
+                            "pound"
                         ]
                     }
                 }
-            ]
+            ],
+            "variable": "Word Ambiguity",
+            "number of instances": 10,
+            "generator": "random",
+            "opponent difficulty": 1,
+            "assignments": {
+                "team": 9,
+                "opponent": 8,
+                "innocent": 7,
+                "assassin": 1
+            },
+            "wordlist": "ambiguous_words.json",
+            "flags": {
+                "IGNORE RAMBLING": false,
+                "IGNORE FALSE TARGETS OR GUESSES": false,
+                "REPROMPT ON ERROR": false,
+                "STRIP WORDS": true,
+                "IGNORE NUMBER OF TARGETS": false
+            }
         },
         {
             "name": "concrete",
@@ -3090,67 +3284,132 @@
                     }
                 },
                 {
-                    "game_id": 4,
+                    "game_id": 3,
                     "board": [
-                        "guardrail",
-                        "bell",
-                        "kite",
-                        "pillbox",
-                        "pistachio",
-                        "birdbath",
-                        "cornfield",
-                        "jar",
-                        "rafter",
-                        "toothbrush",
-                        "bridge",
-                        "umbrella",
-                        "neck",
-                        "arm",
-                        "kidney",
-                        "knuckle",
-                        "treadmill",
-                        "suitcase",
+                        "toe",
+                        "needles",
+                        "camel",
+                        "quilt",
+                        "flute",
+                        "horn",
+                        "eggroll",
                         "lighthouse",
-                        "blueberry",
-                        "churchyard",
-                        "jawbone",
-                        "bikini",
-                        "rum",
-                        "pantyhose"
+                        "braces",
+                        "clipboard",
+                        "turtle",
+                        "carousel",
+                        "hotdog",
+                        "birdhouse",
+                        "crate",
+                        "dustpan",
+                        "teapot",
+                        "mirror",
+                        "binoculars",
+                        "hill",
+                        "lid",
+                        "pocketknife",
+                        "drumstick",
+                        "yacht",
+                        "fingernail"
                     ],
                     "assignments": {
                         "team": [
-                            "kite",
-                            "umbrella",
-                            "churchyard",
-                            "arm",
-                            "pillbox",
-                            "knuckle",
-                            "bridge",
-                            "lighthouse",
-                            "birdbath"
+                            "lid",
+                            "hill",
+                            "drumstick",
+                            "turtle",
+                            "horn",
+                            "flute",
+                            "yacht",
+                            "eggroll",
+                            "needles"
                         ],
                         "opponent": [
-                            "jar",
-                            "kidney",
-                            "rafter",
-                            "blueberry",
-                            "pantyhose",
-                            "rum",
-                            "bell",
-                            "treadmill"
+                            "pocketknife",
+                            "teapot",
+                            "mirror",
+                            "clipboard",
+                            "hotdog",
+                            "binoculars",
+                            "fingernail",
+                            "carousel"
                         ],
                         "innocent": [
-                            "guardrail",
-                            "pistachio",
-                            "jawbone",
-                            "cornfield",
-                            "neck",
-                            "toothbrush",
-                            "suitcase"
+                            "toe",
+                            "camel",
+                            "lighthouse",
+                            "dustpan",
+                            "quilt",
+                            "crate",
+                            "braces"
                         ],
                         "assassin": [
-                            "bikini"
+                            "birdhouse"
+                        ]
+                    }
+                },
+                {
+                    "game_id": 1,
+                    "board": [
+                        "octopus",
+                        "rainfall",
+                        "porch",
+                        "badge",
+                        "cotton",
+                        "laundry",
+                        "urine",
+                        "toe",
+                        "hubcap",
+                        "corn",
+                        "shotgun",
+                        "nectarine",
+                        "drawers",
+                        "pocketbook",
+                        "quilt",
+                        "washcloth",
+                        "longbow",
+                        "kidney",
+                        "chopsticks",
+                        "eggroll",
+                        "biceps",
+                        "bourbon",
+                        "camel",
+                        "knee",
+                        "groundhog"
+                    ],
+                    "assignments": {
+                        "team": [
+                            "octopus",
+                            "urine",
+                            "longbow",
+                            "laundry",
+                            "shotgun",
+                            "groundhog",
+                            "washcloth",
+                            "cotton",
+                            "drawers"
+                        ],
+                        "opponent": [
+                            "pocketbook",
+                            "kidney",
+                            "chopsticks",
+                            "badge",
+                            "toe",
+                            "hubcap",
+                            "eggroll",
+                            "knee"
+                        ],
+                        "innocent": [
+                            "biceps",
+                            "porch",
+                            "quilt",
+                            "camel",
+                            "corn",
+                            "bourbon",
+                            "nectarine"
+                        ],
+                        "assassin": [
+                            "rainfall"
                         ]
                     }
                 },
@@ -3218,139 +3477,92 @@
                             "escalator"
                         ]
                     }
-                },
-                {
-                    "game_id": 3,
-                    "board": [
-                        "toe",
-                        "needles",
-                        "camel",
-                        "quilt",
-                        "flute",
-                        "horn",
-                        "eggroll",
-                        "lighthouse",
-                        "braces",
-                        "clipboard",
-                        "turtle",
-                        "carousel",
-                        "hotdog",
-                        "birdhouse",
-                        "crate",
-                        "dustpan",
-                        "teapot",
-                        "mirror",
-                        "binoculars",
-                        "hill",
-                        "lid",
-                        "pocketknife",
-                        "drumstick",
-                        "yacht",
-                        "fingernail"
-                    ],
-                    "assignments": {
-                        "team": [
-                            "lid",
-                            "hill",
-                            "drumstick",
-                            "turtle",
-                            "horn",
-                            "flute",
-                            "yacht",
-                            "eggroll",
-                            "needles"
-                        ],
-                        "opponent": [
-                            "pocketknife",
-                            "teapot",
-                            "mirror",
-                            "clipboard",
-                            "hotdog",
-                            "binoculars",
-                            "fingernail",
-                            "carousel"
-                        ],
-                        "innocent": [
-                            "toe",
-                            "camel",
-                            "lighthouse",
-                            "dustpan",
-                            "quilt",
-                            "crate",
-                            "braces"
-                        ],
-                        "assassin": [
-                            "birdhouse"
-                        ]
-                    }
                 }
-            ]
+            ],
+            "variable": "Word Concreteness",
+            "number of instances": 10,
+            "generator": "random",
+            "opponent difficulty": 1,
+            "assignments": {
+                "team": 9,
+                "opponent": 8,
+                "innocent": 7,
+                "assassin": 1
+            },
+            "wordlist": "concrete_words.json",
+            "flags": {
+                "IGNORE RAMBLING": false,
+                "IGNORE FALSE TARGETS OR GUESSES": false,
+                "REPROMPT ON ERROR": false,
+                "STRIP WORDS": true,
+                "IGNORE NUMBER OF TARGETS": false
+            }
         },
         {
             "name": "abstract",
             "game_instances": [
                 {
-                    "game_id": 6,
+                    "game_id": 2,
                     "board": [
-                        "incompetency",
-                        "neediness",
-                        "inconsideration",
-                        "adaptability",
-                        "bleakness",
-                        "privacy",
-                        "bonkers",
-                        "grandiosity",
-                        "ethic",
-                        "fixation",
-                        "persuasiveness",
-                        "niftiness",
-                        "vigilantism",
-                        "formality",
-                        "vitalism",
-                        "fate",
-                        "ingratitude",
-                        "precedent",
-                        "justification",
-                        "subtlety",
-                        "outrageousness",
-                        "discernment",
-                        "expedience",
-                        "greatness",
-                        "refutation"
+                        "paradigm",
+                        "materialism",
+                        "panache",
+                        "predictability",
+                        "insentient",
+                        "misguidance",
+                        "plausibility",
+                        "cheapness",
+                        "misanthropy",
+                        "parallelism",
+                        "ethos",
+                        "nationalization",
+                        "cunningness",
+                        "flimflam",
+                        "insubordination",
+                        "curiosity",
+                        "newness",
+                        "existence",
+                        "utilization",
+                        "discordance",
+                        "possessiveness",
+                        "totality",
+                        "unbelief",
+                        "interpretation",
+                        "spirituality"
                     ],
                     "assignments": {
                         "team": [
-                            "formality",
-                            "bonkers",
-                            "fate",
-                            "persuasiveness",
-                            "adaptability",
-                            "subtlety",
-                            "ethic",
-                            "greatness",
-                            "inconsideration"
+                            "parallelism",
+                            "materialism",
+                            "misguidance",
+                            "insentient",
+                            "discordance",
+                            "cunningness",
+                            "possessiveness",
+                            "newness",
+                            "unbelief"
                         ],
                         "opponent": [
-                            "bleakness",
-                            "neediness",
-                            "fixation",
-                            "ingratitude",
-                            "vigilantism",
-                            "vitalism",
-                            "niftiness",
-                            "precedent"
+                            "predictability",
+                            "insubordination",
+                            "totality",
+                            "paradigm",
+                            "existence",
+                            "panache",
+                            "ethos",
+                            "utilization"
                         ],
                         "innocent": [
-                            "outrageousness",
-                            "grandiosity",
-                            "expedience",
-                            "justification",
-                            "refutation",
-                            "incompetency",
-                            "privacy"
+                            "interpretation",
+                            "plausibility",
+                            "cheapness",
+                            "flimflam",
+                            "nationalization",
+                            "curiosity",
+                            "spirituality"
                         ],
                         "assassin": [
-                            "discernment"
+                            "misanthropy"
                         ]
                     }
                 },
@@ -3485,71 +3697,89 @@
                     }
                 },
                 {
-                    "game_id": 2,
+                    "game_id": 7,
                     "board": [
-                        "paradigm",
+                        "tenacity",
+                        "dehumanization",
+                        "stringency",
+                        "anomaly",
+                        "divergence",
+                        "lessening",
+                        "implementation",
+                        "desperation",
+                        "patience",
+                        "euphemism",
+                        "subjection",
+                        "finality",
                         "materialism",
-                        "panache",
-                        "predictability",
-                        "insentient",
-                        "misguidance",
-                        "plausibility",
-                        "cheapness",
-                        "misanthropy",
-                        "parallelism",
-                        "ethos",
-                        "nationalization",
-                        "cunningness",
-                        "flimflam",
-                        "insubordination",
-                        "curiosity",
-                        "newness",
-                        "existence",
-                        "utilization",
-                        "discordance",
-                        "possessiveness",
-                        "totality",
-                        "unbelief",
-                        "interpretation",
-                        "spirituality"
+                        "sacredness",
+                        "insinuation",
+                        "romanticism",
+                        "enrichment",
+                        "strictness",
+                        "phooey",
+                        "lenience",
+                        "infallibility",
+                        "desperateness",
+                        "uncertainty",
+                        "infinity",
+                        "insubordination"
                     ],
                     "assignments": {
                         "team": [
-                            "parallelism",
-                            "materialism",
-                            "misguidance",
-                            "insentient",
-                            "discordance",
-                            "cunningness",
-                            "possessiveness",
-                            "newness",
-                            "unbelief"
+                            "divergence",
+                            "lenience",
+                            "strictness",
+                            "euphemism",
+                            "infinity",
+                            "phooey",
+                            "sacredness",
+                            "anomaly",
+                            "materialism"
                         ],
                         "opponent": [
-                            "predictability",
                             "insubordination",
-                            "totality",
-                            "paradigm",
-                            "existence",
-                            "panache",
-                            "ethos",
-                            "utilization"
+                            "desperateness",
+                            "patience",
+                            "finality",
+                            "subjection",
+                            "implementation",
+                            "desperation",
+                            "uncertainty"
                         ],
                         "innocent": [
-                            "interpretation",
-                            "plausibility",
-                            "cheapness",
-                            "flimflam",
-                            "nationalization",
-                            "curiosity",
-                            "spirituality"
+                            "stringency",
+                            "romanticism",
+                            "lessening",
+                            "enrichment",
+                            "infallibility",
+                            "insinuation",
+                            "dehumanization"
                         ],
                         "assassin": [
-                            "misanthropy"
+                            "tenacity"
                         ]
                     }
                 }
-            ]
+            ],
+            "variable": "Word Concreteness",
+            "number of instances": 10,
+            "generator": "random",
+            "opponent difficulty": 1,
+            "assignments": {
+                "team": 9,
+                "opponent": 8,
+                "innocent": 7,
+                "assassin": 1
+            },
+            "wordlist": "abstract_words.json",
+            "flags": {
+                "IGNORE RAMBLING": false,
+                "IGNORE FALSE TARGETS OR GUESSES": false,
+                "REPROMPT ON ERROR": false,
+                "STRIP WORDS": true,
+                "IGNORE NUMBER OF TARGETS": false
+            }
         }
     ]
 }
