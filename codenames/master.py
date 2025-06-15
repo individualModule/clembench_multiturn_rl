@@ -274,15 +274,12 @@ class CodenamesGame(DialogueGameMaster):
         self.log_key("Cluegiver engaged flags", self.cluegiver.flags_engaged)
         self.log_key("Guesser engaged flags", self.guesser.flags_engaged)
 
-    def on_after_game(self):
+    def _on_after_game(self):
         # Added for playpen - log success/lose/abort so that we can track success rates. 
         self.info['lost'] = self.lost
         self.info['aborted'] = self.aborted
         self.info['success'] = True if not self.lost and not self.aborted else False
         self.info['game_id'] = self.game_instance['game_id'] # log game id
-
-
-
 
     def compute_response_score(self, parsed_response: str, context: Dict) -> float:
         """
