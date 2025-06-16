@@ -281,7 +281,7 @@ class CodenamesGame(DialogueGameMaster):
         self.info['success'] = True if not self.lost and not self.aborted else False
         self.info['game_id'] = self.game_instance['game_id'] # log game id
 
-    def compute_response_score(self, parsed_response: str, context: Dict) -> float:
+    def compute_response_score_old(self, parsed_response: str, context: Dict) -> float:
         """
         Compute the F1 score for the current turn.
 
@@ -325,15 +325,20 @@ class CodenamesGame(DialogueGameMaster):
         # return unscaled reward
         return f1_score    
     
-    # def compute_episode_score(self) -> float:
-    #     score = 0
-    #     number_of_turns = self.current_round + 1
-        
-    #     if number_of_turns > 0:
-    #         score = self.running_score/ number_of_turns
+    def compute_response_score(self, parsed_response: str, context: Dict) -> float:
 
-    #     return score*100
-    def compute_episode_score(self) -> float:   
+        return -1
+    
+    def compute_episode_score(self):
+        if self.board.has_team_won():
+            return 0
+        elif self.aborted:
+            return -10
+        else:
+            return 0
+
+        
+    def compute_episode_score_old(self) -> float:   
         # small turn reward signal
 
         number_of_turns = self.current_round + 1
