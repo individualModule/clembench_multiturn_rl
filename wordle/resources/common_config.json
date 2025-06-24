@@ -5,9 +5,9 @@
     "use_error_explanation": true,
     "supported_word_difficulty": ["high_frequency", "medium_frequency", "low_frequency"],
     "number_of_target_words": {
-                                "high_frequency": 10,
-                                "medium_frequency": 20,
-                                "low_frequency": 10
+                                "high_frequency": 30,
+                                "medium_frequency": 50,
+                                "low_frequency": 0
     },
     "max_token_limit_openai_models": 3800,
     "max_critic_opinion_count": 1
