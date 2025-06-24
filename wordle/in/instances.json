@@ -29,98 +29,158 @@
         },
         {
           "game_id": 5,
+          "target_word": "heart",
+          "target_word_clue": "love, on bumper stickers",
+          "target_word_difficulty": "high_frequency"
+        },
+        {
+          "game_id": 6,
           "target_word": "green",
           "target_word_clue": "environmentally-minded",
           "target_word_difficulty": "high_frequency"
         },
         {
-          "game_id": 6,
+          "game_id": 7,
           "target_word": "month",
           "target_word_clue": "calendar page",
           "target_word_difficulty": "high_frequency"
         },
         {
-          "game_id": 7,
+          "game_id": 8,
           "target_word": "small",
           "target_word_clue": "insignificant",
           "target_word_difficulty": "high_frequency"
         },
         {
-          "game_id": 8,
+          "game_id": 9,
           "target_word": "level",
           "target_word_clue": "gauge reading",
           "target_word_difficulty": "high_frequency"
         },
         {
-          "game_id": 9,
+          "game_id": 10,
           "target_word": "south",
           "target_word_clue": "contract winner in the paper",
           "target_word_difficulty": "high_frequency"
         },
         {
-          "game_id": 10,
+          "game_id": 11,
           "target_word": "write",
           "target_word_clue": "pen",
           "target_word_difficulty": "high_frequency"
         },
         {
-          "game_id": 11,
-          "target_word": "while",
-          "target_word_clue": "indefinite wait",
-          "target_word_difficulty": "high_frequency"
-        },
-        {
           "game_id": 12,
-          "target_word": "water",
-          "target_word_clue": "fire fighter",
+          "target_word": "could",
+          "target_word_clue": "manilow's \"___ it be magic\"",
           "target_word_difficulty": "high_frequency"
         },
         {
           "game_id": 13,
-          "target_word": "board",
-          "target_word_clue": "meals",
-          "target_word_difficulty": "high_frequency"
-        },
-        {
-          "game_id": 14,
-          "target_word": "these",
-          "target_word_clue": "items on hand",
-          "target_word_difficulty": "high_frequency"
-        },
-        {
-          "game_id": 15,
-          "target_word": "china",
-          "target_word_clue": "dinnerware",
-          "target_word_difficulty": "high_frequency"
-        },
-        {
-          "game_id": 16,
-          "target_word": "every",
-          "target_word_clue": "\"___ little movement\" (dorsey brothers hit)",
-          "target_word_difficulty": "high_frequency"
-        },
-        {
-          "game_id": 17,
-          "target_word": "order",
-          "target_word_clue": "judge's exhortation",
-          "target_word_difficulty": "high_frequency"
-        },
-        {
-          "game_id": 18,
-          "target_word": "right",
-          "target_word_clue": "divine ___",
-          "target_word_difficulty": "high_frequency"
-        },
-        {
-          "game_id": 19,
           "target_word": "major",
           "target_word_clue": "tv's\"___dad\"",
           "target_word_difficulty": "high_frequency"
         },
         {
+          "game_id": 14,
+          "target_word": "daily",
+          "target_word_clue": "many a newspaper",
+          "target_word_difficulty": "high_frequency"
+        },
+        {
+          "game_id": 15,
+          "target_word": "where",
+          "target_word_clue": "invitation heading",
+          "target_word_difficulty": "high_frequency"
+        },
+        {
+          "game_id": 16,
+          "target_word": "going",
+          "target_word_clue": "start of an auctioneer's windup",
+          "target_word_difficulty": "high_frequency"
+        },
+        {
+          "game_id": 17,
+          "target_word": "right",
+          "target_word_clue": "divine ___",
+          "target_word_difficulty": "high_frequency"
+        },
+        {
+          "game_id": 18,
+          "target_word": "local",
+          "target_word_clue": "dietary",
+          "target_word_difficulty": "high_frequency"
+        },
+        {
+          "game_id": 19,
+          "target_word": "their",
+          "target_word_clue": "others'",
+          "target_word_difficulty": "high_frequency"
+        },
+        {
           "game_id": 20,
-          "target_word": "again",
-          "target_word_clue": "one more time",
+          "target_word": "white",
+          "target_word_clue": "former justice byron",
+          "target_word_difficulty": "high_frequency"
+        },
+        {
+          "game_id": 21,
+          "target_word": "black",
+          "target_word_clue": "longtime supreme court name",
+          "target_word_difficulty": "high_frequency"
+        },
+        {
+          "game_id": 22,
+          "target_word": "click",
+          "target_word_clue": "succeed, informally",
+          "target_word_difficulty": "high_frequency"
+        },
+        {
+          "game_id": 23,
+          "target_word": "world",
+          "target_word_clue": "series opener?",
+          "target_word_difficulty": "high_frequency"
+        },
+        {
+          "game_id": 24,
+          "target_word": "thing",
+          "target_word_clue": "chas. addams character",
+          "target_word_difficulty": "high_frequency"
+        },
+        {
+          "game_id": 25,
+          "target_word": "power",
+          "target_word_clue": "juice, so to speak",
+          "target_word_difficulty": "high_frequency"
+        },
+        {
+          "game_id": 26,
+          "target_word": "story",
+          "target_word_clue": "floor",
+          "target_word_difficulty": "high_frequency"
+        },
+        {
+          "game_id": 27,
+          "target_word": "might",
+          "target_word_clue": "strength",
+          "target_word_difficulty": "high_frequency"
+        },
+        {
+          "game_id": 28,
+          "target_word": "beach",
+          "target_word_clue": "leave on shore",
+          "target_word_difficulty": "high_frequency"
+        },
+        {
+          "game_id": 29,
+          "target_word": "hotel",
+          "target_word_clue": "hailey novel",
+          "target_word_difficulty": "high_frequency"
+        },
+        {
+          "game_id": 30,
+          "target_word": "value",
+          "target_word_clue": "utility",
           "target_word_difficulty": "high_frequency"
         }
       ],
@@ -139,9 +199,9 @@
           "low_frequency"
         ],
         "number_of_target_words": {
-          "high_frequency": 20,
-          "medium_frequency": 40,
-          "low_frequency": 20
+          "high_frequency": 30,
+          "medium_frequency": 50,
+          "low_frequency": 0
         },
         "max_token_limit_openai_models": 3800,
         "max_critic_opinion_count": 1,
@@ -13379,6 +13439,66 @@
           "target_word": "inlet",
           "target_word_clue": "sea arm",
           "target_word_difficulty": "medium_frequency"
+        },
+        {
+          "game_id": 41,
+          "target_word": "rivet",
+          "target_word_clue": "rosie's bolt",
+          "target_word_difficulty": "medium_frequency"
+        },
+        {
+          "game_id": 42,
+          "target_word": "crown",
+          "target_word_clue": "queen topper",
+          "target_word_difficulty": "medium_frequency"
+        },
+        {
+          "game_id": 43,
+          "target_word": "avoid",
+          "target_word_clue": "steer clear of",
+          "target_word_difficulty": "medium_frequency"
+        },
+        {
+          "game_id": 44,
+          "target_word": "elegy",
+          "target_word_clue": "thomas gray piece",
+          "target_word_difficulty": "medium_frequency"
+        },
+        {
+          "game_id": 45,
+          "target_word": "eclat",
+          "target_word_clue": "razzle-dazzle",
+          "target_word_difficulty": "medium_frequency"
+        },
+        {
+          "game_id": 46,
+          "target_word": "roomy",
+          "target_word_clue": "spread out",
+          "target_word_difficulty": "medium_frequency"
+        },
+        {
+          "game_id": 47,
+          "target_word": "badly",
+          "target_word_clue": "ineptly",
+          "target_word_difficulty": "medium_frequency"
+        },
+        {
+          "game_id": 48,
+          "target_word": "saute",
+          "target_word_clue": "pan-fry",
+          "target_word_difficulty": "medium_frequency"
+        },
+        {
+          "game_id": 49,
+          "target_word": "motto",
+          "target_word_clue": "words of wisdom",
+          "target_word_difficulty": "medium_frequency"
+        },
+        {
+          "game_id": 50,
+          "target_word": "foray",
+          "target_word_clue": "brief incursion",
+          "target_word_difficulty": "medium_frequency"
         }
       ],
       "common_config": {
@@ -13396,9 +13516,9 @@
           "low_frequency"
         ],
         "number_of_target_words": {
-          "high_frequency": 20,
-          "medium_frequency": 40,
-          "low_frequency": 20
+          "high_frequency": 30,
+          "medium_frequency": 50,
+          "low_frequency": 0
         },
         "max_token_limit_openai_models": 3800,
         "max_critic_opinion_count": 1,
