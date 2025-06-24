@@ -398,7 +398,6 @@ class Wordle(DialogueGameMaster):
         """
         # Check if the game is aborted
         if self.state.aborted:
-            print('aborted')
             return -10
 
         # Extract the guessed word from the parsed response
@@ -407,17 +406,14 @@ class Wordle(DialogueGameMaster):
         # Check if the guessed word has already been used
         if guessed_word in self.guesser_guesses[:-1]: # guessed word already appended to last spot
             logger.warning(f"Repeated guess detected: {guessed_word}")
-            print('guess used')
             return -10
 
         # Calculate the strategy score using the ComputeMetrics instance
         strategy_score = turns_strategy(self.guesser_feedbacks, self.state.aborted)
         if strategy_score:
-            print('strategy score')
             return strategy_score[-1]  # Return the calculated strategy score for this turn
 
         # Default to 0 if no strategy score is calculated
-        print('somehow else.')
         return -10
     
     def compute_episode_score(self):
