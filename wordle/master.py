@@ -311,6 +311,7 @@ class Wordle(DialogueGameMaster):
         self.guess_validator = GuessValidator(self.state.target_word)
         self.formatter = ResponseFormatter(self.state.words)
         self._add_players()
+        self.game_instance = game_instance
 
     def _add_players(self):
         self.guesser = WordGuesser(self.player_models[0], self.state.words, self.state.target_word)
@@ -425,6 +426,11 @@ class Wordle(DialogueGameMaster):
         return 0
 
     def _on_after_game(self):
+        self.info['lost'] = self.state.failure
+        self.info['aborted'] = self.state.aborted
+        self.info['success'] = self.state.success
+        self.info['game_id'] = self.game_instance['game_id']
+
         self.log_key(METRIC_ABORTED, int(self.state.aborted))
         self.log_key(METRIC_LOSE, int(self.state.failure))
         self.log_key(METRIC_SUCCESS, int(self.state.success))
