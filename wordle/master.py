@@ -391,32 +391,10 @@ class Wordle(DialogueGameMaster):
 
     def compute_response_score(self, parsed_response, context):
         """
-        Compute the response score for the current turn.
-
-        1) Calculate the strategy score and return it.
-        2) If the game is aborted, return -10.
-        3) If the word has been used already, return -10.
+        Game intrinsic sparse rewards - return 0 for turn, SPEED for episode
         """
-        # Check if the game is aborted
-        if self.state.aborted:
-            return -10
-
-        # Extract the guessed word from the parsed response
-        guessed_word = self.state.current_guess
-
-        # Check if the guessed word has already been used
-        if guessed_word in self.guesser_guesses[:-1]: # guessed word already appended to last spot
-            logger.warning(f"Repeated guess detected: {guessed_word}")
-            return -10
-
-        # Calculate the strategy score using the ComputeMetrics instance
-        strategy_score = turns_strategy(self.guesser_feedbacks, self.state.aborted)
-        if strategy_score:
-            return strategy_score[-1]  # Return the calculated strategy score for this turn
-
-        # Default to 0 if no strategy score is calculated
-        return -10
-    
+        return 0
+        
     def compute_episode_score(self):
         """
         Returns speed as the metric

@@ -229,6 +229,27 @@ class MatchItAscii(DialogueGameMaster):
             return False
         return True
 
+    def compute_response_score(self, parsed_response, context):
+        """
+        Game intrinsic sparse rewards - return 0 for turn, SPEED for episode
+        """
+        return 0
+
+    def compute_episode_score(self):
+        """
+        Returns speed as the metric
+        """
+        if self.player_a.success:
+            return 100
+        return 0
+
+    def _on_after_game(self):
+        both_success = self.player_a.success and self.player_b.success
+
+        self.info['success'] = both_success
+        self.info['lost'] = not both_success and not self.aborted
+        self.info['aborted'] = self.aborted
+        self.info['game_id'] = self.game_instance['game_id']
 
 class MatchItScorer(GameScorer):
 

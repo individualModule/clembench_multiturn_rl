@@ -135,6 +135,7 @@ class Textmapworld(DialogueGameMaster):
 
     def _on_setup(self, **game_instance):
         logger.info("_on_setup")
+        self.game_instance = game_instance
         self.graph_type = game_instance['Game_Type']
         self.initial_position = game_instance[
             "Current_Position"] if self.graph_type == "named_graph" else ast.literal_eval(
@@ -260,6 +261,40 @@ class Textmapworld(DialogueGameMaster):
                 if self.reprompting_parameter and loop_identification(self.visited_nodes, False):
                     self.visited_nodes.clear()
                     self.reprompting_parameter = True
+
+    def compute_response_score(self, parsed_response, context):
+        """
+        Game intrinsic sparse rewards - return 0 for turn, Main score for episode
+        """
+        return 0
+
+    def compute_episode_score(self):
+        """
+        Return exploration as a metric
+        - cant return bench score as it needs to search for best moves.
+        - difficult to evaluate in rollout.
+        - if this doesn't work we can try that as well.
+        """
+        nodes = ast.literal_eval(self.game_instance['Graph_Nodes'])
+        visited = self.visited_nodes # should work. If not, replicate what they did in scorer
+        exploration = (len(visited) / len(nodes) * 100) if len(nodes) else 0
+
+        # potentially normalize the value with the number of turns it took.
+        # larger number of turns smaller score.
+
+        return exploration
+
+    def _on_after_game(self):
+        visited = self.visited_nodes
+        nodes = ast.literal_eval(self.game_instance['Graph_Nodes'])
+        aborted = self.invalid_response
+        success = visited==set(nodes)
+
+        self.info['success'] = success
+        self.info['lost'] = not success and not aborted
+
+        self.info['aborted'] = aborted
+        self.info['game_id'] = self.game_instance['game_id']
 
 
 class GraphGameScorer(GameScorer):
