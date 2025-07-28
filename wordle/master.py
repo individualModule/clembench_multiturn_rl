@@ -396,10 +396,14 @@ class Wordle(DialogueGameMaster):
         1) Calculate the strategy score and return it.
         2) If the game is aborted, return -10.
         3) If the word has been used already, return -10.
+
+        Strategy needs to be scaled
+        - must make sure that the model should make a successful guess sooner in the game
+        - high strategy score enables reward hacking
+        - should strategy be scale below final reward?
+            
+        if scaling down does not work - try a hard value: 10 for good strategy, -10 for poor strategy.
         """
-        # Check if the game is aborted
-        if self.state.aborted:
-            return -10
 
         # Extract the guessed word from the parsed response
         guessed_word = self.state.current_guess
@@ -412,19 +416,21 @@ class Wordle(DialogueGameMaster):
         # Calculate the strategy score using the ComputeMetrics instance
         strategy_score = turns_strategy(self.guesser_feedbacks, self.state.aborted)
         if strategy_score:
-            return strategy_score[-1]  # Return the calculated strategy score for this turn
+            score = strategy_score[-1]/10
+            return score  # Return the calculated strategy score for this turn: scale it
 
         # Default to 0 if no strategy score is calculated
-        return -10
+        return 0
     
     def compute_episode_score(self):
         """
         Returns speed as the metric
         """
         if self.state.success:
-            return 100 / self.current_round
+            logger.warning(f" success at round {self.current_round} - with +1 = {self.current_round+1}, reward = {100/(self.current_round+1)}")
+            return 100 / (self.current_round+1)
         if self.state.aborted:
-            return -10
+            return -100 
         
         return 0
 
