@@ -423,6 +423,9 @@ class Wordle(DialogueGameMaster):
         """
         if self.state.success:
             return 100 / self.current_round
+        if self.state.aborted:
+            return -10
+        
         return 0
 
     def _on_after_game(self):
