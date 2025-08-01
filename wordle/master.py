@@ -427,10 +427,10 @@ class Wordle(DialogueGameMaster):
         Returns speed as the metric
         """
         if self.state.success:
-            logger.warning(f" success at round {self.current_round} - with +1 = {self.current_round+1}, reward = {100/(self.current_round+1)}")
-            return 100 / (self.current_round+1)
+            # logger.warning(f" success at round {self.current_round} - with +1 = {self.current_round+1}, reward = {100/(self.current_round+1)}")
+            return 100 / (self.current_round)
         if self.state.aborted:
-            return -100 
+            return -10
         
         return 0
 
