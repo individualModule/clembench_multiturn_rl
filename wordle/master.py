@@ -416,7 +416,7 @@ class Wordle(DialogueGameMaster):
         # Calculate the strategy score using the ComputeMetrics instance
         strategy_score = turns_strategy(self.guesser_feedbacks, self.state.aborted)
         if strategy_score:
-            score = strategy_score[-1]/10
+            score = strategy_score[-1]
             return score  # Return the calculated strategy score for this turn: scale it
 
         # Default to 0 if no strategy score is calculated
