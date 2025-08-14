@@ -392,17 +392,10 @@ class Wordle(DialogueGameMaster):
     def compute_response_score(self, parsed_response, context):
         """
         Compute the response score for the current turn.
-
-        1) Calculate the strategy score and return it.
-        2) If the game is aborted, return -10.
-        3) If the word has been used already, return -10.
-
-        Strategy needs to be scaled
-        - must make sure that the model should make a successful guess sooner in the game
-        - high strategy score enables reward hacking
-        - should strategy be scale below final reward?
-            
-        if scaling down does not work - try a hard value: 10 for good strategy, -10 for poor strategy.
+        
+        - just negative penalties for poor behavior
+        - -10 abort, repeat guess, default moves as well -10 (e.g. non existant words)
+        - only negative strategy reward.
         """
 
         # Extract the guessed word from the parsed response
@@ -413,10 +406,13 @@ class Wordle(DialogueGameMaster):
             logger.warning(f"Repeated guess detected: {guessed_word}")
             return -10
 
+        if isinstance(self.state.error, UnknownFiveLetterWordError):
+            return -10
+
         # Calculate the strategy score using the ComputeMetrics instance
         strategy_score = turns_strategy(self.guesser_feedbacks, self.state.aborted)
         if strategy_score:
-            score = strategy_score[-1]
+            score = min(strategy_score[-1], 0)
             return score  # Return the calculated strategy score for this turn: scale it
 
         # Default to 0 if no strategy score is calculated
