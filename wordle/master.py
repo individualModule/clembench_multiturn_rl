@@ -10,8 +10,8 @@ from clemcore.clemgame import GameSpec, GameMaster, GameBenchmark, Player, Dialo
 from clemcore.clemgame.metrics import METRIC_ABORTED, METRIC_SUCCESS, METRIC_LOSE, METRIC_REQUEST_COUNT, \
     METRIC_REQUEST_COUNT_VIOLATED, METRIC_REQUEST_COUNT_PARSED, BENCH_SCORE
 
-from utils.guessvalidator import GuessValidator
-from utils.compute_metrics import turns_closeness, turns_strategy
+from clembench_multiturn_rl.wordle.utils.guessvalidator import GuessValidator
+from clembench_multiturn_rl.wordle.utils.compute_metrics import turns_closeness, turns_strategy
 
 logger = logging.getLogger(__name__)
 
