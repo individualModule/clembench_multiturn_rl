@@ -4,11 +4,14 @@ from typing import Dict, Tuple, List, Optional
 import logging
 import numpy as np
 import re
+import sys
 
 from clemcore.backends import Model
 from clemcore.clemgame import GameSpec, GameMaster, GameBenchmark, Player, DialogueGameMaster, GameScorer
 from clemcore.clemgame.metrics import METRIC_ABORTED, METRIC_SUCCESS, METRIC_LOSE, METRIC_REQUEST_COUNT, \
     METRIC_REQUEST_COUNT_VIOLATED, METRIC_REQUEST_COUNT_PARSED, BENCH_SCORE
+
+# sys.path.append('/home/bbmdr998/thesis/clembench_multiturn_rl')
 
 from clembench_multiturn_rl.wordle.utils.guessvalidator import GuessValidator
 from clembench_multiturn_rl.wordle.utils.compute_metrics import turns_closeness, turns_strategy
