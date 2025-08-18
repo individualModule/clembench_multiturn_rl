@@ -404,10 +404,10 @@ class Wordle(DialogueGameMaster):
         # Check if the guessed word has already been used
         if guessed_word in self.guesser_guesses[:-1]: # guessed word already appended to last spot
             logger.warning(f"Repeated guess detected: {guessed_word}")
-            return -10
+            return -50
 
         if isinstance(self.state.error, UnknownFiveLetterWordError):
-            return -10
+            return -50
 
         # Calculate the strategy score using the ComputeMetrics instance
         strategy_score = turns_strategy(self.guesser_feedbacks, self.state.aborted)
@@ -422,11 +422,11 @@ class Wordle(DialogueGameMaster):
         """
         Returns speed as the metric
         """
-        if self.state.success:
-            # logger.warning(f" success at round {self.current_round} - with +1 = {self.current_round+1}, reward = {100/(self.current_round+1)}")
-            return 100 / (self.current_round)
+        # if self.state.success:
+        #     # logger.warning(f" success at round {self.current_round} - with +1 = {self.current_round+1}, reward = {100/(self.current_round+1)}")
+        #     return 100 / (self.current_round)
         if self.state.aborted:
-            return -10
+            return -100
         
         return 0
 
