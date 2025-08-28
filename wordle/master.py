@@ -407,6 +407,8 @@ class Wordle(DialogueGameMaster):
 
         # Extract the guessed word from the parsed response
         guessed_word = self.state.current_guess
+        if isinstance(self.state.error, UnknownFiveLetterWordError):
+            return -10
 
         # Check if the guessed word has already been used
         if guessed_word in self.guesser_guesses[:-1]: # guessed word already appended to last spot
