@@ -1,6 +1,6 @@
 import os
 from clemcore.clemgame import GameInstanceGenerator
-from wordle.utils.instance_utils import InstanceUtils
+from clembench_multiturn_rl.wordle.utils.instance_utils import InstanceUtils
 
 
 # SEED = "17, 42"  # seed for old/v1.6 instances
@@ -39,7 +39,7 @@ class WordleGameInstanceGenerator(GameInstanceGenerator):
 
 
 if __name__ == "__main__":
-    for variant in ["wordle"]:#, "wordle_withclue", "wordle_withcritic"]:
+    for variant in ["wordle_withclue", "wordle_withcritic"]:#, "wordle_withclue", "wordle_withcritic"]:
         file_name = "instances.json"
         variant_suffix = variant.split("_")
         if len(variant_suffix) > 1:
