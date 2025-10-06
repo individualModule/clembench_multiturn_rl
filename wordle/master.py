@@ -394,19 +394,7 @@ class Wordle(DialogueGameMaster):
         Compute the response score for the current turn.
 
         """
-        # Check if the game is aborted
-
-        # Extract the guessed word from the parsed response
-        guessed_word = self.state.current_guess
-
-        # Calculate the strategy score using the ComputeMetrics instance
-        strategy_score = turns_strategy(self.guesser_feedbacks, self.state.aborted)
-        if strategy_score:
-            if strategy_score[-1] >= 0:
-                return strategy_score[-1]  # Return the calculated strategy score for this turn
-            else:
-                return 0
-        # Default to 0 if no strategy score is calculated
+        
         return 0
     
     def compute_episode_score(self):
@@ -415,6 +403,9 @@ class Wordle(DialogueGameMaster):
         """
         if self.state.success:
             return 100
+        if self.state.aborted:
+            return -100
+        
         return 0
 
     def _on_after_game(self):
