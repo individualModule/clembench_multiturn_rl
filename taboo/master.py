@@ -190,12 +190,25 @@ class Taboo(DialogueGameMaster):
             self.set_context_for(self.describer, parsed_response)
 
     def compute_response_score(self, response, context):
-        return 1 if self.is_success() else 0
+        return 0
 
     def compute_episode_score(self):
         if self.is_success():
-            return 100 / (self.current_round + 1)  # zero-based
+            return 100 
+        
+        if self.is_aborted():
+            return -100
+
         return 0
+
+    def _on_after_game(self):
+        success = self.is_success()
+        aborted = self.is_aborted()
+        lost = (not success and not aborted)
+        self.info['lost'] = lost
+        self.info['aborted'] = aborted
+        self.info['success'] = success
+        self.info['game_id'] = self.game_instance['game_id']
 
 
 class TabooScorer(GameScorer):

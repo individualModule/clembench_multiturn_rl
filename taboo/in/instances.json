@@ -5,302 +5,452 @@
       "game_instances": [
         {
           "game_id": 0,
-          "target_word": "winter",
+          "target_word": "effect",
           "related_word": [
-            "cold",
-            "snow",
-            "season"
+            "impact",
+            "consequence",
+            "result"
           ],
-          "target_word_stem": "winter",
+          "target_word_stem": "effect",
           "related_word_stem": [
-            "cold",
-            "snow",
-            "season"
+            "impact",
+            "consequ",
+            "result"
           ]
         },
         {
           "game_id": 1,
-          "target_word": "independent",
+          "target_word": "password",
           "related_word": [
-            "autarkical",
-            "strong-minded",
-            "separate"
+            "Authentication",
+            "security",
+            "credentials"
           ],
-          "target_word_stem": "independ",
+          "target_word_stem": "password",
           "related_word_stem": [
-            "autark",
-            "strong-mind",
-            "separ"
+            "authent",
+            "secur",
+            "credenti"
           ]
         },
         {
           "game_id": 2,
-          "target_word": "fly",
+          "target_word": "strategic",
           "related_word": [
-            "action",
-            "insect",
-            "bug"
+            "tactical",
+            "planning",
+            "foresight"
           ],
-          "target_word_stem": "fly",
+          "target_word_stem": "strateg",
           "related_word_stem": [
-            "action",
-            "insect",
-            "bug"
+            "tactic",
+            "plan",
+            "foresight"
           ]
         },
         {
           "game_id": 3,
-          "target_word": "fort",
+          "target_word": "luxury",
           "related_word": [
-            "meet",
-            "garrison",
-            "fortify"
+            "Opulence",
+            "extravagance",
+            "elegance"
           ],
-          "target_word_stem": "fort",
+          "target_word_stem": "luxuri",
           "related_word_stem": [
-            "meet",
-            "garrison",
-            "fortif"
+            "opul",
+            "extravag",
+            "eleg"
           ]
         },
         {
           "game_id": 4,
-          "target_word": "jan",
+          "target_word": "domain",
           "related_word": [
-            "January",
-            "nickname",
-            "not"
+            "territory",
+            "sphere",
+            "realm"
           ],
-          "target_word_stem": "jan",
+          "target_word_stem": "domain",
           "related_word_stem": [
-            "january",
-            "nicknam",
-            "not"
+            "territori",
+            "sphere",
+            "realm"
           ]
         },
         {
           "game_id": 5,
-          "target_word": "energy",
+          "target_word": "happen",
           "related_word": [
-            "solar",
-            "power",
-            "electricity"
+            "Occur",
+            "transpire",
+            "ensue"
           ],
-          "target_word_stem": "energy",
+          "target_word_stem": "happen",
           "related_word_stem": [
-            "solar",
-            "power",
-            "electric"
+            "occur",
+            "transpir",
+            "ensu"
           ]
         },
         {
           "game_id": 6,
-          "target_word": "gate",
+          "target_word": "sort",
           "related_word": [
-            "door",
-            "fence",
-            "opening"
+            "arrange",
+            "organize",
+            "categorize"
           ],
-          "target_word_stem": "gate",
+          "target_word_stem": "sort",
           "related_word_stem": [
-            "door",
-            "fenc",
-            "open"
+            "arrang",
+            "organ",
+            "categor"
           ]
         },
         {
           "game_id": 7,
-          "target_word": "suck",
+          "target_word": "elizabeth",
           "related_word": [
-            "blow",
-            "absorb",
-            "sucking"
+            "queen",
+            "england",
+            "monarchy"
           ],
-          "target_word_stem": "suck",
+          "target_word_stem": "elizabeth",
           "related_word_stem": [
-            "blow",
-            "absorb",
-            "suck"
+            "queen",
+            "england",
+            "monarchi"
           ]
         },
         {
           "game_id": 8,
-          "target_word": "int",
+          "target_word": "serious",
           "related_word": [
-            "rpg",
-            "intelligence",
-            "programming"
+            "solemn",
+            "grave",
+            "earnest"
           ],
-          "target_word_stem": "int",
+          "target_word_stem": "serious",
           "related_word_stem": [
-            "rpg",
-            "intellig",
-            "program"
+            "solemn",
+            "grave",
+            "earnest"
           ]
         },
         {
           "game_id": 9,
-          "target_word": "half",
+          "target_word": "automotive",
           "related_word": [
-            "football",
-            "basketball",
-            "part"
+            "vehicle",
+            "engine",
+            "transmission"
           ],
-          "target_word_stem": "half",
+          "target_word_stem": "automot",
           "related_word_stem": [
-            "football",
-            "basketball",
-            "part"
+            "vehicl",
+            "engin",
+            "transmiss"
           ]
         },
         {
           "game_id": 10,
-          "target_word": "song",
+          "target_word": "approach",
           "related_word": [
-            "entertainment",
-            "musical",
-            "music"
+            "method",
+            "strategy",
+            "tactic"
           ],
-          "target_word_stem": "song",
+          "target_word_stem": "approach",
           "related_word_stem": [
-            "entertain",
-            "music",
-            "music"
+            "method",
+            "strategi",
+            "tactic"
           ]
         },
         {
           "game_id": 11,
-          "target_word": "consist",
+          "target_word": "station",
           "related_word": [
-            "be",
-            "dwell",
-            "match"
+            "terminal",
+            "depot",
+            "platform"
           ],
-          "target_word_stem": "consist",
+          "target_word_stem": "station",
           "related_word_stem": [
-            "be",
-            "dwell",
-            "match"
+            "termin",
+            "depot",
+            "platform"
           ]
         },
         {
           "game_id": 12,
-          "target_word": "sure",
+          "target_word": "audio",
           "related_word": [
-            "indisputable",
-            "certain",
-            "trusted"
+            "Sound",
+            "speaker",
+            "microphone"
           ],
-          "target_word_stem": "sure",
+          "target_word_stem": "audio",
           "related_word_stem": [
-            "indisput",
-            "certain",
-            "trust"
+            "sound",
+            "speaker",
+            "microphon"
           ]
         },
         {
           "game_id": 13,
-          "target_word": "pool",
+          "target_word": "chain",
           "related_word": [
-            "swiming",
-            "group",
-            "Swimming"
+            "link",
+            "necklace",
+            "reaction"
           ],
-          "target_word_stem": "pool",
+          "target_word_stem": "chain",
           "related_word_stem": [
-            "swim",
-            "group",
-            "swim"
+            "link",
+            "necklac",
+            "reaction"
           ]
         },
         {
           "game_id": 14,
-          "target_word": "council",
+          "target_word": "beach",
           "related_word": [
-            "decide",
-            "group",
-            "government"
+            "sand",
+            "ocean",
+            "waves"
           ],
-          "target_word_stem": "council",
+          "target_word_stem": "beach",
           "related_word_stem": [
-            "decid",
-            "group",
-            "govern"
+            "sand",
+            "ocean",
+            "wave"
           ]
         },
         {
           "game_id": 15,
-          "target_word": "sexy",
+          "target_word": "sponsor",
           "related_word": [
-            "toothsome",
-            "autoerotic",
-            "titillating"
+            "patron",
+            "backer",
+            "supporter"
           ],
-          "target_word_stem": "sexi",
+          "target_word_stem": "sponsor",
           "related_word_stem": [
-            "toothsom",
-            "autoerot",
-            "titil"
+            "patron",
+            "backer",
+            "support"
           ]
         },
         {
           "game_id": 16,
-          "target_word": "word",
+          "target_word": "bottle",
           "related_word": [
-            "sentence",
-            "language",
-            "unit"
+            "glass",
+            "cap",
+            "liquid"
           ],
-          "target_word_stem": "word",
+          "target_word_stem": "bottl",
           "related_word_stem": [
-            "sentenc",
-            "languag",
-            "unit"
+            "glass",
+            "cap",
+            "liquid"
           ]
         },
         {
           "game_id": 17,
-          "target_word": "care",
+          "target_word": "aug",
           "related_word": [
-            "concern",
-            "loving",
-            "love"
+            "August",
+            "augment",
+            "augur"
           ],
-          "target_word_stem": "care",
+          "target_word_stem": "aug",
           "related_word_stem": [
-            "concern",
-            "lov",
-            "love"
+            "august",
+            "augment",
+            "augur"
           ]
         },
         {
           "game_id": 18,
-          "target_word": "market",
+          "target_word": "wish",
           "related_word": [
-            "store",
-            "place",
-            "shopping"
+            "desire",
+            "hope",
+            "dream"
           ],
-          "target_word_stem": "market",
+          "target_word_stem": "wish",
           "related_word_stem": [
-            "store",
-            "place",
-            "shop"
+            "desir",
+            "hope",
+            "dream"
           ]
         },
         {
           "game_id": 19,
-          "target_word": "little",
+          "target_word": "look",
           "related_word": [
-            "big",
-            "small",
-            "tiny"
+            "See",
+            "glance",
+            "gaze"
           ],
-          "target_word_stem": "little",
+          "target_word_stem": "look",
           "related_word_stem": [
-            "big",
-            "small",
-            "tiny"
+            "see",
+            "glanc",
+            "gaze"
+          ]
+        },
+        {
+          "game_id": 20,
+          "target_word": "plate",
+          "related_word": [
+            "dish",
+            "platter",
+            "saucer"
+          ],
+          "target_word_stem": "plate",
+          "related_word_stem": [
+            "dish",
+            "platter",
+            "saucer"
+          ]
+        },
+        {
+          "game_id": 21,
+          "target_word": "effort",
+          "related_word": [
+            "labor",
+            "exertion",
+            "endeavor"
+          ],
+          "target_word_stem": "effort",
+          "related_word_stem": [
+            "labor",
+            "exert",
+            "endeavor"
+          ]
+        },
+        {
+          "game_id": 22,
+          "target_word": "topic",
+          "related_word": [
+            "Subject",
+            "theme",
+            "issue"
+          ],
+          "target_word_stem": "topic",
+          "related_word_stem": [
+            "subject",
+            "theme",
+            "issu"
+          ]
+        },
+        {
+          "game_id": 23,
+          "target_word": "keep",
+          "related_word": [
+            "hold",
+            "retain",
+            "maintain"
+          ],
+          "target_word_stem": "keep",
+          "related_word_stem": [
+            "hold",
+            "retain",
+            "maintain"
+          ]
+        },
+        {
+          "game_id": 24,
+          "target_word": "spot",
+          "related_word": [
+            "dot",
+            "stain",
+            "location"
+          ],
+          "target_word_stem": "spot",
+          "related_word_stem": [
+            "dot",
+            "stain",
+            "locat"
+          ]
+        },
+        {
+          "game_id": 25,
+          "target_word": "ability",
+          "related_word": [
+            "skill",
+            "talent",
+            "capability"
+          ],
+          "target_word_stem": "abil",
+          "related_word_stem": [
+            "skill",
+            "talent",
+            "capabl"
+          ]
+        },
+        {
+          "game_id": 26,
+          "target_word": "break",
+          "related_word": [
+            "fracture",
+            "shatter",
+            "split"
+          ],
+          "target_word_stem": "break",
+          "related_word_stem": [
+            "fractur",
+            "shatter",
+            "split"
+          ]
+        },
+        {
+          "game_id": 27,
+          "target_word": "believe",
+          "related_word": [
+            "trust",
+            "faith",
+            "conviction"
+          ],
+          "target_word_stem": "believ",
+          "related_word_stem": [
+            "trust",
+            "faith",
+            "convict"
+          ]
+        },
+        {
+          "game_id": 28,
+          "target_word": "physician",
+          "related_word": [
+            "doctor",
+            "medical",
+            "healthcare"
+          ],
+          "target_word_stem": "physician",
+          "related_word_stem": [
+            "doctor",
+            "medic",
+            "healthcar"
+          ]
+        },
+        {
+          "game_id": 29,
+          "target_word": "atlanta",
+          "related_word": [
+            "Georgia",
+            "Peachtree",
+            "Falcons"
+          ],
+          "target_word_stem": "atlanta",
+          "related_word_stem": [
+            "georgia",
+            "peachtre",
+            "falcon"
           ]
         }
       ],
@@ -313,302 +463,452 @@
       "game_instances": [
         {
           "game_id": 0,
-          "target_word": "ordinary",
+          "target_word": "antenna",
           "related_word": [
-            "common",
-            "normal",
-            "plain"
+            "receiver",
+            "transmitter",
+            "signal"
           ],
-          "target_word_stem": "ordinar",
+          "target_word_stem": "antenna",
           "related_word_stem": [
-            "common",
-            "normal",
-            "plain"
+            "receiv",
+            "transmitt",
+            "signal"
           ]
         },
         {
           "game_id": 1,
-          "target_word": "chicken",
+          "target_word": "jail",
           "related_word": [
-            "hen",
-            "rooster",
-            "bird"
+            "prison",
+            "cell",
+            "incarceration"
           ],
-          "target_word_stem": "chicken",
+          "target_word_stem": "jail",
           "related_word_stem": [
-            "hen",
-            "rooster",
-            "bird"
+            "prison",
+            "cell",
+            "incarcer"
           ]
         },
         {
           "game_id": 2,
-          "target_word": "impose",
+          "target_word": "aggregate",
           "related_word": [
-            "enforce",
-            "levy",
-            "inflict"
+            "collection",
+            "total",
+            "composite"
           ],
-          "target_word_stem": "impos",
+          "target_word_stem": "aggreg",
           "related_word_stem": [
-            "enforc",
-            "lev",
-            "inflict"
+            "collect",
+            "total",
+            "composit"
           ]
         },
         {
           "game_id": 3,
-          "target_word": "nelson",
+          "target_word": "surf",
           "related_word": [
-            "hold",
-            "nell",
-            "wrestling"
+            "wave",
+            "board",
+            "ocean"
           ],
-          "target_word_stem": "nelson",
+          "target_word_stem": "surf",
           "related_word_stem": [
-            "hold",
-            "nell",
-            "wrestl"
+            "wave",
+            "board",
+            "ocean"
           ]
         },
         {
           "game_id": 4,
-          "target_word": "rough",
+          "target_word": "placement",
           "related_word": [
-            "ciliated",
-            "sensation",
-            "roughish"
+            "positioning",
+            "arrangement",
+            "allocation"
           ],
-          "target_word_stem": "rough",
+          "target_word_stem": "placement",
           "related_word_stem": [
-            "ciliat",
-            "sensat",
-            "roughish"
+            "posit",
+            "arrang",
+            "alloc"
           ]
         },
         {
           "game_id": 5,
-          "target_word": "chapel",
+          "target_word": "anderson",
           "related_word": [
-            "praying",
-            "worshipping",
-            "meditation"
+            "Cooper",
+            "Silva",
+            "Andersons"
           ],
-          "target_word_stem": "chapel",
+          "target_word_stem": "anderson",
           "related_word_stem": [
-            "pray",
-            "worship",
-            "medit"
+            "cooper",
+            "silva",
+            "anderson"
           ]
         },
         {
           "game_id": 6,
-          "target_word": "translate",
+          "target_word": "dublin",
           "related_word": [
-            "equal",
-            "physics",
-            "genetics"
+            "Ireland",
+            "Liffey",
+            "Temple Bar"
           ],
-          "target_word_stem": "translat",
+          "target_word_stem": "dublin",
           "related_word_stem": [
-            "equal",
-            "physic",
-            "genet"
+            "ireland",
+            "liffey",
+            "temple bar"
           ]
         },
         {
           "game_id": 7,
-          "target_word": "primarily",
+          "target_word": "pos",
           "related_word": [
-            "primary",
-            "focus",
-            "principally"
+            "position",
+            "positive",
+            "possibility"
           ],
-          "target_word_stem": "primar",
+          "target_word_stem": "pos",
           "related_word_stem": [
-            "primar",
-            "focus",
-            "princip"
+            "posit",
+            "posit",
+            "possibl"
           ]
         },
         {
           "game_id": 8,
-          "target_word": "retrieve",
+          "target_word": "perfume",
           "related_word": [
-            "remember",
-            "recover",
-            "bring"
+            "Fragrance",
+            "aroma",
+            "scent"
           ],
-          "target_word_stem": "retriev",
+          "target_word_stem": "perfum",
           "related_word_stem": [
-            "rememb",
-            "recov",
-            "bring"
+            "fragranc",
+            "aroma",
+            "scent"
           ]
         },
         {
           "game_id": 9,
-          "target_word": "fault",
+          "target_word": "advertiser",
           "related_word": [
-            "blame",
-            "electronics",
-            "geology"
+            "marketer",
+            "promoter",
+            "sponsor"
           ],
-          "target_word_stem": "fault",
+          "target_word_stem": "advertis",
           "related_word_stem": [
-            "blame",
-            "electron",
-            "geolog"
+            "market",
+            "promot",
+            "sponsor"
           ]
         },
         {
           "game_id": 10,
-          "target_word": "karen",
+          "target_word": "bracket",
           "related_word": [
-            "Tibeto-Burman",
-            "historical",
-            "human"
+            "parentheses",
+            "support",
+            "category"
           ],
-          "target_word_stem": "karen",
+          "target_word_stem": "bracket",
           "related_word_stem": [
-            "tibeto-burman",
-            "histor",
-            "human"
+            "parenthes",
+            "support",
+            "categori"
           ]
         },
         {
           "game_id": 11,
-          "target_word": "ferry",
+          "target_word": "scream",
           "related_word": [
-            "boat",
-            "cargo",
-            "bring"
+            "Yell",
+            "shriek",
+            "howl"
           ],
-          "target_word_stem": "ferry",
+          "target_word_stem": "scream",
           "related_word_stem": [
-            "boat",
-            "cargo",
-            "bring"
+            "yell",
+            "shriek",
+            "howl"
           ]
         },
         {
           "game_id": 12,
-          "target_word": "coastal",
+          "target_word": "pursue",
           "related_word": [
-            "maritime",
-            "coastwise",
-            "inshore"
+            "chase",
+            "follow",
+            "seek"
           ],
-          "target_word_stem": "coastal",
+          "target_word_stem": "pursu",
           "related_word_stem": [
-            "maritime",
-            "coastwise",
-            "inshore"
+            "chase",
+            "follow",
+            "seek"
           ]
         },
         {
           "game_id": 13,
-          "target_word": "ordinance",
+          "target_word": "recorder",
           "related_word": [
-            "law",
-            "regulation",
-            "ordination"
+            "flute",
+            "instrument",
+            "music"
           ],
-          "target_word_stem": "ordin",
+          "target_word_stem": "record",
           "related_word_stem": [
-            "law",
-            "regulat",
-            "ordinat"
+            "flute",
+            "instrument",
+            "music"
           ]
         },
         {
           "game_id": 14,
-          "target_word": "setup",
+          "target_word": "norman",
           "related_word": [
-            "frame-up",
-            "manner",
-            "apparatus"
+            "Conquest",
+            "England",
+            "Normandy"
           ],
-          "target_word_stem": "setup",
+          "target_word_stem": "norman",
           "related_word_stem": [
-            "frame-up",
-            "manner",
-            "apparatus"
+            "conquest",
+            "england",
+            "normandi"
           ]
         },
         {
           "game_id": 15,
-          "target_word": "institutional",
+          "target_word": "canyon",
           "related_word": [
-            "institutionalised",
-            "institution",
-            "uninteresting"
+            "Gorge",
+            "ravine",
+            "chasm"
           ],
-          "target_word_stem": "institut",
+          "target_word_stem": "canyon",
           "related_word_stem": [
-            "institutionalis",
-            "institut",
-            "uninterest"
+            "gorg",
+            "ravin",
+            "chasm"
           ]
         },
         {
           "game_id": 16,
-          "target_word": "colored",
+          "target_word": "seeker",
           "related_word": [
-            "garnet-coloured",
-            "straw-coloured",
-            "indigo"
+            "Explorer",
+            "searcher",
+            "quester"
           ],
-          "target_word_stem": "color",
+          "target_word_stem": "seeker",
           "related_word_stem": [
-            "garnet-colour",
-            "straw-colour",
-            "indigo"
+            "explor",
+            "searcher",
+            "quester"
           ]
         },
         {
           "game_id": 17,
-          "target_word": "dozen",
+          "target_word": "statute",
           "related_word": [
-            "hundredweight",
-            "12",
-            "twelve"
+            "law",
+            "regulation",
+            "legislation"
           ],
-          "target_word_stem": "dozen",
+          "target_word_stem": "statut",
           "related_word_stem": [
-            "hundredweight",
-            "12",
-            "twelve"
+            "law",
+            "regul",
+            "legisl"
           ]
         },
         {
           "game_id": 18,
-          "target_word": "debug",
+          "target_word": "geographic",
           "related_word": [
-            "correct",
-            "electronic",
-            "bug"
+            "Topography",
+            "cartography",
+            "spatial"
           ],
-          "target_word_stem": "debug",
+          "target_word_stem": "geograph",
           "related_word_stem": [
-            "correct",
-            "electron",
-            "bug"
+            "topographi",
+            "cartographi",
+            "spatial"
           ]
         },
         {
           "game_id": 19,
-          "target_word": "dependent",
+          "target_word": "admit",
           "related_word": [
-            "dependant",
-            "subordinate",
-            "parasitical"
+            "confess",
+            "acknowledge",
+            "concede"
           ],
-          "target_word_stem": "depend",
+          "target_word_stem": "admit",
           "related_word_stem": [
-            "depend",
-            "subordin",
-            "parasit"
+            "confess",
+            "acknowledg",
+            "conced"
+          ]
+        },
+        {
+          "game_id": 20,
+          "target_word": "crazy",
+          "related_word": [
+            "insane",
+            "mad",
+            "berserk"
+          ],
+          "target_word_stem": "crazi",
+          "related_word_stem": [
+            "insan",
+            "mad",
+            "berserk"
+          ]
+        },
+        {
+          "game_id": 21,
+          "target_word": "assault",
+          "related_word": [
+            "attack",
+            "battery",
+            "aggression"
+          ],
+          "target_word_stem": "assault",
+          "related_word_stem": [
+            "attack",
+            "batteri",
+            "aggress"
+          ]
+        },
+        {
+          "game_id": 22,
+          "target_word": "canvas",
+          "related_word": [
+            "painting",
+            "fabric",
+            "artist"
+          ],
+          "target_word_stem": "canva",
+          "related_word_stem": [
+            "paint",
+            "fabric",
+            "artist"
+          ]
+        },
+        {
+          "game_id": 23,
+          "target_word": "premise",
+          "related_word": [
+            "assumption",
+            "proposition",
+            "hypothesis"
+          ],
+          "target_word_stem": "premis",
+          "related_word_stem": [
+            "assumpt",
+            "proposit",
+            "hypothesi"
+          ]
+        },
+        {
+          "game_id": 24,
+          "target_word": "respondent",
+          "related_word": [
+            "participant",
+            "interviewee",
+            "defendant"
+          ],
+          "target_word_stem": "respond",
+          "related_word_stem": [
+            "particip",
+            "interviewe",
+            "defend"
+          ]
+        },
+        {
+          "game_id": 25,
+          "target_word": "machinery",
+          "related_word": [
+            "equipment",
+            "apparatus",
+            "device"
+          ],
+          "target_word_stem": "machineri",
+          "related_word_stem": [
+            "equip",
+            "apparatus",
+            "devic"
+          ]
+        },
+        {
+          "game_id": 26,
+          "target_word": "regulate",
+          "related_word": [
+            "control",
+            "manage",
+            "govern"
+          ],
+          "target_word_stem": "regul",
+          "related_word_stem": [
+            "control",
+            "manag",
+            "govern"
+          ]
+        },
+        {
+          "game_id": 27,
+          "target_word": "nissan",
+          "related_word": [
+            "cars",
+            "Japan",
+            "automaker"
+          ],
+          "target_word_stem": "nissan",
+          "related_word_stem": [
+            "car",
+            "japan",
+            "automak"
+          ]
+        },
+        {
+          "game_id": 28,
+          "target_word": "capable",
+          "related_word": [
+            "competent",
+            "able",
+            "proficient"
+          ],
+          "target_word_stem": "capabl",
+          "related_word_stem": [
+            "compet",
+            "abl",
+            "profici"
+          ]
+        },
+        {
+          "game_id": 29,
+          "target_word": "voltage",
+          "related_word": [
+            "Current",
+            "resistance",
+            "power"
+          ],
+          "target_word_stem": "voltag",
+          "related_word_stem": [
+            "current",
+            "resist",
+            "power"
           ]
         }
       ],
@@ -621,302 +921,452 @@
       "game_instances": [
         {
           "game_id": 0,
-          "target_word": "chan",
+          "target_word": "porsche",
           "related_word": [
-            "chinese",
-            "internet",
-            "irc"
+            "Automobile",
+            "luxury",
+            "performance"
           ],
-          "target_word_stem": "chan",
+          "target_word_stem": "porsch",
           "related_word_stem": [
-            "chines",
-            "internet",
-            "irc"
+            "automobil",
+            "luxuri",
+            "perform"
           ]
         },
         {
           "game_id": 1,
-          "target_word": "rifle",
+          "target_word": "motorsport",
           "related_word": [
-            "shooting",
-            "long",
-            "gun"
+            "racing",
+            "circuit",
+            "horsepower"
           ],
-          "target_word_stem": "rifl",
+          "target_word_stem": "motorsport",
           "related_word_stem": [
-            "shoot",
-            "long",
-            "gun"
+            "race",
+            "circuit",
+            "horsepow"
           ]
         },
         {
           "game_id": 2,
-          "target_word": "ugly",
+          "target_word": "gag",
           "related_word": [
-            "displeasing",
-            "despicable",
-            "unattractive"
+            "joke",
+            "silence",
+            "choke"
           ],
-          "target_word_stem": "ugly",
+          "target_word_stem": "gag",
           "related_word_stem": [
-            "displeas",
-            "despic",
-            "unattract"
+            "joke",
+            "silenc",
+            "choke"
           ]
         },
         {
           "game_id": 3,
-          "target_word": "feather",
+          "target_word": "hunger",
           "related_word": [
-            "fledge",
-            "bird",
-            "rotation"
+            "appetite",
+            "starvation",
+            "craving"
           ],
-          "target_word_stem": "feather",
+          "target_word_stem": "hunger",
           "related_word_stem": [
-            "fledg",
-            "bird",
-            "rotat"
+            "appetit",
+            "starvat",
+            "crave"
           ]
         },
         {
           "game_id": 4,
-          "target_word": "hatch",
+          "target_word": "mileage",
           "related_word": [
-            "inlay",
-            "hatchback",
-            "shading"
+            "distance",
+            "consumption",
+            "efficiency"
           ],
-          "target_word_stem": "hatch",
+          "target_word_stem": "mileag",
           "related_word_stem": [
-            "inlay",
-            "hatchback",
-            "shad"
+            "distanc",
+            "consumpt",
+            "effici"
           ]
         },
         {
           "game_id": 5,
-          "target_word": "richardson",
+          "target_word": "cia",
           "related_word": [
-            "richard",
-            "texas",
-            "usa"
+            "intelligence",
+            "espionage",
+            "agency"
           ],
-          "target_word_stem": "richardson",
+          "target_word_stem": "cia",
           "related_word_stem": [
-            "richard",
-            "texas",
-            "usa"
+            "intellig",
+            "espionag",
+            "agenc"
           ]
         },
         {
           "game_id": 6,
-          "target_word": "stranger",
+          "target_word": "refill",
           "related_word": [
-            "know",
-            "person",
-            "meeting"
+            "replenish",
+            "restock",
+            "reload"
           ],
-          "target_word_stem": "stranger",
+          "target_word_stem": "refil",
           "related_word_stem": [
-            "know",
-            "person",
-            "meet"
+            "replenish",
+            "restock",
+            "reload"
           ]
         },
         {
           "game_id": 7,
-          "target_word": "bradley",
+          "target_word": "unity",
           "related_word": [
-            "brad",
-            "england",
-            "bradlea"
+            "harmony",
+            "solidarity",
+            "cohesion"
           ],
-          "target_word_stem": "bradley",
+          "target_word_stem": "uniti",
           "related_word_stem": [
-            "brad",
-            "england",
-            "bradlea"
+            "harmoni",
+            "solidar",
+            "cohes"
           ]
         },
         {
           "game_id": 8,
-          "target_word": "gibson",
+          "target_word": "satin",
           "related_word": [
-            "gin",
-            "son",
-            "vermouth"
+            "Silk",
+            "Glossy",
+            "Fabric"
           ],
-          "target_word_stem": "gibson",
+          "target_word_stem": "satin",
           "related_word_stem": [
-            "gin",
-            "son",
-            "vermouth"
+            "silk",
+            "glossi",
+            "fabric"
           ]
         },
         {
           "game_id": 9,
-          "target_word": "angry",
+          "target_word": "sweat",
           "related_word": [
-            "wrathful",
-            "unhealthy",
-            "black"
+            "perspiration",
+            "moisture",
+            "exertion"
           ],
-          "target_word_stem": "angr",
+          "target_word_stem": "sweat",
           "related_word_stem": [
-            "wrath",
-            "unhealth",
-            "black"
+            "perspir",
+            "moistur",
+            "exert"
           ]
         },
         {
           "game_id": 10,
-          "target_word": "harmful",
+          "target_word": "sagem",
           "related_word": [
-            "bruising",
-            "harm",
-            "mischievous"
+            "technology",
+            "telecommunications",
+            "electronics"
           ],
-          "target_word_stem": "harm",
+          "target_word_stem": "sagem",
           "related_word_stem": [
-            "bruis",
-            "harm",
-            "mischie"
+            "technolog",
+            "telecommun",
+            "electron"
           ]
         },
         {
           "game_id": 11,
-          "target_word": "brandon",
+          "target_word": "persian",
           "related_word": [
-            "florida",
-            "england",
-            "colorado"
+            "Iran",
+            "Farsi",
+            "cat"
           ],
-          "target_word_stem": "brandon",
+          "target_word_stem": "persian",
           "related_word_stem": [
-            "florida",
-            "england",
-            "colorado"
+            "iran",
+            "farsi",
+            "cat"
           ]
         },
         {
           "game_id": 12,
-          "target_word": "hyundai",
+          "target_word": "chrysler",
           "related_word": [
-            "car",
-            "seoul",
-            "company"
+            "automobile",
+            "mopar",
+            "detroit"
           ],
-          "target_word_stem": "hyundai",
+          "target_word_stem": "chrysler",
           "related_word_stem": [
-            "car",
-            "seoul",
-            "company"
+            "automobil",
+            "mopar",
+            "detroit"
           ]
         },
         {
           "game_id": 13,
-          "target_word": "surrey",
+          "target_word": "bras",
           "related_word": [
-            "motorized",
-            "England",
-            "carriage"
+            "lingerie",
+            "support",
+            "undergarment"
           ],
-          "target_word_stem": "surrey",
+          "target_word_stem": "bras",
           "related_word_stem": [
-            "motor",
-            "england",
-            "carriage"
+            "lingeri",
+            "support",
+            "undergar"
           ]
         },
         {
           "game_id": 14,
-          "target_word": "parse",
+          "target_word": "concord",
           "related_word": [
-            "closely",
-            "grammar",
-            "analyze"
+            "harmony",
+            "agreement",
+            "accord"
           ],
-          "target_word_stem": "pars",
+          "target_word_stem": "concord",
           "related_word_stem": [
-            "close",
-            "grammar",
-            "analyz"
+            "harmoni",
+            "agreement",
+            "accord"
           ]
         },
         {
           "game_id": 15,
-          "target_word": "halifax",
+          "target_word": "symantec",
           "related_word": [
-            "fax",
-            "yorkshire",
-            "virginia"
+            "Norton",
+            "cybersecurity",
+            "software"
           ],
-          "target_word_stem": "halifax",
+          "target_word_stem": "symantec",
           "related_word_stem": [
-            "fax",
-            "yorkshire",
-            "virginia"
+            "norton",
+            "cybersecur",
+            "softwar"
           ]
         },
         {
           "game_id": 16,
-          "target_word": "characterization",
+          "target_word": "elf",
           "related_word": [
-            "portrayal",
-            "description",
-            "characterize"
+            "fairy",
+            "sprite",
+            "gnome"
           ],
-          "target_word_stem": "character",
+          "target_word_stem": "elf",
           "related_word_stem": [
-            "portray",
-            "descript",
-            "character"
+            "fairi",
+            "sprite",
+            "gnome"
           ]
         },
         {
           "game_id": 17,
-          "target_word": "landmark",
+          "target_word": "momentum",
           "related_word": [
-            "position",
-            "juncture",
-            "surgery"
+            "velocity",
+            "inertia",
+            "impulse"
           ],
-          "target_word_stem": "landmark",
+          "target_word_stem": "momentum",
           "related_word_stem": [
-            "position",
-            "juncture",
-            "surgery"
+            "veloc",
+            "inertia",
+            "impuls"
           ]
         },
         {
           "game_id": 18,
-          "target_word": "troubleshoot",
+          "target_word": "wit",
           "related_word": [
-            "debug",
-            "trouble-shoot",
-            "troubleshooting"
+            "humor",
+            "cleverness",
+            "intelligence"
           ],
-          "target_word_stem": "troubleshoot",
+          "target_word_stem": "wit",
           "related_word_stem": [
-            "debug",
-            "trouble-shoot",
-            "troubleshoot"
+            "humor",
+            "clever",
+            "intellig"
           ]
         },
         {
           "game_id": 19,
-          "target_word": "realistic",
+          "target_word": "clarify",
           "related_word": [
-            "down-to-earth",
-            "practical",
-            "hard-nosed"
+            "Explain",
+            "elucidate",
+            "illuminate"
           ],
-          "target_word_stem": "realist",
+          "target_word_stem": "clarifi",
           "related_word_stem": [
-            "down-to-earth",
-            "practic",
-            "hard-nose"
+            "explain",
+            "elucid",
+            "illumin"
+          ]
+        },
+        {
+          "game_id": 20,
+          "target_word": "nudity",
+          "related_word": [
+            "Nakedness",
+            "bareness",
+            "exposure"
+          ],
+          "target_word_stem": "nuditi",
+          "related_word_stem": [
+            "naked",
+            "bare",
+            "exposur"
+          ]
+        },
+        {
+          "game_id": 21,
+          "target_word": "ivory",
+          "related_word": [
+            "Elephant",
+            "tusk",
+            "poaching"
+          ],
+          "target_word_stem": "ivori",
+          "related_word_stem": [
+            "eleph",
+            "tusk",
+            "poach"
+          ]
+        },
+        {
+          "game_id": 22,
+          "target_word": "casualty",
+          "related_word": [
+            "victim",
+            "injury",
+            "fatality"
+          ],
+          "target_word_stem": "casualti",
+          "related_word_stem": [
+            "victim",
+            "injuri",
+            "fatal"
+          ]
+        },
+        {
+          "game_id": 23,
+          "target_word": "sustainability",
+          "related_word": [
+            "environment",
+            "conservation",
+            "resilience"
+          ],
+          "target_word_stem": "sustain",
+          "related_word_stem": [
+            "environ",
+            "conserv",
+            "resili"
+          ]
+        },
+        {
+          "game_id": 24,
+          "target_word": "cindy",
+          "related_word": [
+            "Cinderella",
+            "Crawford",
+            "Lauper"
+          ],
+          "target_word_stem": "cindi",
+          "related_word_stem": [
+            "cinderella",
+            "crawford",
+            "lauper"
+          ]
+        },
+        {
+          "game_id": 25,
+          "target_word": "manor",
+          "related_word": [
+            "Estate",
+            "mansion",
+            "residence"
+          ],
+          "target_word_stem": "manor",
+          "related_word_stem": [
+            "estat",
+            "mansion",
+            "resid"
+          ]
+        },
+        {
+          "game_id": 26,
+          "target_word": "dpi",
+          "related_word": [
+            "resolution",
+            "printing",
+            "pixels"
+          ],
+          "target_word_stem": "dpi",
+          "related_word_stem": [
+            "resolut",
+            "print",
+            "pixel"
+          ]
+        },
+        {
+          "game_id": 27,
+          "target_word": "housewife",
+          "related_word": [
+            "homemaker",
+            "spouse",
+            "caregiver"
+          ],
+          "target_word_stem": "housewif",
+          "related_word_stem": [
+            "homemak",
+            "spous",
+            "caregiv"
+          ]
+        },
+        {
+          "game_id": 28,
+          "target_word": "chad",
+          "related_word": [
+            "Africa",
+            "Lake",
+            "Debris"
+          ],
+          "target_word_stem": "chad",
+          "related_word_stem": [
+            "africa",
+            "lake",
+            "debri"
+          ]
+        },
+        {
+          "game_id": 29,
+          "target_word": "prejudice",
+          "related_word": [
+            "Bias",
+            "discrimination",
+            "intolerance"
+          ],
+          "target_word_stem": "prejudic",
+          "related_word_stem": [
+            "bias",
+            "discrimin",
+            "intoler"
           ]
         }
       ],

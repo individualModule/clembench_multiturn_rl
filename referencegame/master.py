@@ -32,6 +32,7 @@ class InstructionGiver(Player):
 class ReferenceGame:
 
     def __init__(self, game_instance: Dict):
+        self.game_instance = game_instance
         self.lang = game_instance['lang']
         self.p1_mode = game_instance['p1_mode']
         self.p2_mode = game_instance['p2_mode']
@@ -53,6 +54,10 @@ class ReferenceGame:
 
         self.terminate = False
 
+
+        self.success = False
+        self.lose = False
+        self.abort = False
 
 class ReferenceGameMaster(DialogueGameMaster):
 
@@ -97,6 +102,8 @@ class ReferenceGameMaster(DialogueGameMaster):
                     return True
             self.game.terminate = True
             self.log_to_self("invalid format", "Invalid generated expression")
+
+            self.abort = True
             return False
         elif player == self.instruction_follower:
             # Game only has one round, so we terminate regardless of the response
@@ -109,6 +116,8 @@ class ReferenceGameMaster(DialogueGameMaster):
                     # in strict mode, the model should only produce the label
                     return True
             self.log_to_self("invalid format", "Invalid generated expression")
+
+            self.abort = True
             return False
         
     def _parse_response(self, player, response):
@@ -149,13 +158,42 @@ class ReferenceGameMaster(DialogueGameMaster):
         else:
             if parsed_response in self.game.target_grid_name:
                 self.log_to_self('parse_correct', parsed_response)
+                self.success = True
             else:
                 self.log_to_self('parse_wrong', parsed_response)
-
+                self.lose = True
+        
     def _does_game_proceed(self):
         if self.game.terminate:
             return False
         return True
+
+
+    def compute_response_score(self, parsed_response, context):
+        """
+        Compute the response score for the current turn.
+
+        """
+        
+        return 0
+    
+    def compute_episode_score(self):
+        """
+        Returns speed as the metric
+        """
+        if self.success:
+            return 100
+        if self.abort:
+            return -100
+        
+        return 0
+
+
+    def _on_after_game(self):
+        self.info['lost'] = self.lose
+        self.info['aborted'] = self.abort
+        self.info['success'] = self.success
+        self.info['game_id'] = self.game_instance['game_id']
 
 class ReferenceGameScorer(GameScorer):
 

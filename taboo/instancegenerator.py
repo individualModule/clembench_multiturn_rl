@@ -12,12 +12,13 @@ import logging
 import openai
 import requests
 import argparse
+import time
 
 import nltk
 
 from clemcore.clemgame import GameInstanceGenerator
 
-N_INSTANCES = 20  # how many different target words
+N_INSTANCES = 30  # how many different target words
 N_GUESSES = 3  # how many tries the guesser will have
 N_RELATED_WORDS = 3
 VERSION = "v2.0"
@@ -30,6 +31,7 @@ logger = logging.getLogger(__name__)
 # Seed for reproducibility
 # random.seed(87326423)  # v1 seed
 # random.seed(73128361)  # v2.0 seed
+random.seed(28) # for training instances
 
 class TabooGameInstanceGenerator(GameInstanceGenerator):
 
@@ -45,7 +47,7 @@ class TabooGameInstanceGenerator(GameInstanceGenerator):
         # prepare related word generation
         lang = kwargs["lang"]
         mode = kwargs["mode"]
-        assert mode == "manual", "Only support manual related word selection for now"
+        # assert mode == "manual", "Only support manual related word selection for now"
 
         taboo_words = self.load_json(WORD_LISTS.format(lang))
 
@@ -158,21 +160,23 @@ class TabooGameInstanceGenerator(GameInstanceGenerator):
         """
         try:
             # Prompt for Chat model
+            time.sleep(0.3)
             messages = [
                 {"role": "system", "content": "You are a helpful assistant."},
-                {"role": "user", "content": f"Give me {N_RELATED_WORDS} words that are related to '{target_word}'."}
+                {"role": "user", "content": f"Give me {N_RELATED_WORDS} words that are related to '{target_word}'. DO NOT WRITE ANYTHING ELSE PLEASE OR YOU WILL BREAK MY SCRIPTS. Just respond like this: word_1, word_2, word_3"}
             ]
 
             # Request to the ChatCompletion-API
-            response = openai.ChatCompletion.create(
-                model="gpt-3.5-turbo",  # or "gpt-4.0-turbo" if available
+
+            response = openai.chat.completions.create(
+                model="gpt-4o",  # or "gpt-4.0-turbo" if available
                 messages=messages,
                 max_tokens=50,
                 temperature=0.7
             )
-
-            raw_response = response['choices'][0]['message']['content'].strip()
-
+            # raw_response = response['choices'][0]['message']['content'].strip()
+            raw_response = response.choices[0].message.content.strip()
+            print(raw_response)
             # Standardize the response
             if "\n" in raw_response:  # Check for newline-separated list
                 related_words = [line.split(".")[-1].strip() for line in raw_response.split("\n") if line.strip()]
@@ -181,13 +185,14 @@ class TabooGameInstanceGenerator(GameInstanceGenerator):
 
             return related_words[:self.n]  # limit the number of related words
         except Exception as e:
+            print(e)
             logger.error(f"Error generating related words for '{target_word}': {e}")
             return []
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Generate Taboo game instances.")
-    parser.add_argument("-m", "--mode", choices=["manual", "conceptnet", "openai"], default="conceptnet",
+    parser.add_argument("-m", "--mode", choices=["manual", "conceptnet", "openai"], default="openai",
                         help="Choose whether to use ConceptNet or OpenAI.")
     args = parser.parse_args()
-    TabooGameInstanceGenerator().generate(seed=73128361, mode=args.mode)
+    TabooGameInstanceGenerator().generate(seed=28, mode=args.mode, lang="en")
