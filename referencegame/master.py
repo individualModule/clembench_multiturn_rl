@@ -32,7 +32,6 @@ class InstructionGiver(Player):
 class ReferenceGame:
 
     def __init__(self, game_instance: Dict):
-        self.game_instance = game_instance
         self.lang = game_instance['lang']
         self.p1_mode = game_instance['p1_mode']
         self.p2_mode = game_instance['p2_mode']
@@ -55,16 +54,17 @@ class ReferenceGame:
         self.terminate = False
 
 
-        self.success = False
-        self.lose = False
-        self.abort = False
 
 class ReferenceGameMaster(DialogueGameMaster):
 
     def __init__(self, game_name: str, game_path: str, experiment: Dict, player_models: List[Model]):
         super().__init__(game_name, game_path, experiment, player_models)
+        self.success = False
+        self.lose = False
+        self.abort = False
 
     def _on_setup(self, **game_instance):
+        self.game_instance = game_instance
         self.game = ReferenceGame(game_instance)
         self.instruction_giver = InstructionGiver(self.player_models[0],
                                                   name="Player 1",
