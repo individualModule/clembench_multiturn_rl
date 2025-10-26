@@ -1,66 +1,126 @@
 {
   "experiments": [
     {
-      "name": "high_frequency_words_clue_with_critic",
+      "name": "high_frequency_words_clue_no_critic",
       "game_instances": [
         {
-          "game_id": 1,
+          "game_id": 0,
           "target_word": "model",
           "target_word_clue": "display",
           "target_word_difficulty": "high_frequency"
         },
         {
-          "game_id": 2,
+          "game_id": 1,
           "target_word": "dogma",
           "target_word_clue": "church teachings",
           "target_word_difficulty": "high_frequency"
         },
         {
-          "game_id": 3,
+          "game_id": 2,
           "target_word": "horny",
           "target_word_clue": "like rhinos",
           "target_word_difficulty": "high_frequency"
         },
         {
-          "game_id": 4,
+          "game_id": 3,
           "target_word": "vigil",
           "target_word_clue": "watch",
           "target_word_difficulty": "high_frequency"
         },
         {
-          "game_id": 5,
+          "game_id": 4,
           "target_word": "creme",
           "target_word_clue": "food topping",
           "target_word_difficulty": "high_frequency"
         },
         {
-          "game_id": 6,
+          "game_id": 5,
           "target_word": "otter",
           "target_word_clue": "mink's relative",
           "target_word_difficulty": "high_frequency"
         },
         {
-          "game_id": 7,
+          "game_id": 6,
           "target_word": "stare",
           "target_word_clue": "rubberneck",
           "target_word_difficulty": "high_frequency"
         },
         {
-          "game_id": 8,
+          "game_id": 7,
           "target_word": "prong",
           "target_word_clue": "tine",
           "target_word_difficulty": "high_frequency"
         },
         {
-          "game_id": 9,
+          "game_id": 8,
           "target_word": "crony",
           "target_word_clue": "back-room fellow",
           "target_word_difficulty": "high_frequency"
         },
         {
-          "game_id": 10,
+          "game_id": 9,
           "target_word": "grain",
           "target_word_clue": "rye or corn",
+          "target_word_difficulty": "high_frequency"
+        },
+        {
+          "game_id": 10,
+          "target_word": "acute",
+          "target_word_clue": "sharp",
+          "target_word_difficulty": "high_frequency"
+        },
+        {
+          "game_id": 11,
+          "target_word": "blade",
+          "target_word_clue": "plow part",
+          "target_word_difficulty": "high_frequency"
+        },
+        {
+          "game_id": 12,
+          "target_word": "wacky",
+          "target_word_clue": "amusingly eccentric",
+          "target_word_difficulty": "high_frequency"
+        },
+        {
+          "game_id": 13,
+          "target_word": "extol",
+          "target_word_clue": "eulogize",
+          "target_word_difficulty": "high_frequency"
+        },
+        {
+          "game_id": 14,
+          "target_word": "polka",
+          "target_word_clue": "lively dance",
+          "target_word_difficulty": "high_frequency"
+        },
+        {
+          "game_id": 15,
+          "target_word": "smear",
+          "target_word_clue": "ruin, as calligraphy",
+          "target_word_difficulty": "high_frequency"
+        },
+        {
+          "game_id": 16,
+          "target_word": "radar",
+          "target_word_clue": "\"m*a*s*h\" character",
+          "target_word_difficulty": "high_frequency"
+        },
+        {
+          "game_id": 17,
+          "target_word": "quail",
+          "target_word_clue": "shrink with fear",
+          "target_word_difficulty": "high_frequency"
+        },
+        {
+          "game_id": 18,
+          "target_word": "havoc",
+          "target_word_clue": "june in hollywood",
+          "target_word_difficulty": "high_frequency"
+        },
+        {
+          "game_id": 19,
+          "target_word": "juice",
+          "target_word_clue": "power",
           "target_word_difficulty": "high_frequency"
         }
       ],
@@ -13047,72 +13107,132 @@
         "zymic"
       ],
       "use_clue": true,
-      "use_critic": true,
+      "use_critic": false,
       "system_definition": "You are a language wizard who likes to guess words by using the given rules.",
-      "guesser_prompt": "You are a language wizard who likes to guess words by using the given rules.\n\nWelcome to Wordle! You have six attempts to guess the target word, a valid English word of five lowercase letters (a-z). Please use the tags \"explanation:\" and \"guess:\" to provide a concise explanation for each guess.\n\nTo help you make an informed guess, you will receive a clue for the word, such as\nclue: \"snowy white\"\n\nHere is an example guess based on the clue:\nexplanation: In the fairy tail Snow White, the girl is killed because she eats a poisoned apple. And the word apple has 5 letters.\nguess: apple\n\nI will then indicate whether I agree or disagree with your guess and provide rationale, but agreeing with a guess does not confirm its correctness. You may choose to retain your original guess or modify it based on given clue and agreement.\n\nAfter each guess, your answer will be validated, and you will receive feedback indicating which letters are correct (green), which letters are correct but in the wrong position (yellow), and which letters are incorrect (red). This feedback can be useful in determining which letters to include or exclude in your next guess.\n\nFor example, the feedback for \"apple\" might be:\nguess_feedback: a<yellow> p<yellow> p<green> l<yellow> e<red>\n\nHere are some rules to keep in mind:\n1. Please do not generate any guess feedback or clue on your own\n2. Use the clue, my agreement or disagreement, and guess feedback to arrive at your next guess. This should be reflected in your explanation as well.\n\nDo not generate any other text.\n\nLet's begin with your first guess.",
-      "guesser_critic_prompt": "I need your assistance with a word game in which we need to find a 5-letter word using a clue, a guess and an explanation for the guess.\n\nFor example, if the clue is \"snow white\" and the guess is \"apple\", you will get the information like this:\nclue: snow white\nexplanation: the fairy tale Snow White involves the girl eating a poisoned apple, which has 5 letters.\nguess: apple\n\nYour task is to either agree or disagree with my guess based on the given clue.\n\nIf you disagree, I will make another guess, and if you agree, I will proceed in the game using the same guess.\n\nInitially, guess feedback is not available, but as the game proceeds, it becomes available. The guess feedback is not for current guess, but rather an indication of what letters can be present in the current guess. A letter highlighted in green indicates that it is a correct letter in the correct position, while yellow indicates that it is a correct letter in the wrong position, and red indicates a wrong letter. At this point, you should use all the provided information, including the clue, guess, explanation, and guess feedback, to decide whether the given guess matches the clue, and also stick to guess feedback or not.\n\nPlease respond in lowercase letters and stick to this format:\nexplanation: your reason for doing so\nagreement: yes or no\n\nPlease note that you must not guess any word based on the riddle clue and stick to the given format while responding.\n\nDo not generate any other text.\n\nLet's begin!"
+      "guesser_prompt": "You are a language wizard who likes to guess words by using the given rules.\n\nWelcome to Wordle! You have six attempts to guess the target word, a valid English word of five lowercase letters (a-z). Please use the tags \"explanation:\" and \"guess:\" to provide a concise explanation for each guess.\n\nTo help you make an informed guess, you will receive a clue for the word, such as\nclue: snowy white.\n\nHere is an example guess based on the clue:\nexplanation: In the fairy tail Snow White, the girl is killed because she eats a poisoned apple. And the word apple has 5 letters.\nguess: apple\n\nAfter each guess, your answer will be validated, and you will receive feedback indicating which letters are correct (green), which letters are correct but in the wrong position (yellow), and which letters are incorrect (red). This feedback can be useful in determining which letters to include or exclude in your next guess.\n\nFor example, the feedback for \"apple\" might be:\nguess_feedback: a<yellow> p<yellow> p<green> l<yellow> e<red>\n\nThe explanation should contain details about how both the guess_feedback and clue work together in tandem to formulate a new guess.\n\nDo not generate any other text.\n\nLet's begin with your first guess.",
+      "guesser_critic_prompt": []
     },
     {
-      "name": "medium_frequency_words_clue_with_critic",
+      "name": "medium_frequency_words_clue_no_critic",
       "game_instances": [
         {
-          "game_id": 1,
+          "game_id": 0,
           "target_word": "stiff",
           "target_word_clue": "unbending",
           "target_word_difficulty": "medium_frequency"
         },
         {
-          "game_id": 2,
+          "game_id": 1,
           "target_word": "media",
           "target_word_clue": "news conference attendees",
           "target_word_difficulty": "medium_frequency"
         },
         {
-          "game_id": 3,
+          "game_id": 2,
           "target_word": "macaw",
           "target_word_clue": "cockatoo cousin",
           "target_word_difficulty": "medium_frequency"
         },
         {
-          "game_id": 4,
+          "game_id": 3,
           "target_word": "array",
           "target_word_clue": "marshal",
           "target_word_difficulty": "medium_frequency"
         },
         {
-          "game_id": 5,
+          "game_id": 4,
           "target_word": "beset",
           "target_word_clue": "hound",
           "target_word_difficulty": "medium_frequency"
         },
         {
-          "game_id": 6,
+          "game_id": 5,
           "target_word": "chain",
           "target_word_clue": "sprockets linker",
           "target_word_difficulty": "medium_frequency"
         },
         {
-          "game_id": 7,
+          "game_id": 6,
           "target_word": "feast",
           "target_word_clue": "celebration",
           "target_word_difficulty": "medium_frequency"
         },
         {
-          "game_id": 8,
+          "game_id": 7,
           "target_word": "mound",
           "target_word_clue": "pitcher's place",
           "target_word_difficulty": "medium_frequency"
         },
         {
-          "game_id": 9,
+          "game_id": 8,
           "target_word": "spied",
           "target_word_clue": "snooped",
           "target_word_difficulty": "medium_frequency"
         },
         {
-          "game_id": 10,
+          "game_id": 9,
           "target_word": "thigh",
           "target_word_clue": "dark meat option",
+          "target_word_difficulty": "medium_frequency"
+        },
+        {
+          "game_id": 10,
+          "target_word": "buddy",
+          "target_word_clue": "pal",
+          "target_word_difficulty": "medium_frequency"
+        },
+        {
+          "game_id": 11,
+          "target_word": "check",
+          "target_word_clue": "one means of payment",
+          "target_word_difficulty": "medium_frequency"
+        },
+        {
+          "game_id": 12,
+          "target_word": "penne",
+          "target_word_clue": "italian dish",
+          "target_word_difficulty": "medium_frequency"
+        },
+        {
+          "game_id": 13,
+          "target_word": "sweet",
+          "target_word_clue": "treacly",
+          "target_word_difficulty": "medium_frequency"
+        },
+        {
+          "game_id": 14,
+          "target_word": "kayak",
+          "target_word_clue": "olympic vehicle",
+          "target_word_difficulty": "medium_frequency"
+        },
+        {
+          "game_id": 15,
+          "target_word": "awash",
+          "target_word_clue": "flooded",
+          "target_word_difficulty": "medium_frequency"
+        },
+        {
+          "game_id": 16,
+          "target_word": "jumbo",
+          "target_word_clue": "family-size",
+          "target_word_difficulty": "medium_frequency"
+        },
+        {
+          "game_id": 17,
+          "target_word": "aback",
+          "target_word_clue": "one way to be taken",
+          "target_word_difficulty": "medium_frequency"
+        },
+        {
+          "game_id": 18,
+          "target_word": "spiny",
+          "target_word_clue": "like porcupines",
+          "target_word_difficulty": "medium_frequency"
+        },
+        {
+          "game_id": 19,
+          "target_word": "found",
+          "target_word_clue": "*with 44-down, not turning up as expected in a search",
           "target_word_difficulty": "medium_frequency"
         }
       ],
@@ -26099,72 +26219,132 @@
         "zymic"
       ],
       "use_clue": true,
-      "use_critic": true,
+      "use_critic": false,
       "system_definition": "You are a language wizard who likes to guess words by using the given rules.",
-      "guesser_prompt": "You are a language wizard who likes to guess words by using the given rules.\n\nWelcome to Wordle! You have six attempts to guess the target word, a valid English word of five lowercase letters (a-z). Please use the tags \"explanation:\" and \"guess:\" to provide a concise explanation for each guess.\n\nTo help you make an informed guess, you will receive a clue for the word, such as\nclue: \"snowy white\"\n\nHere is an example guess based on the clue:\nexplanation: In the fairy tail Snow White, the girl is killed because she eats a poisoned apple. And the word apple has 5 letters.\nguess: apple\n\nI will then indicate whether I agree or disagree with your guess and provide rationale, but agreeing with a guess does not confirm its correctness. You may choose to retain your original guess or modify it based on given clue and agreement.\n\nAfter each guess, your answer will be validated, and you will receive feedback indicating which letters are correct (green), which letters are correct but in the wrong position (yellow), and which letters are incorrect (red). This feedback can be useful in determining which letters to include or exclude in your next guess.\n\nFor example, the feedback for \"apple\" might be:\nguess_feedback: a<yellow> p<yellow> p<green> l<yellow> e<red>\n\nHere are some rules to keep in mind:\n1. Please do not generate any guess feedback or clue on your own\n2. Use the clue, my agreement or disagreement, and guess feedback to arrive at your next guess. This should be reflected in your explanation as well.\n\nDo not generate any other text.\n\nLet's begin with your first guess.",
-      "guesser_critic_prompt": "I need your assistance with a word game in which we need to find a 5-letter word using a clue, a guess and an explanation for the guess.\n\nFor example, if the clue is \"snow white\" and the guess is \"apple\", you will get the information like this:\nclue: snow white\nexplanation: the fairy tale Snow White involves the girl eating a poisoned apple, which has 5 letters.\nguess: apple\n\nYour task is to either agree or disagree with my guess based on the given clue.\n\nIf you disagree, I will make another guess, and if you agree, I will proceed in the game using the same guess.\n\nInitially, guess feedback is not available, but as the game proceeds, it becomes available. The guess feedback is not for current guess, but rather an indication of what letters can be present in the current guess. A letter highlighted in green indicates that it is a correct letter in the correct position, while yellow indicates that it is a correct letter in the wrong position, and red indicates a wrong letter. At this point, you should use all the provided information, including the clue, guess, explanation, and guess feedback, to decide whether the given guess matches the clue, and also stick to guess feedback or not.\n\nPlease respond in lowercase letters and stick to this format:\nexplanation: your reason for doing so\nagreement: yes or no\n\nPlease note that you must not guess any word based on the riddle clue and stick to the given format while responding.\n\nDo not generate any other text.\n\nLet's begin!"
+      "guesser_prompt": "You are a language wizard who likes to guess words by using the given rules.\n\nWelcome to Wordle! You have six attempts to guess the target word, a valid English word of five lowercase letters (a-z). Please use the tags \"explanation:\" and \"guess:\" to provide a concise explanation for each guess.\n\nTo help you make an informed guess, you will receive a clue for the word, such as\nclue: snowy white.\n\nHere is an example guess based on the clue:\nexplanation: In the fairy tail Snow White, the girl is killed because she eats a poisoned apple. And the word apple has 5 letters.\nguess: apple\n\nAfter each guess, your answer will be validated, and you will receive feedback indicating which letters are correct (green), which letters are correct but in the wrong position (yellow), and which letters are incorrect (red). This feedback can be useful in determining which letters to include or exclude in your next guess.\n\nFor example, the feedback for \"apple\" might be:\nguess_feedback: a<yellow> p<yellow> p<green> l<yellow> e<red>\n\nThe explanation should contain details about how both the guess_feedback and clue work together in tandem to formulate a new guess.\n\nDo not generate any other text.\n\nLet's begin with your first guess.",
+      "guesser_critic_prompt": []
     },
     {
-      "name": "low_frequency_words_clue_with_critic",
+      "name": "low_frequency_words_clue_no_critic",
       "game_instances": [
         {
-          "game_id": 1,
+          "game_id": 0,
           "target_word": "jerky",
           "target_word_clue": "uneven",
           "target_word_difficulty": "low_frequency"
         },
         {
-          "game_id": 2,
+          "game_id": 1,
           "target_word": "brash",
           "target_word_clue": "full of chutzpah",
           "target_word_difficulty": "low_frequency"
         },
         {
-          "game_id": 3,
+          "game_id": 2,
           "target_word": "trial",
           "target_word_clue": "court event",
           "target_word_difficulty": "low_frequency"
         },
         {
-          "game_id": 4,
+          "game_id": 3,
           "target_word": "flier",
           "target_word_clue": "ace",
           "target_word_difficulty": "low_frequency"
         },
         {
-          "game_id": 5,
+          "game_id": 4,
           "target_word": "wider",
           "target_word_clue": "dentist's directive",
           "target_word_difficulty": "low_frequency"
         },
         {
-          "game_id": 6,
+          "game_id": 5,
           "target_word": "album",
           "target_word_clue": "philatelist's need",
           "target_word_difficulty": "low_frequency"
         },
         {
-          "game_id": 7,
+          "game_id": 6,
           "target_word": "koala",
           "target_word_clue": "zoo critter",
           "target_word_difficulty": "low_frequency"
         },
         {
-          "game_id": 8,
+          "game_id": 7,
           "target_word": "islet",
           "target_word_clue": "key",
           "target_word_difficulty": "low_frequency"
         },
         {
-          "game_id": 9,
+          "game_id": 8,
           "target_word": "dried",
           "target_word_clue": "toweled off",
           "target_word_difficulty": "low_frequency"
         },
         {
-          "game_id": 10,
+          "game_id": 9,
           "target_word": "stand",
           "target_word_clue": "kiosk",
+          "target_word_difficulty": "low_frequency"
+        },
+        {
+          "game_id": 10,
+          "target_word": "dwelt",
+          "target_word_clue": "resided",
+          "target_word_difficulty": "low_frequency"
+        },
+        {
+          "game_id": 11,
+          "target_word": "blink",
+          "target_word_clue": "go on and off, as a traffic light",
+          "target_word_difficulty": "low_frequency"
+        },
+        {
+          "game_id": 12,
+          "target_word": "ascot",
+          "target_word_clue": "gold cup day site",
+          "target_word_difficulty": "low_frequency"
+        },
+        {
+          "game_id": 13,
+          "target_word": "there",
+          "target_word_clue": "when repeated, comforting comment",
+          "target_word_difficulty": "low_frequency"
+        },
+        {
+          "game_id": 14,
+          "target_word": "brawl",
+          "target_word_clue": "more than a scuffle",
+          "target_word_difficulty": "low_frequency"
+        },
+        {
+          "game_id": 15,
+          "target_word": "extra",
+          "target_word_clue": "lagniappe",
+          "target_word_difficulty": "low_frequency"
+        },
+        {
+          "game_id": 16,
+          "target_word": "lusty",
+          "target_word_clue": "spirited",
+          "target_word_difficulty": "low_frequency"
+        },
+        {
+          "game_id": 17,
+          "target_word": "unmet",
+          "target_word_clue": "not fulfilled",
+          "target_word_difficulty": "low_frequency"
+        },
+        {
+          "game_id": 18,
+          "target_word": "bluer",
+          "target_word_clue": "further down?",
+          "target_word_difficulty": "low_frequency"
+        },
+        {
+          "game_id": 19,
+          "target_word": "tabby",
+          "target_word_clue": "brindled cat",
           "target_word_difficulty": "low_frequency"
         }
       ],
@@ -39151,10 +39331,10 @@
         "zymic"
       ],
       "use_clue": true,
-      "use_critic": true,
+      "use_critic": false,
       "system_definition": "You are a language wizard who likes to guess words by using the given rules.",
-      "guesser_prompt": "You are a language wizard who likes to guess words by using the given rules.\n\nWelcome to Wordle! You have six attempts to guess the target word, a valid English word of five lowercase letters (a-z). Please use the tags \"explanation:\" and \"guess:\" to provide a concise explanation for each guess.\n\nTo help you make an informed guess, you will receive a clue for the word, such as\nclue: \"snowy white\"\n\nHere is an example guess based on the clue:\nexplanation: In the fairy tail Snow White, the girl is killed because she eats a poisoned apple. And the word apple has 5 letters.\nguess: apple\n\nI will then indicate whether I agree or disagree with your guess and provide rationale, but agreeing with a guess does not confirm its correctness. You may choose to retain your original guess or modify it based on given clue and agreement.\n\nAfter each guess, your answer will be validated, and you will receive feedback indicating which letters are correct (green), which letters are correct but in the wrong position (yellow), and which letters are incorrect (red). This feedback can be useful in determining which letters to include or exclude in your next guess.\n\nFor example, the feedback for \"apple\" might be:\nguess_feedback: a<yellow> p<yellow> p<green> l<yellow> e<red>\n\nHere are some rules to keep in mind:\n1. Please do not generate any guess feedback or clue on your own\n2. Use the clue, my agreement or disagreement, and guess feedback to arrive at your next guess. This should be reflected in your explanation as well.\n\nDo not generate any other text.\n\nLet's begin with your first guess.",
-      "guesser_critic_prompt": "I need your assistance with a word game in which we need to find a 5-letter word using a clue, a guess and an explanation for the guess.\n\nFor example, if the clue is \"snow white\" and the guess is \"apple\", you will get the information like this:\nclue: snow white\nexplanation: the fairy tale Snow White involves the girl eating a poisoned apple, which has 5 letters.\nguess: apple\n\nYour task is to either agree or disagree with my guess based on the given clue.\n\nIf you disagree, I will make another guess, and if you agree, I will proceed in the game using the same guess.\n\nInitially, guess feedback is not available, but as the game proceeds, it becomes available. The guess feedback is not for current guess, but rather an indication of what letters can be present in the current guess. A letter highlighted in green indicates that it is a correct letter in the correct position, while yellow indicates that it is a correct letter in the wrong position, and red indicates a wrong letter. At this point, you should use all the provided information, including the clue, guess, explanation, and guess feedback, to decide whether the given guess matches the clue, and also stick to guess feedback or not.\n\nPlease respond in lowercase letters and stick to this format:\nexplanation: your reason for doing so\nagreement: yes or no\n\nPlease note that you must not guess any word based on the riddle clue and stick to the given format while responding.\n\nDo not generate any other text.\n\nLet's begin!"
+      "guesser_prompt": "You are a language wizard who likes to guess words by using the given rules.\n\nWelcome to Wordle! You have six attempts to guess the target word, a valid English word of five lowercase letters (a-z). Please use the tags \"explanation:\" and \"guess:\" to provide a concise explanation for each guess.\n\nTo help you make an informed guess, you will receive a clue for the word, such as\nclue: snowy white.\n\nHere is an example guess based on the clue:\nexplanation: In the fairy tail Snow White, the girl is killed because she eats a poisoned apple. And the word apple has 5 letters.\nguess: apple\n\nAfter each guess, your answer will be validated, and you will receive feedback indicating which letters are correct (green), which letters are correct but in the wrong position (yellow), and which letters are incorrect (red). This feedback can be useful in determining which letters to include or exclude in your next guess.\n\nFor example, the feedback for \"apple\" might be:\nguess_feedback: a<yellow> p<yellow> p<green> l<yellow> e<red>\n\nThe explanation should contain details about how both the guess_feedback and clue work together in tandem to formulate a new guess.\n\nDo not generate any other text.\n\nLet's begin with your first guess.",
+      "guesser_critic_prompt": []
     }
   ]
 }
