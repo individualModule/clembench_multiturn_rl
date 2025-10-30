@@ -1,6 +1,7 @@
 import random
 from dataclasses import dataclass
 from typing import Dict, Tuple, List, Optional
+import random
 import logging
 import numpy as np
 import re
@@ -401,12 +402,8 @@ class Wordle(DialogueGameMaster):
         """
         Returns speed as the metric
         """
-        if self.state.success:
-            return 100
-        if self.state.aborted:
-            return -100
         
-        return 0
+        return random.choice([100, -100, 0])
 
     def _on_after_game(self):
         self.info['lost'] = self.state.failure
