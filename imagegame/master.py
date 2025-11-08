@@ -43,6 +43,7 @@ class ImageGame:
         self.max_rounds = self.grid_dimension * self.grid_dimension * 2
         self.terminate = False
 
+
         # for playpen scoring
         self.prev_turn_score = 0
 
@@ -51,7 +52,14 @@ class ImageGameMaster(DialogueGameMaster):
     def __init__(self, game_name: str, game_path: str, experiment: Dict, player_models: List[Model]):
         super().__init__(game_name, game_path, experiment, player_models)
 
+        self.success = False
+        self.lose = False
+        self.abort = False
+
+
+
     def _on_setup(self, **game_instance):
+        self.game_instance = game_instance
         self.request_count = 0
         self.parsed_request_count = 0
         self.violated_request_count = 0
@@ -91,6 +99,7 @@ class ImageGameMaster(DialogueGameMaster):
                 else:
                     self.game.terminate = True
                     self.log_to_self("invalid format", "Invalid instruction format")
+                    self.abort = True
                     return False
         else:
             match = re.compile(self.game.player_2_response_pattern).match(response)
@@ -99,6 +108,8 @@ class ImageGameMaster(DialogueGameMaster):
             else:
                 self.game.terminate = True
                 self.log_to_self("invalid format", "Invalid grid format")
+                self.abort = True
+
                 return False
 
     def _parse_response(self, player: Player, response: str) -> str:
@@ -168,30 +179,42 @@ class ImageGameMaster(DialogueGameMaster):
             The F1 score for the current turn. 0-100 scale
         """
         precision, recall, f1 = 0, 0, 0
-
         target_grid = self.game.target_grid
 
         try:
             # Evaluate the F1 score based on the target grid and Player 1's parsed response
-            precision, recall, f1 = evaluate(target_grid, parsed_response)
+            _, _, f1 = evaluate(target_grid, parsed_response)
         except Exception as e:
             # Handle any evaluation errors gracefully
             self.prev_turn_score = 0
             return 0
-
+        
         self.prev_turn_score = f1
-        return f1
+        return 0
+
 
     def compute_episode_score(self):
         """
         Episode level scores for playpen.
         """
-
+        if self.abort:
+            return -100
+        
         # Return the F1 score as the BENCH_SCORE
         if self.prev_turn_score > 99:
-            return self.prev_turn_score
+            self.success = True
+            return 100
+        
+        self.lose = True
         
         return 0
+
+
+    def _on_after_game(self):
+        self.info['lost'] = self.lose
+        self.info['aborted'] = self.abort
+        self.info['success'] = self.success
+        self.info['game_id'] = self.game_instance['game_id']
 
 
 

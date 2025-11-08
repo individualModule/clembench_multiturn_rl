@@ -91,7 +91,6 @@ class Taboo(DialogueGameMaster):
 
         self.target_word = game_instance["target_word"]
         self.related_words = game_instance["related_word"]
-
         describer_initial_prompt = self.experiment["describer_initial_prompt"]
         describer_initial_prompt = describer_initial_prompt.replace("$TARGET_WORD$", self.target_word)
         rel_words = f"- {self.related_words[0]}\n- {self.related_words[1]}\n- {self.related_words[2]}"
