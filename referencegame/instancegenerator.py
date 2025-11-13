@@ -18,8 +18,9 @@ from referencegame.resources.localization_utils import MULTILINGUAL_PATTERNS
 
 logger = logging.getLogger(__name__)
 
-VERSION = "v2.0"
-GRIDS = "resources/grids_v2.0.json"
+VERSION = "v1.0"
+# GRIDS = "resources/grids_v2.0.json"
+GRIDS = "resources/grids_v1.0.json"
 P1_MODE = "strict"  # "liberal"
 P2_MODE = "strict"  # "liberal"
 # modes relate to regex parsing:
@@ -219,4 +220,4 @@ if __name__ == '__main__':
     # generate language versions
     for language in MULTILINGUAL_PATTERNS.keys():
         ReferenceGameInstanceGenerator().generate(
-            filename=f"instances_{VERSION}_{language}.json", seed=42, lang=language)
+            filename=f"training_instances_{VERSION}_{language}.json", seed=42, lang=language)

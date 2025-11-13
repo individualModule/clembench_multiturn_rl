@@ -32,16 +32,18 @@ class InstructionGiver(Player):
 class ReferenceGame:
 
     def __init__(self, game_instance: Dict):
-        self.lang = game_instance['lang']
-        self.p1_mode = game_instance['p1_mode']
-        self.p2_mode = game_instance['p2_mode']
+        self.lang = game_instance.get('lang', 'en')
+        self.p1_mode = game_instance.get('p1_mode', 'strict')
+        self.p2_mode = game_instance.get('p2_mode', 'strict')
         self.game_id = game_instance['game_id']
         self.player_1_prompt_header = game_instance['player_1_prompt_header']
         self.player_2_prompt_header = game_instance['player_2_prompt_header']
         self.target_grid_name = game_instance['target_grid_name']
+        p1_resp = game_instance.get("player_1_response_pattern", "^(?P<tag>expression:\\s*)(?P<content>(?P<response>.+)\n*(?P<remainder>(.|\n)*))")
+        p2_resp = game_instance.get("player_2_response_pattern", "^(?P<tag>answer:\\s*)(?P<content>(?P<response>first|second|third|1|2|3).*\n*(?P<remainder>(.|\n)*))")
 
-        self.player_1_response_pattern = r'{}'.format(game_instance['player_1_response_pattern'])
-        self.player_2_response_pattern = r'{}'.format(game_instance['player_2_response_pattern'])
+        self.player_1_response_pattern = r'{}'.format(p1_resp)
+        self.player_2_response_pattern = r'{}'.format(p2_resp)
 
         self.player_1_target_grid = game_instance['player_1_target_grid']
         self.player_1_second_grid = game_instance['player_1_second_grid']
